@@ -1,0 +1,3 @@
+.title {
+    -unity-font: url('/Assets/04_SCRIPTS/InventoryUI/Fonts/CRAWLER-RegularDEMO.ttf');
+}
