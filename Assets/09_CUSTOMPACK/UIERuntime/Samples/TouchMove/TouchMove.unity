@@ -232,15 +232,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1176070926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44ec0339032d26e4a97049d225934b91, type: 3}
+  m_Script: {fileID: 11500000, guid: 700714e9c258f6a4f99093f3d23b2a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uxml: {fileID: 9197481963319205126, guid: a4678cd8c31ca3345b92138883f96624, type: 3}
-  unityStyleSheet: {fileID: 0}
-  stylesheets:
-  - {fileID: 7433441132597879392, guid: c2b47fd815bda90409eb857007275814, type: 3}
+  uxml: {fileID: 9197481963319205126, guid: 8257a3f9d6f51bf468e21edb73b67fbe, type: 3}
+  unityStyleSheet: {fileID: 7433441132597879392, guid: 0ea604d702488fc40b50dcda07e2b73b,
+    type: 3}
+  stylesheets: []
   targetTexture: {fileID: 0}
   panelTransform: {fileID: 0}
+  enableLiveUpdates: 0
 --- !u!114 &1176070928
 MonoBehaviour:
   m_ObjectHideFlags: 0
