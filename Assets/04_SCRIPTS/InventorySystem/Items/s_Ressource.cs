@@ -7,6 +7,6 @@ public class s_Ressource : ItemObject
 {
    public void Awake() 
    {
-       type = ItemType.Ressource;
+       m_type = ItemType.Ressource;
    }
 }

@@ -14,12 +14,12 @@
     justify-content: flex-start;
     -unity-font: resource('RepeatGame/Fontdiner_Swanky/FontdinerSwanky-Regular');
     font-size: 15%;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
     -unity-text-align: middle-center;
-    border-left-color: rgba(0, 0, 0, 255);
-    border-right-color: rgba(0, 0, 0, 255);
-    border-top-color: rgba(0, 0, 0, 255);
-    border-bottom-color: rgba(0, 0, 0, 255);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
     display: flex;
     visibility: visible;
 }
@@ -38,16 +38,16 @@
     border-bottom-left-radius: 19px;
     border-top-right-radius: 19px;
     border-bottom-right-radius: 19px;
-    border-right-color: rgba(161, 161, 161, 255);
-    border-bottom-color: rgba(161, 161, 161, 255);
-    color: rgba(255, 255, 255, 255);
+    border-right-color: rgb(161, 161, 161);
+    border-bottom-color: rgb(161, 161, 161);
+    color: rgb(255, 255, 255);
     -unity-background-scale-mode: stretch-to-fill;
     -unity-slice-left: 0;
     -unity-slice-top: 0;
     -unity-slice-right: 0;
     -unity-slice-bottom: 0;
-    border-left-color: rgba(161, 161, 161, 255);
-    border-top-color: rgba(161, 161, 161, 255);
+    border-left-color: rgb(161, 161, 161);
+    border-top-color: rgb(161, 161, 161);
     border-top-width: 3px;
     border-left-width: 4px;
 }
@@ -76,16 +76,16 @@
     border-bottom-left-radius: 18px;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    border-left-color: rgba(161, 161, 161, 255);
-    border-right-color: rgba(161, 161, 161, 255);
-    border-top-color: rgba(161, 161, 161, 255);
-    border-bottom-color: rgba(161, 161, 161, 255);
+    border-left-color: rgb(161, 161, 161);
+    border-right-color: rgb(161, 161, 161);
+    border-top-color: rgb(161, 161, 161);
+    border-bottom-color: rgb(161, 161, 161);
     background-color: rgba(0, 0, 0, 0.43);
     -unity-slice-left: 0;
     -unity-slice-top: 0;
     -unity-slice-right: 0;
     -unity-slice-bottom: 0;
-    -unity-background-image-tint-color: rgba(255, 255, 255, 255);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
     -unity-background-scale-mode: stretch-to-fill;
     width: 70px;
     height: 65px;
@@ -93,4 +93,7 @@
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.item {
 }

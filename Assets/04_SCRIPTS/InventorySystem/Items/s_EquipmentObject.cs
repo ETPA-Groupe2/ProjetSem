@@ -17,7 +17,7 @@ public class s_EquipmentObject : ItemObject
     public EquipmentRadiusType radiusType;
     public void Awake() 
     {
-        type = ItemType.Equipment;
+        m_type = ItemType.Equipment;
         radiusType = EquipmentRadiusType.Default;
     }
 }

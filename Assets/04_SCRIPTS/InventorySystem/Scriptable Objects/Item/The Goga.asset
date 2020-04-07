@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b472a9ad2e57e74c8da486da3f07d28, type: 3}
-  m_Name: Gun
+  m_Name: The Goga
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5455298944657949885, guid: 446734be9836f3b499c7df3b5f9947b7, type: 3}
-  type: 0
-  Description: Pew pew motherfucker !
-  m_radiusModifier: 60
-  radiusType: 1
+  m_itemTexture: {fileID: 0}
+  m_type: 0
+  m_itemPickedSound: {fileID: 0}
+  m_itemUsedSound: {fileID: 0}
+  m_description: 
+  m_radiusModifier: 0
+  radiusType: 2

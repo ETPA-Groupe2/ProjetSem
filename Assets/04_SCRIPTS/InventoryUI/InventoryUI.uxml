@@ -2,7 +2,7 @@
     <ui:VisualElement name="Inventory-Menu" style="flex-grow: 1;&#10;align-items: center;&#10;justify-content: space-around;&#10;margin-left: 0;&#10;margin-right: 0;&#10;margin-top: 0;&#10;margin-bottom: 0;&#10;padding-left: 0;&#10;padding-right: 0;&#10;padding-top: 0;&#10;padding-bottom: 0;&#10;flex-direction: row;&#10;flex-wrap: no-wrap;&#10;-unity-font: url(&apos;/Assets/04_SCRIPTS/InventoryUI/Fonts/CRAWLER-RegularDEMO.ttf&apos;);&#10;position: absolute;&#10;left: 0;&#10;top: 0;&#10;right: 0;&#10;bottom: 0;&#10;">
         <Style src="InventoryUI.uss" />
         <ui:VisualElement name="Inventory-Container" class="menu" style="justify-content: flex-start;&#10;align-items: center;&#10;">
-            <ui:Label text="INVENTORY" name="Inventory-Name" class="menu-label" style="color: rgba(255, 255, 255, 255);&#10;" />
+            <ui:Label text="INVENTORY" name="Inventory-Name" class="menu-label" style="color: rgb(255, 255, 255);&#10;" />
             <ui:VisualElement name="Slot-Container" class="slotMenu">
                 <ui:VisualElement name="Slot" class="Slot" />
                 <ui:VisualElement name="Slot" class="Slot" />
@@ -27,14 +27,14 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Craft-Container" class="menu">
-            <ui:Label text="CRAFT MENU" name="Craft-Name" class="menu-label" style="color: rgba(255, 255, 255, 255);&#10;" />
+            <ui:Label text="CRAFT MENU" name="Craft-Name" class="menu-label" style="color: rgb(255, 255, 255);&#10;" />
             <ui:VisualElement name="Menu-Container" class="slotMenu" style="align-items: center;&#10;justify-content: center;&#10;flex-wrap: no-wrap;&#10;">
                 <ui:VisualElement name="Craft-Item" class="Slot" style="margin-top: 0;&#10;margin-bottom: 0;&#10;margin-left: 0;&#10;margin-right: 50px;&#10;width: 100px;&#10;height: 100px;&#10;top: -15%;&#10;" />
                 <ui:VisualElement name="Craft-Item" class="Slot" style="margin-right: 90px;&#10;margin-left: 0;&#10;margin-top: 0;&#10;margin-bottom: 0;&#10;width: 100px;&#10;height: 100px;&#10;top: -15%;&#10;" />
                 <ui:VisualElement name="Craft-Item" class="Slot" style="margin-top: 0;&#10;margin-bottom: 0;&#10;margin-left: 0;&#10;margin-right: 0;&#10;width: 100px;&#10;height: 100px;&#10;top: -15%;&#10;" />
-                <ui:VisualElement name="Loader" style="top: 65%;&#10;width: 420px;&#10;height: 23px;&#10;position: absolute;&#10;left: 10%;&#10;background-color: rgba(0, 0, 0, 255);&#10;-unity-slice-left: 0;&#10;border-left-width: 5px;&#10;border-right-width: 5px;&#10;border-top-width: 5px;&#10;border-bottom-width: 5px;&#10;border-left-color: rgba(161, 161, 161, 255);&#10;border-right-color: rgba(161, 161, 161, 255);&#10;border-top-color: rgba(161, 161, 161, 255);&#10;border-bottom-color: rgba(161, 161, 161, 255);&#10;border-top-left-radius: 13px;&#10;border-bottom-left-radius: 13px;&#10;border-top-right-radius: 13px;&#10;border-bottom-right-radius: 13px;&#10;" />
-                <ui:VisualElement name="Craft-Button" style="position: absolute;&#10;width: 420px;&#10;height: 80px;&#10;top: 75%;&#10;left: 10%;&#10;background-color: rgba(0, 0, 0, 255);&#10;border-left-width: 3px;&#10;border-right-width: 3px;&#10;border-top-width: 3px;&#10;border-bottom-width: 12px;&#10;border-left-color: rgba(161, 161, 161, 255);&#10;border-right-color: rgba(161, 161, 161, 255);&#10;border-top-color: rgba(161, 161, 161, 255);&#10;border-bottom-color: rgba(161, 161, 161, 255);&#10;border-top-left-radius: 20px;&#10;border-bottom-left-radius: 20px;&#10;border-top-right-radius: 20px;&#10;border-bottom-right-radius: 20px;&#10;font-size: 50px;&#10;color: rgba(255, 255, 255, 255);&#10;-unity-font-style: bold;&#10;">
-                    <ui:Label text="CRAFT !" name="Craft-Button-Name" style="color: rgba(255, 255, 255, 255);&#10;-unity-font-style: normal;&#10;" />
+                <ui:VisualElement name="Loader" style="top: 65%;&#10;width: 420px;&#10;height: 23px;&#10;position: absolute;&#10;left: 10%;&#10;background-color: rgb(0, 0, 0);&#10;-unity-slice-left: 0;&#10;border-left-width: 5px;&#10;border-right-width: 5px;&#10;border-top-width: 5px;&#10;border-bottom-width: 5px;&#10;border-left-color: rgb(161, 161, 161);&#10;border-right-color: rgb(161, 161, 161);&#10;border-top-color: rgb(161, 161, 161);&#10;border-bottom-color: rgb(161, 161, 161);&#10;border-top-left-radius: 13px;&#10;border-bottom-left-radius: 13px;&#10;border-top-right-radius: 13px;&#10;border-bottom-right-radius: 13px;&#10;" />
+                <ui:VisualElement name="Craft-Button" style="position: absolute;&#10;width: 420px;&#10;height: 80px;&#10;top: 75%;&#10;left: 10%;&#10;background-color: rgb(0, 0, 0);&#10;border-left-width: 3px;&#10;border-right-width: 3px;&#10;border-top-width: 3px;&#10;border-bottom-width: 12px;&#10;border-left-color: rgb(161, 161, 161);&#10;border-right-color: rgb(161, 161, 161);&#10;border-top-color: rgb(161, 161, 161);&#10;border-bottom-color: rgb(161, 161, 161);&#10;border-top-left-radius: 20px;&#10;border-bottom-left-radius: 20px;&#10;border-top-right-radius: 20px;&#10;border-bottom-right-radius: 20px;&#10;font-size: 50px;&#10;color: rgb(255, 255, 255);&#10;-unity-font-style: bold;&#10;">
+                    <ui:Label text="CRAFT !" name="Craft-Button-Name" style="color: rgb(255, 255, 255);&#10;-unity-font-style: normal;&#10;" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>

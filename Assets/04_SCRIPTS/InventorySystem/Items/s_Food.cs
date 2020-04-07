@@ -8,6 +8,6 @@ public class s_Food : ItemObject
     public int m_restoreEnergyValue;
     public void Awake() 
     {
-        type = ItemType.Food;
+        m_type = ItemType.Food;
     }
 }

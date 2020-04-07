@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc90ba4d2ec9e7468592eaea06624c8, type: 3}
   m_Name: Strawberry
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5455298944657949885, guid: 446734be9836f3b499c7df3b5f9947b7, type: 3}
-  type: 2
-  Description: This is a delicious strawberry !
-  m_restoreEnergyValue: 15
+  m_itemTexture: {fileID: 0}
+  m_type: 2
+  m_itemPickedSound: {fileID: 0}
+  m_itemUsedSound: {fileID: 0}
+  m_description: 
+  m_restoreEnergyValue: 0
