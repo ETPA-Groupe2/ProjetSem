@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b472a9ad2e57e74c8da486da3f07d28, type: 3}
+  m_Name: Gun
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5455298944657949885, guid: 446734be9836f3b499c7df3b5f9947b7, type: 3}
+  type: 0
+  Description: Pew pew motherfucker !
+  m_radiusModifier: 60
+  radiusType: 1
