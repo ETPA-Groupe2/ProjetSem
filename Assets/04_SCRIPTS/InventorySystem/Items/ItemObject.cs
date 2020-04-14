@@ -2,20 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ItemType
-{
-    Equipment,
-    Ressource,
-    Food
-}
-
-public abstract class ItemObject : ScriptableObject 
+[CreateAssetMenu(fileName = "New Item Object", menuName = "Inventory System/Item/New Item")]
+public class ItemObject : ScriptableObject 
 {
     [Tooltip("Texture 2D of the item")]
-    public Texture2D m_itemTexture;
+    public Sprite m_itemTexture;
 
     [Tooltip("Type of the item")]
-    public ItemType m_type;
+    public EnumType m_type;
 
     [Tooltip("The sound when the item is picked")]
     public AudioClip m_itemPickedSound;
@@ -23,7 +17,17 @@ public abstract class ItemObject : ScriptableObject
     [Tooltip("The sound when the item is used")]
     public AudioClip m_itemUsedSound;
 
+    [Tooltip("The name of the item")]
+    public string m_name;
+
     [Tooltip("The description of the item")]
     [TextArea(15, 20)]
     public string m_description;    
+
+    [Min(0)]private int m_sellPrice = 1;
+    [Min(1)]private int m_maxStack = 1;
+    
+    public int SellPrice => m_sellPrice;
+
+    public int MaxStack => m_maxStack;
 }

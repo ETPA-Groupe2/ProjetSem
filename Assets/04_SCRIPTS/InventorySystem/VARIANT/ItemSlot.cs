@@ -1,9 +1,9 @@
 ﻿public struct ItemSlot
 {
-    public InventoryItem m_item;
+    public ItemObject m_item;
     public int m_quantity;
 
-    public ItemSlot(InventoryItem p_item, int p_quantity)
+    public ItemSlot(ItemObject p_item, int p_quantity)
     {
         this.m_item = p_item;
         this.m_quantity = p_quantity;

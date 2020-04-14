@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System;
 
+
 public class Inventory : ScriptableObject, ItemContainer
 {
-    private ItemSlot[] m_itemSlots = new ItemSlot[20];
+    [SerializeField] private ItemSlot[] m_itemSlots = new ItemSlot[20];
 
     public Action onItemsUpdated = delegate {};
 
@@ -68,7 +69,7 @@ public class Inventory : ScriptableObject, ItemContainer
         return p_itemSlot;
     }
 
-    public int GetTotalQuantity(InventoryItem p_item)
+    public int GetTotalQuantity(ItemObject p_item)
     {
         int totalCount = 0;
 
@@ -83,7 +84,7 @@ public class Inventory : ScriptableObject, ItemContainer
         return totalCount;
     }
 
-    public bool HasItem(InventoryItem p_item)
+    public bool HasItem(ItemObject p_item)
     {
         foreach(ItemSlot itemSlot in m_itemSlots)
         {
