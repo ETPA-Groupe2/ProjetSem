@@ -7,23 +7,26 @@ public class s_InventoryObject : ScriptableObject
 {
     public InventorySlot[] m_container = new InventorySlot[20];
 
-   public InventorySlot AddItem(ItemObject p_item, int p_amount)
+   public void AddItem(ItemObject p_item, int p_amount)
     {
         bool hasItem = false;
-
         for(int i = 0; i<m_container.Length; i++)
         {
-            if(m_container[i].m_item != null)
+            if(m_container[i].m_item == p_item)
             {
-                if(m_container[i].m_item == p_item)
-                {
-                    m_container[i].AddAmount(p_amount);
-                    return new InventorySlot(p_item, p_amount); 
-                }
+                m_container[i].AddAmount(p_amount);
+                hasItem = true; 
+                break;
             }
         }
         
-        return new InventorySlot(p_item, p_amount); 
+        if(!hasItem)
+        {
+            foreach(InventorySlot slot in m_container)
+            { 
+                slot.AddNewItem(p_item, p_amount);  
+            }
+        }
     }
 
 }
