@@ -138,4 +138,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_blueBlockTR: {fileID: 4806992490076978108}
-  m_force: 100
+  m_force: 200
