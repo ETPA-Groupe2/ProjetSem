@@ -31,7 +31,7 @@ public class Energy : MonoBehaviour
     [SerializeField] private float m_waitTime=0.1f;
     [Header("Sphere properties")]
     [Tooltip("Collider of the sphere")]
-    [SerializeField] SphereCollider m_collider;
+    [SerializeField] private Collider_Change m_collider;
 
 
 
@@ -41,7 +41,7 @@ public class Energy : MonoBehaviour
         m_displayEnergy.text = "ENERGY: " + m_energy + "/100";
 
         //Increases the size of the sphere
-        if (m_collider.isTrigger == true && m_minReached == false)
+        if (m_collider.m_isTrigger == true && m_minReached == false)
         {
             m_timer += Time.deltaTime;
             if (m_timer > m_waitTime)
@@ -52,7 +52,7 @@ public class Energy : MonoBehaviour
         }
 
         //Reduces the size of the sphere
-        if (m_collider.isTrigger == false && m_maxReached == false)
+        if (m_collider.m_isTrigger == false && m_maxReached == false)
         {
             m_timer += Time.deltaTime;
             if (m_timer > m_waitTime)
