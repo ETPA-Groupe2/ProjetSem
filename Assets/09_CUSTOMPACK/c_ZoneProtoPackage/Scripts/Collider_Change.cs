@@ -9,7 +9,7 @@ public class Collider_Change : MonoBehaviour
 {
     //Sphere collider for the trigger button
     SphereCollider m_collider;
-    [SerializeField]GameObject m_sphere;
+    public GameObject m_sphere;
     // slowdown time
     private float m_timeScale = 0.5f;
     //increase scale's sphere

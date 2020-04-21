@@ -5,12 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Inventory Object", menuName = "Inventory System/Inventory")]
 public class s_InventoryObject : ScriptableObject
 {
-    public InventorySlot[] m_container = new InventorySlot[20];
+    public List<InventorySlot> m_container = new List<InventorySlot>();
 
    public void AddItem(ItemObject p_item, int p_amount)
     {
         bool hasItem = false;
-        for(int i = 0; i<m_container.Length; i++)
+        for(int i = 0; i<m_container.Count; i++)
         {
             if(m_container[i].m_item == p_item)
             {
@@ -22,10 +22,7 @@ public class s_InventoryObject : ScriptableObject
         
         if(!hasItem)
         {
-            foreach(InventorySlot slot in m_container)
-            { 
-                slot.AddNewItem(p_item, p_amount);  
-            }
+            m_container.Add(new InventorySlot(p_item, p_amount));
         }
     }
 
@@ -44,11 +41,5 @@ public class InventorySlot
     public void AddAmount(int p_value)
     {
         m_amount += p_value;
-    }
-
-    public void AddNewItem(ItemObject p_item, int p_amount)
-    {
-        m_item = p_item;
-        m_amount = p_amount;
     }
 }
