@@ -19,6 +19,8 @@ public class PurpleBlock : MonoBehaviour, IBlock2
     public void onTouch()
     {
         //Changes the block color
-        this.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+        gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+
+        Debug.Log("What happened?!");   
     }
 }

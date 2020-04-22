@@ -23,7 +23,7 @@ public class Collider_Change : MonoBehaviour
 
     public bool m_isTrigger = false;
 
-    [Tooltip("Scaling of the collider.")] public float m_x = 4, m_y, m_z;
+    [Tooltip("Scaling of the collider.")] public float m_x, m_y, m_z;
 
 
     void Start()
