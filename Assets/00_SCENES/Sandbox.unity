@@ -898,6 +898,11 @@ PrefabInstance:
       propertyPath: m_z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4837699427710070859, guid: 9488be115942cc346bda215d4374ea0f,
+        type: 3}
+      propertyPath: m_timeSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4837699427710070862, guid: 9488be115942cc346bda215d4374ea0f,
         type: 3}
       propertyPath: m_Name
