@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -149,15 +149,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 213739128}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8865e1c14e314274897c5cf9eb89cc7d, type: 3}
+  m_Script: {fileID: 11500000, guid: 94ac706b4e304e942859dceacd6dc1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   uxml: {fileID: 0}
-  unityStyleSheet: {fileID: 11400000, guid: d610daef742b54fdda82fd41508f7f2e, type: 2}
-  stylesheets:
-  - {fileID: 7433441132597879392, guid: 26414bc81aa2d414a91426ac695f77ba, type: 3}
+  unityStyleSheet: {fileID: 7433441132597879392, guid: 26414bc81aa2d414a91426ac695f77ba,
+    type: 3}
+  stylesheets: []
   targetTexture: {fileID: 0}
   panelTransform: {fileID: 0}
+  enableLiveUpdates: 0
   m_Tasks: []
 --- !u!4 &213739130
 Transform:
