@@ -21,10 +21,9 @@ public class ChainReaction : MonoBehaviour
 
     private void HandleReaction(GD2Lib.Event p_event, object[] p_params)
     {
-        if(GD2Lib.Event.TryParseArgs(out Transform block1, out Transform block2, p_params))
+        if(GD2Lib.Event.TryParseArgs(out ParticleSystem p_system, p_params))
         {
-            block1.Translate(50f, 0f, 10f);
-            block2.Translate(80f, 50f, 10f);
+            p_system.Play();
 
             Debug.Log("Ca marche starff");
         }
