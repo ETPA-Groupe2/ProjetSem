@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item Type", menuName = "Inventory System/Item Type/New Item Type")]
+[CreateAssetMenu(fileName = "New Enum Type", menuName = "Enum Type/New Enum Type")]
 public class EnumType : ScriptableObject
 {
     //This is used to create the type of an Item for the Designers.

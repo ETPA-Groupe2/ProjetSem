@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5262804348997192936}
   - component: {fileID: 5262804348997192853}
   - component: {fileID: 5262804348997192850}
+  - component: {fileID: 1350569675665404742}
   - component: {fileID: 5262804348997192852}
   m_Layer: 0
   m_Name: PurpleBlock
@@ -125,6 +126,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1350569675665404742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262804348997192939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8a04c60202dc64b812a39c425e6f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_type: {fileID: 11400000, guid: 6d5eaa75826192140ab0c52d845f0c0e, type: 2}
 --- !u!114 &5262804348997192852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,3 +151,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cc5ba9939eb5c418be79569f853838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 1771968ddaa7cd246bf5616c64949a5d, type: 2}
+  m_type: {fileID: 1350569675665404742}

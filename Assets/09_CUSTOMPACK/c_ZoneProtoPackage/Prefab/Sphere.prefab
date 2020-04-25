@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4837699427710070857}
   - component: {fileID: 4837699427710070856}
   - component: {fileID: 4837699427710070863}
+  - component: {fileID: 2063372571084232379}
   - component: {fileID: 4837699427710070859}
   m_Layer: 0
   m_Name: Sphere
@@ -94,6 +95,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2063372571084232379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4837699427710070862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8a04c60202dc64b812a39c425e6f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_type: {fileID: 11400000, guid: 571bbb9c14b11764287c54876206e33f, type: 2}
 --- !u!114 &4837699427710070859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,3 +121,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sphere: {fileID: 4837699427710070862}
+  m_timeSpeed: 0
+  m_scaleChange: {x: 0, y: 0, z: 0}
+  m_initialScale: {x: 0, y: 0, z: 0}
+  m_sphereRad: 0
+  m_energy: {fileID: 0}
+  m_isTrigger: 0
+  m_x: 0
+  m_y: 0
+  m_z: 0

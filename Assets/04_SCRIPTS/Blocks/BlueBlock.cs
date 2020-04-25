@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class BlueBlock : MonoBehaviour, IBlock1
+using GD2Lib;
+public class BlueBlock : Blocks, IBlock1
 {
     /// Rigidbody of the BlueBlock
     [SerializeField]
     public Rigidbody m_blueBlockTR;
+
     
     /// The force applied to the block
     [SerializeField]
@@ -21,12 +22,17 @@ public class BlueBlock : MonoBehaviour, IBlock1
 
     public void OnTriggerEnter(Collider other)
     {
+        Type t = other.gameObject.GetComponent<Type>();
+
         // If this block is trigger by the zone, it calls this function
-        if (other.tag == "Zone")
+        if(t != null)
         {
-            //function called when touched  
-            onTouch();
+            if(t.m_type == m_zoneType)
+            {
+                onTouch();
+            }
         }
+       
     }
 
     public void onTouch()
