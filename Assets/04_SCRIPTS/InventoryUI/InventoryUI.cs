@@ -21,14 +21,14 @@ public class InventoryUI : PanelRenderer
     private void DisplayItems()
     {
         VisualElement ve;
-        for(int i = 1; i < m_Container.childCount+1; i++)
+        for(int i = 0; i < m_Container.childCount; i++)
         {
             if(m_Container.ElementAt(i) != null && m_items[i].m_item != null)
             {
                 ve = m_Container.ElementAt(i);
                 ve.Add(m_itemImage);
-                m_itemImage.image = m_items[i].m_item.m_itemTexture;
                 Debug.Log(m_items[i].m_item.m_itemTexture);
+                //m_itemImage.image = m_items[i].m_item.m_itemTexture;
             }
         }
     }
