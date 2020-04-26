@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13d6fcd5cdd360428de44e29b90aab7, type: 3}
   m_Name: Goga
   m_EditorClassIdentifier: 
-  m_itemTexture: {fileID: 0}
+  m_itemTexture: {fileID: 2800000, guid: fd2da501d86e74edb849e50807938838, type: 3}
   m_type: {fileID: 11400000, guid: 77341e72d6149fd4b92f3c631a6a359e, type: 2}
   m_itemPickedSound: {fileID: 0}
   m_itemUsedSound: {fileID: 0}

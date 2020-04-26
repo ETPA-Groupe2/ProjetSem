@@ -159,7 +159,9 @@ MonoBehaviour:
   targetTexture: {fileID: 0}
   panelTransform: {fileID: 0}
   enableLiveUpdates: 0
-  m_Tasks: []
+  m_Tasks:
+  - 
+  - 
 --- !u!4 &213739130
 Transform:
   m_ObjectHideFlags: 0

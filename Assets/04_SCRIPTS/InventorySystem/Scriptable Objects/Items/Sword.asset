@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13d6fcd5cdd360428de44e29b90aab7, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  m_itemTexture: {fileID: 0}
-  m_type: {fileID: 0}
+  m_itemTexture: {fileID: 2800000, guid: 4b96dcaf790c6ae429d84aa4952f24c5, type: 3}
+  m_type: {fileID: 11400000, guid: 77341e72d6149fd4b92f3c631a6a359e, type: 2}
   m_itemPickedSound: {fileID: 0}
   m_itemUsedSound: {fileID: 0}
   m_name: 

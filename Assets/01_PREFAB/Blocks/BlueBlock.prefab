@@ -154,10 +154,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_event: {fileID: 11400000, guid: 1771968ddaa7cd246bf5616c64949a5d, type: 2}
   m_type: {fileID: 4423253605011159083}
-  m_zoneType: {fileID: 0}
+  m_zoneType: {fileID: 11400000, guid: 571bbb9c14b11764287c54876206e33f, type: 2}
   m_pollutionLvl: 0
   m_blueBlockTR: {fileID: 4806992490076978108}
-  m_particles: {fileID: 0}
+  m_particles: {fileID: 92344205167146073}
   m_force: 200
 --- !u!1001 &254601781913900887
 PrefabInstance:
@@ -244,6 +244,12 @@ PrefabInstance:
 --- !u!4 &259122770067864419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4521404770085940, guid: 89956e675b749204c8e10395ce2b5fb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 254601781913900887}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &92344205167146073 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198321560017527566, guid: 89956e675b749204c8e10395ce2b5fb9,
     type: 3}
   m_PrefabInstance: {fileID: 254601781913900887}
   m_PrefabAsset: {fileID: 0}

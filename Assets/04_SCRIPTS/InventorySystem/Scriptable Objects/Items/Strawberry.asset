@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13d6fcd5cdd360428de44e29b90aab7, type: 3}
   m_Name: Strawberry
   m_EditorClassIdentifier: 
-  m_itemTexture: {fileID: 0}
+  m_itemTexture: {fileID: 2800000, guid: fd40f995202bd5d48bfc70c9e0fd36ef, type: 3}
   m_type: {fileID: 11400000, guid: 51ed4e1a8028932418d92fe3b84db046, type: 2}
   m_itemPickedSound: {fileID: 0}
   m_itemUsedSound: {fileID: 0}

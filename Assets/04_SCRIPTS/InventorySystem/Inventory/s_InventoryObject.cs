@@ -25,7 +25,6 @@ public class s_InventoryObject : ScriptableObject
             m_container.Add(new InventorySlot(p_item, p_amount));
         }
     }
-
 }
 
 [System.Serializable]

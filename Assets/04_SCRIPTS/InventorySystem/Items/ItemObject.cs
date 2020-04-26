@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [CreateAssetMenu(fileName = "New Item Object", menuName = "Inventory System/Item/New Item")]
 public class ItemObject : ScriptableObject 
 {
     [Tooltip("Texture 2D of the item")]
-    public Sprite m_itemTexture;
+    public Texture m_itemTexture;
 
     [Tooltip("Type of the item")]
     public EnumType m_type;

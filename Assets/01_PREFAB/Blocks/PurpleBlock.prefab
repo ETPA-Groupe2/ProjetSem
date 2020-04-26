@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5262804348997192850}
   - component: {fileID: 1350569675665404742}
   - component: {fileID: 5262804348997192852}
+  - component: {fileID: 3472734565323109117}
   m_Layer: 0
   m_Name: PurpleBlock
   m_TagString: PurpleBlock
@@ -154,9 +155,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_event: {fileID: 11400000, guid: 1771968ddaa7cd246bf5616c64949a5d, type: 2}
   m_type: {fileID: 1350569675665404742}
-  m_zoneType: {fileID: 0}
+  m_zoneType: {fileID: 11400000, guid: 571bbb9c14b11764287c54876206e33f, type: 2}
   m_pollutionLvl: 0
-  m_particles: {fileID: 0}
+  m_particles: {fileID: 3736930246703110557}
+--- !u!114 &3472734565323109117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262804348997192939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 647cc7b9b8ecbf7409bcfc61660f7c5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 1771968ddaa7cd246bf5616c64949a5d, type: 2}
 --- !u!1001 &3538890508212615827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -247,6 +261,12 @@ PrefabInstance:
 --- !u!4 &3534404433984575143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4521404770085940, guid: 89956e675b749204c8e10395ce2b5fb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3538890508212615827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3736930246703110557 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198321560017527566, guid: 89956e675b749204c8e10395ce2b5fb9,
     type: 3}
   m_PrefabInstance: {fileID: 3538890508212615827}
   m_PrefabAsset: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5901986391903340987}
   - component: {fileID: 5901986391903340988}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: p_CameraPrefab
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,12 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e5146d7a2bbd04d911dcfc7daba308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_zoomSensitivity: 15
-  m_zoomSpeed: 5
-  m_MinFov: 20
-  m_MaxFov: 90
-  m_smoothFactor: 0.5
-  m_lookAtPlayer: 0
-  m_rotateAroundPlayer: 1
-  m_rotationSpeed: 5
+  m_minFov: 20
+  m_maxFov: 90
+  m_zoomSmoothness: 0.1
+  m_followSmoothness: 0.5
   m_playerTransform: {fileID: 0}
