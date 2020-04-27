@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Iohannes Mboumba                      *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -7,7 +12,7 @@ using UnityEngine.UIElements;
 public class ItemObject : ScriptableObject 
 {
     [Tooltip("Texture 2D of the item")]
-    public Texture m_itemTexture;
+    public Texture2D m_itemTexture;
 
     [Tooltip("Type of the item")]
     public EnumType m_type;
@@ -24,11 +29,4 @@ public class ItemObject : ScriptableObject
     [Tooltip("The description of the item")]
     [TextArea(15, 20)]
     public string m_description;    
-
-    [Min(0)]private int m_sellPrice = 1;
-    [Min(1)]private int m_maxStack = 1;
-    
-    public int SellPrice => m_sellPrice;
-
-    public int MaxStack => m_maxStack;
 }

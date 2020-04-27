@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Pauline Barbet & Iohannes Mboumba     *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -10,10 +15,12 @@ public class PlayerController : MonoBehaviour
 
     public s_InventoryObject m_inventory;
 
+    public VarBool m_hasTaken;
+
     private void Start()
     {
         m_agent = GetComponent<NavMeshAgent>();
-            
+        m_hasTaken.Value = false;
     }
 
     private void FollowNavMesh()
@@ -39,6 +46,7 @@ public class PlayerController : MonoBehaviour
         {
             m_inventory.AddItem(item.m_item, 1);
             Destroy(other.gameObject);
+            m_hasTaken.Value = true;
         }
     }
     

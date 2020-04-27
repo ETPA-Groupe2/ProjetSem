@@ -4,26 +4,66 @@
         <ui:VisualElement name="Inventory-Container" class="menu" style="justify-content: flex-start;&#10;align-items: center;&#10;">
             <ui:Label text="INVENTORY" name="Inventory-Name" class="menu-label" style="color: rgb(255, 255, 255);&#10;" />
             <ui:VisualElement name="Slot-Container" class="slotMenu">
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
-                <ui:VisualElement name="Slot" class="Slot" />
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Slot" class="Slot">
+                    <ui:VisualElement name="ItemField" class="item" />
+                </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Craft-Container" class="menu">

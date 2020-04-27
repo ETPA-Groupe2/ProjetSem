@@ -1,8 +1,13 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Iohannes Mboumba                      *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Enum Type", menuName = "Enum Type/New Enum Type")]
+[CreateAssetMenu(fileName = "New Enum Type", menuName = "ProjectLib/New Enum Type")]
 public class EnumType : ScriptableObject
 {
     //This is used to create the type of an Item for the Designers.

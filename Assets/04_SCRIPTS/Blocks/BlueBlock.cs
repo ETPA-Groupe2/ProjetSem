@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Pauline Barbet & Iohannes Mboumba     *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GD2Lib;
@@ -28,6 +33,7 @@ public class BlueBlock : Blocks
             }
         }
 
+        //It it touches something that have fire, it'll burn lol
         if(f != null)
         {
            if(m_event!=null)

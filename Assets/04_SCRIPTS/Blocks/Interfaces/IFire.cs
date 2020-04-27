@@ -1,5 +1,10 @@
-﻿public interface IFire
+﻿/******************************************************
+*       Made by Iohannes Mboumba                      *  
+*                                                     *
+/*****************************************************/
+
+public interface IFire
 {
-    ///<summary>The method when the interface IBlock2 touch something</summary>
+    ///<summary>The method when the interface IFire touch something</summary>
     void onTouch();
 }
