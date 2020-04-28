@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Equipement Type", menuName = "Inventory System/Item Type/Equipement")]
-public class s_Equipement : EnumType
+public class s_Equipement : s_EnumType
 {
     [Tooltip("Amount of modification dealt to the overall state.")]
     [Range(0f, 100f)]

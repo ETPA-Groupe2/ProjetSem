@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Type : MonoBehaviour
 {
-    public EnumType m_type;
+    public s_EnumType m_type;
 }

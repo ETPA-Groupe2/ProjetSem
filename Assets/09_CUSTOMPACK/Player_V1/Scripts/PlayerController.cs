@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     public s_InventoryObject m_inventory;
 
-    public VarBool m_hasTaken;
+    public s_VarBool m_hasTaken;
 
     private void Start()
     {

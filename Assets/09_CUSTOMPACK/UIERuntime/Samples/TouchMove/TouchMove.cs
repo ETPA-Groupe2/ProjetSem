@@ -46,7 +46,7 @@ public class TouchMove : PanelRenderer
             evt.target.CapturePointer(evt.pointerId);
             
             VisualElement ve = evt.target as VisualElement;
-            ve.AddToClassList("active");
+            ve.AddToClassList("selected");
 
             var fingerIndex = evt.pointerId - PointerId.touchPointerIdBase;
             m_StartPosition[fingerIndex] = new Vector2(ve.resolvedStyle.left, ve.resolvedStyle.top);

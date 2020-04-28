@@ -15,7 +15,7 @@ public class ItemObject : ScriptableObject
     public Texture2D m_itemTexture;
 
     [Tooltip("Type of the item")]
-    public EnumType m_type;
+    public s_EnumType m_type;
 
     [Tooltip("The sound when the item is picked")]
     public AudioClip m_itemPickedSound;

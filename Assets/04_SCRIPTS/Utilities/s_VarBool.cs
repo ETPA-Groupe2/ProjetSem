@@ -9,7 +9,7 @@ using UnityEngine;
 using System;
 
 [CreateAssetMenu(fileName = "New Bool Var", menuName = "ProjectLib/New Bool Var")]
-public class VarBool : ScriptableObject
+public class s_VarBool : ScriptableObject
 {
     private bool m_value;
     public bool Value

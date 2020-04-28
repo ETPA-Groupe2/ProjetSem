@@ -74,6 +74,13 @@ MonoBehaviour:
   targetTexture: {fileID: 0}
   panelTransform: {fileID: 0}
   enableLiveUpdates: 0
+  m_inventory: {fileID: 0}
+  m_items: []
+  m_hasTaken: {fileID: 0}
+  m_item:
+  - {fileID: 0}
+  - {fileID: 0}
+  m_recipes: []
 --- !u!114 &8456526443147017004
 MonoBehaviour:
   m_ObjectHideFlags: 0

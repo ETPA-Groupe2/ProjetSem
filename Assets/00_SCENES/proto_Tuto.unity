@@ -821,6 +821,12 @@ PrefabInstance:
       propertyPath: m_cam
       value: 
       objectReference: {fileID: 320662511}
+    - target: {fileID: 5766993879752682153, guid: 76c06ca2dfcaa4a45b3c3406e4774073,
+        type: 3}
+      propertyPath: m_inventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 2169d9450dc2c634d89e392a3b632995,
+        type: 2}
     - target: {fileID: 6102789725984913148, guid: 76c06ca2dfcaa4a45b3c3406e4774073,
         type: 3}
       propertyPath: m_displayEnergy

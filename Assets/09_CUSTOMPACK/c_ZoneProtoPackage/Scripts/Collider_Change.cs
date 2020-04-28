@@ -18,6 +18,8 @@ public class Collider_Change : MonoBehaviour
     [SerializeField] private Vector3 m_initialScale;
     //limit increase/decrease scale of the sphere
     [SerializeField] private float m_sphereRad = 0.0f;
+
+    [SerializeField] private s_EnumType m_zoneType;
     //for energy value
     public Energy m_energy;
 
@@ -101,6 +103,17 @@ public class Collider_Change : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
         } 
+    }
+
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        Blocks type = other.GetComponent<Blocks>();
+
+        if(type)
+        {
+            type.CheckType(m_zoneType);
+        }
     }
 
 }

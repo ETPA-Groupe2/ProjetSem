@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Enum Type", menuName = "ProjectLib/New Enum Type")]
-public class EnumType : ScriptableObject
+public class s_EnumType : ScriptableObject
 {
     //This is used to create the type of an Item for the Designers.
 
