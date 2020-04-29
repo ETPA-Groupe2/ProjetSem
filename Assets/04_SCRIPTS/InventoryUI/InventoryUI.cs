@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Unity.UIElements.Runtime;
-using PointerType = UnityEngine.UIElements.PointerType;
 
 public class InventoryUI : PanelRenderer
 {
@@ -103,11 +102,29 @@ public class InventoryUI : PanelRenderer
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnPointerDown); });
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerMoveEvent>(OnPointerMove); });
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerUpEvent>(OnPointerUp); });
-        visualTree.Query("Button", "buttonInv").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickDisplay);});
+
+
+        visualTree.Query("Button", "buttonInv").ForEach(e => 
+        {
+            //e.RegisterCallback<PointerDownEvent>(OnClickDisplay, TrickleDown.TrickleDown);
+            Button button = e as Button;
+            button.clicked += OnClickDisplay;
+        });
+
+
         visualTree.Query("QuitButton", "quitButton").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickRemove);});
+
+
+        visualTree.Query("Button", "buttonInv").ForEach(e => {e.RegisterCallback<MouseDownEvent>(OnClickDisplayMouse);});
+        visualTree.Query("QuitButton", "quitButton").ForEach(e => {e.RegisterCallback<MouseDownEvent>(OnClickRemoveMouse);});
 
     }
 
+    private void HandleClick()
+    {
+        Debug.Log("Clicked");
+    }
+    
     ///<summary>Method to display the inventory items in their slots</summary>
     private void DisplayItems(bool p_hasTaken)
     {
@@ -130,14 +147,44 @@ public class InventoryUI : PanelRenderer
         
     }
 
-    private void OnClickDisplay(PointerDownEvent evt)
+    private void OnClickDisplayMouse(MouseDownEvent evt)
     {
-        if (evt.pointerType != PointerType.touch)
+         Debug.Log("It entered");
+
+        if(evt.currentTarget == evt.target)
+        {
+            Debug.Log("That's the inventory button");
+           if(m_invMenu.resolvedStyle.visibility == Visibility.Hidden && m_craftMenu.resolvedStyle.visibility == Visibility.Hidden)
+           {
+               m_invMenu.style.visibility = Visibility.Visible;
+               m_craftMenu.style.visibility = Visibility.Visible;
+           }
+        }
+    }
+
+    private void OnClickRemoveMouse(MouseDownEvent evt)
+    {
+        if(evt.currentTarget == evt.target)
+        {
+            Debug.Log("That's the red button");
+           if(m_invMenu.resolvedStyle.visibility == Visibility.Visible && m_craftMenu.resolvedStyle.visibility == Visibility.Visible)
+           {
+               m_invMenu.style.visibility = Visibility.Hidden;
+               m_craftMenu.style.visibility = Visibility.Hidden;
+           }
+        }
+    }
+
+    private void OnClickDisplay()
+    {
+        /*if (evt.pointerType != PointerType.touch)
         {
             return;
-        }
+        }*/
+        
+        Debug.Log("It entered");
 
-        if (evt.currentTarget == evt.target)
+        //if (evt.currentTarget == evt.target)
         {
             Debug.Log("That's the inventory button");
            if(m_invMenu.resolvedStyle.visibility == Visibility.Hidden && m_craftMenu.resolvedStyle.visibility == Visibility.Hidden)
@@ -150,10 +197,10 @@ public class InventoryUI : PanelRenderer
 
     private void OnClickRemove(PointerDownEvent evt)
     {
-        if (evt.pointerType != PointerType.touch)
+        /*if (evt.pointerType != PointerType.touch)
         {
             return;
-        }
+        }*/
 
         if (evt.currentTarget == evt.target)
         {
@@ -169,10 +216,10 @@ public class InventoryUI : PanelRenderer
 
      private void OnPointerDown(PointerDownEvent evt)
     {
-        if (evt.pointerType != PointerType.touch)
+        /*if (evt.pointerType != PointerType.touch)
         {
             return;
-        }
+        }*/
 
         if (evt.currentTarget == evt.target)
         {
