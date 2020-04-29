@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GD2Lib;
 
 /// <summary>
 ///  script for increase/decrease area
 /// </summary>
-public class Collider_Change : MonoBehaviour
+public class Collider_Change : MonoBehaviour, IZone
 {
     //Sphere collider for the trigger button
     SphereCollider m_collider;
@@ -19,10 +20,10 @@ public class Collider_Change : MonoBehaviour
     //limit increase/decrease scale of the sphere
     [SerializeField] private float m_sphereRad = 0.0f;
 
-    [SerializeField] private s_EnumType m_zoneType;
+    [SerializeField] private List<GD2Lib.Event> m_event;
+    
     //for energy value
     public Energy m_energy;
-
     IEnumerator Lerp;
     IEnumerator LerpBack;
 
@@ -40,6 +41,20 @@ public class Collider_Change : MonoBehaviour
         m_initialScale = transform.localScale;
     }
 
+    private void OnTriggerEnter(Collider other) 
+    {
+        Blocks b = other.GetComponent<Blocks>();
+        if(b != null)
+        {
+            for(int i = 0; i<m_event.Count; i++)
+            {
+                if(b.m_event == m_event[i])
+                {
+                    m_event[i].Raise();
+                }
+            }
+        }
+    }
 
     public void OnTrigger()
     {
@@ -103,17 +118,6 @@ public class Collider_Change : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
         } 
-    }
-
-
-    private void OnTriggerEnter(Collider other) 
-    {
-        Blocks type = other.GetComponent<Blocks>();
-
-        if(type)
-        {
-            type.CheckType(m_zoneType);
-        }
     }
 
 }

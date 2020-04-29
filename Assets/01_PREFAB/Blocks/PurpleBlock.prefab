@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5262804348997192937}
   - component: {fileID: 5262804348997192936}
   - component: {fileID: 5262804348997192853}
-  - component: {fileID: 5262804348997192850}
   - component: {fileID: 5262804348997192852}
   m_Layer: 0
   m_Name: PurpleBlock
@@ -92,7 +91,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5262804348997192939}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -113,19 +112,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &5262804348997192850
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5262804348997192939}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5262804348997192852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,9 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_event: {fileID: 11400000, guid: 1771968ddaa7cd246bf5616c64949a5d, type: 2}
-  m_types: []
   m_particles: {fileID: 3736930246703110557}
-  hasType: 0
   m_pollutionLvl: 0
 --- !u!1001 &3538890508212615827
 PrefabInstance:

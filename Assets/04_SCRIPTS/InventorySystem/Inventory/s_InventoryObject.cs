@@ -12,7 +12,7 @@ public class s_InventoryObject : ScriptableObject
 {
     public List<InventorySlot> m_container = new List<InventorySlot>();
 
-   public void AddItem(ItemObject p_item, int p_amount)
+   public void AddItem(s_ItemObject p_item, int p_amount)
     {
         bool hasItem = false;
         for(int i = 0; i<m_container.Count; i++)
@@ -35,9 +35,9 @@ public class s_InventoryObject : ScriptableObject
 [System.Serializable]
 public class InventorySlot
 {
-    public ItemObject m_item;
+    public s_ItemObject m_item;
     public int m_amount;
-    public InventorySlot(ItemObject p_item, int p_amount)
+    public InventorySlot(s_ItemObject p_item, int p_amount)
     {
         m_item = p_item;
         m_amount = p_amount;

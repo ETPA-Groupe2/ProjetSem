@@ -12,32 +12,28 @@ public abstract class Blocks : MonoBehaviour
     [Tooltip("Needs a reference to the event it's going to have")]
     public GD2Lib.Event m_event;
 
-    [Tooltip("Needs a reference to the types it's suppose to check")]
-    public List<s_EnumType> m_types;
-
     [Tooltip("Needs a reference to it's particle system")]
-    public ParticleSystem m_particles;
-
-    [Tooltip("Check if it have the correct type")]
-    public bool hasType = false;
+    [SerializeField] protected ParticleSystem m_particles;
 
     [Tooltip("Utterly useless, thank you Anna.")]
-    [SerializeField] private float m_pollutionLvl;
-
-    public virtual void CheckType(s_EnumType p_type)
+    [SerializeField] protected float m_pollutionLvl;
+    
+    private void OnEnable() 
     {
-        for(int i = 0; i<m_types.Count; i++)
-        {
-            if(m_types[i] == p_type)
-            {
-                hasType = true;
-            }
-        }
+        if(m_event != null)
+            m_event.Register(handleReaction);
+    }
 
-        if(hasType)
-        {
-            if(m_event!=null)
-                m_event.Raise(m_particles);
-        }
+    private void OnDisable() 
+    {
+        //Unregister the event
+        if(m_event != null)
+            m_event.Unregister(handleReaction);
+    }
+
+    public  virtual void handleReaction(GD2Lib.Event p_event, object[] p_params)
+    {
+        m_particles.Play();
+        Debug.Log("Ca marche starff");
     }
 }

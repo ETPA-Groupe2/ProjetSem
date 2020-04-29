@@ -10,7 +10,6 @@ using GD2Lib;
 
 public class PurpleBlock : Blocks, IFire
 {
-
     // When the block is triggered by another collider
     public void OnTriggerEnter(Collider other)
     {
@@ -23,11 +22,11 @@ public class PurpleBlock : Blocks, IFire
         }
     }
 
-
     //Function called when the block is touched
     public void onTouch()
     {
         if(m_event!=null)
             m_event.Raise(m_particles);
     }
+
 }

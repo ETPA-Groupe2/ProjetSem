@@ -12,8 +12,8 @@ public class s_Ressource : s_EnumType
 {
    [Tooltip("The drop percentage of the ressource.")]
    [Range(0f, 100f)]
-   public float m_dropPercentage = 100f;
+   [SerializeField] private float m_dropPercentage = 100f;
 
    [Tooltip("The rarity of the ressource.")]
-   public s_EnumType m_rarity;
+   [SerializeField] private s_EnumType m_rarity;
 }

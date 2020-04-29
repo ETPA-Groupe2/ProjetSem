@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 [CreateAssetMenu(fileName = "New Item Object", menuName = "Inventory System/Item/New Item")]
-public class ItemObject : ScriptableObject 
+public class s_ItemObject : ScriptableObject 
 {
     [Tooltip("Texture 2D of the item")]
     public Texture2D m_itemTexture;

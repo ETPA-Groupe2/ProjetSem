@@ -12,8 +12,8 @@ public class s_Equipement : s_EnumType
 {
     [Tooltip("Amount of modification dealt to the overall state.")]
     [Range(0f, 100f)]
-    public float m_statModifier = 5f;
+    [SerializeField] private float m_statModifier = 5f;
 
     [Tooltip("Check if the item has been equiped.")]
-    public bool m_hasEquip = false;
+    [SerializeField] private bool m_hasEquip = false;
 }

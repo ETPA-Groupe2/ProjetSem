@@ -12,8 +12,8 @@ public class s_Consumable : s_EnumType
 {
     [Tooltip("Amount of modification dealt to the overall state.")]
     [Range(0f, 100f)]
-    public float m_statModifier = 5f;
+    [SerializeField] private float m_statModifier = 5f;
 
     [Tooltip("Check if the item has been used.")]
-    public bool m_hasUse = false;
+    [SerializeField] private bool m_hasUse = false;
 }

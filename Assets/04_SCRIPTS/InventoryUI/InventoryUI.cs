@@ -29,6 +29,10 @@ public class InventoryUI : PanelRenderer
     ///<summary>This is the inventory container UI window</summary>
     private VisualElement m_container;
 
+    private VisualElement m_invMenu;
+
+    private VisualElement m_craftMenu;
+
     ///<summary>This is the list of slots in the UI window</summary>
     private List<VisualElement> m_child;
 
@@ -37,7 +41,7 @@ public class InventoryUI : PanelRenderer
     [Header("--- CRAFT UI SETTINGS ---")]
 
     [Tooltip("List of craftable items")]
-    public ItemObject[] m_itemsCraftable = new ItemObject[2];
+    public s_ItemObject[] m_itemsCraftable = new s_ItemObject[2];
     
     [Tooltip("List of craft recipes")]
     public List<s_CraftObject> m_recipes;
@@ -70,6 +74,23 @@ public class InventoryUI : PanelRenderer
         //Implementation of the start method for the UXML file and Stylesheet
         base.Start();
 
+        //We take the list of items in the inventory
+        m_items = m_inventory.m_container;
+
+        //We take the container window of the UI Inventory window
+        m_container = visualTree.Q("Slot-Container", "slotMenu");
+        m_invMenu = visualTree.Q("Inventory-Container", "menu");
+        m_craftMenu = visualTree.Q("Craft-Container", "menu");
+        m_gameField = visualTree.Q("Inventory-Menu", "gameField");
+
+        //We give to the list child all the slots that are in the container window
+        m_child = new List<VisualElement>();
+
+        foreach(VisualElement child in m_container.Children())
+        {
+            m_child.Add(child);
+        }
+
         m_startPosition = new List<Vector2>();
         m_pointerStartPosition = new List<Vector2>();
 
@@ -82,22 +103,8 @@ public class InventoryUI : PanelRenderer
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnPointerDown); });
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerMoveEvent>(OnPointerMove); });
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerUpEvent>(OnPointerUp); });
-
-        //We take the list of items in the inventory
-        m_items = m_inventory.m_container;
-
-        //We take the container window of the UI Inventory window
-        m_container = visualTree.Q("Slot-Container", "slotMenu");
-        m_gameField = visualTree.Q("Inventory-Menu", "gameField");
-
-
-        //We give to the list child all the slots that are in the container window
-        m_child = new List<VisualElement>();
-
-        foreach(VisualElement child in m_container.Children())
-        {
-            m_child.Add(child);
-        }
+        visualTree.Query("Button", "buttonInv").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickDisplay);});
+        visualTree.Query("QuitButton", "quitButton").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickRemove);});
 
     }
 
@@ -121,6 +128,42 @@ public class InventoryUI : PanelRenderer
 
         }
         
+    }
+
+    private void OnClickDisplay(PointerDownEvent evt)
+    {
+        if (evt.pointerType != PointerType.touch)
+        {
+            return;
+        }
+
+        if (evt.currentTarget == evt.target)
+        {
+            Debug.Log("That's the inventory button");
+           if(m_invMenu.resolvedStyle.visibility == Visibility.Hidden && m_craftMenu.resolvedStyle.visibility == Visibility.Hidden)
+           {
+               m_invMenu.style.visibility = Visibility.Visible;
+               m_craftMenu.style.visibility = Visibility.Visible;
+           }
+        }
+    }
+
+    private void OnClickRemove(PointerDownEvent evt)
+    {
+        if (evt.pointerType != PointerType.touch)
+        {
+            return;
+        }
+
+        if (evt.currentTarget == evt.target)
+        {
+            Debug.Log("That's the red button");
+           if(m_invMenu.resolvedStyle.visibility == Visibility.Visible && m_craftMenu.resolvedStyle.visibility == Visibility.Visible)
+           {
+               m_invMenu.style.visibility = Visibility.Hidden;
+               m_craftMenu.style.visibility = Visibility.Hidden;
+           }
+        }
     }
 
 
