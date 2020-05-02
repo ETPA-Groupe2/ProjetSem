@@ -7,6 +7,7 @@ TagManager:
   - BlueBlock
   - PurpleBlock
   - Zone
+  - RedBlock
   layers:
   - Default
   - TransparentFX
@@ -16,9 +17,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - WallDestructible
+  - Player
+  - Cube
   - 
   - 
   - 
