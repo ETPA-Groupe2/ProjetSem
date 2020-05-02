@@ -8,38 +8,39 @@ using GD2Lib;
 /// </summary>
 public class Collider_Change : MonoBehaviour, IZone
 {
-    //Sphere collider for the trigger button
-    SphereCollider m_collider;
-    public GameObject m_sphere;
-    // slowdown time
-    [SerializeField]private float m_timeSpeed;
-    //increase scale's sphere
-    [SerializeField] private Vector3 m_scaleChange;
-    // decrease scale's sphere
-    [SerializeField] private Vector3 m_initialScale;
-    //limit increase/decrease scale of the sphere
-    [SerializeField] private float m_sphereRad = 0.0f;
 
-    [SerializeField] private List<GD2Lib.Event> m_event;
-    
+    [Header("--- PLAYER'S ZONE SETTINGS ---")]
+
+    [Tooltip("Reference to the Zone GameObject")]
+    public GameObject m_sphere;
+
+    [Tooltip("Time at which the zone increase / Decrease")]
+    [SerializeField]private float m_timeSpeed;
+
+    ///<summary>New scale of the sphere</summary>
+    private Vector3 m_scaleChange;
+
+    ///<summary>Initial scale of the sphere</summary>
+    private Vector3 m_initialScale;
+
     //for energy value
     public Energy m_energy;
+    
     IEnumerator Lerp;
     IEnumerator LerpBack;
 
     [Tooltip("Check if we're triggering the zone")]public bool m_isTrigger = false;
 
-    [Tooltip("Scaling of the collider.")] public float m_x, m_y, m_z;
+    [Tooltip("Lerping size of the collider.")] public float m_x, m_y, m_z;
 
+    [SerializeField] private List<GD2Lib.Event> m_event;
 
-
-
-    void Start()
+    private void Start() 
     {
-        // call the collider
-        m_collider = GetComponent<SphereCollider>();
-        m_initialScale = transform.localScale;
+         //We take the initial scale of the sphere
+        m_initialScale = m_sphere.transform.localScale;
     }
+    
 
     private void OnTriggerEnter(Collider other) 
     {
@@ -56,7 +57,8 @@ public class Collider_Change : MonoBehaviour, IZone
         }
     }
 
-    public void OnTrigger()
+     ///<summaryIt handle the zone activation</summary>
+    public void HandleActivation()
     {
         m_isTrigger = true;
 
@@ -70,7 +72,8 @@ public class Collider_Change : MonoBehaviour, IZone
         StartCoroutine(Lerp);
     }
 
-    public void OffTrigger()
+    ///<summary>It handle the zone deactivation</summary>
+    public void HandleDeactivation()
     {
         m_isTrigger = false;
 
@@ -83,7 +86,7 @@ public class Collider_Change : MonoBehaviour, IZone
 
         StartCoroutine(LerpBack);
     }
-
+    
     IEnumerator LerpRoutine()
     {
         m_scaleChange = new Vector3(m_x, m_y, m_z);
@@ -119,5 +122,4 @@ public class Collider_Change : MonoBehaviour, IZone
             }
         } 
     }
-
 }

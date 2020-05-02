@@ -53,6 +53,8 @@ public class InventoryUI : PanelRenderer
 
     private VisualElement m_gameField;
     
+    private Button m_invButton;
+
     #endregion
 
     private new void OnEnable() 
@@ -107,21 +109,15 @@ public class InventoryUI : PanelRenderer
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerMoveEvent>(OnPointerMove); });
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerUpEvent>(OnPointerUp); });
 
-        visualTree.Query("Button", "buttonInv").ForEach(e => {e.RegisterCallback<PointerDownEvent>(OnClickDisplay);});
+        visualTree.Query("Button", "buttonInv").ForEach(e => 
+        {
+            m_invButton = e;
+            e.RegisterCallback<PointerDownEvent>(OnClickDisplay);
+        });
         visualTree.Query("QuitButton", "quitButton").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickRemove);});
 
-        visualTree.Query("EnergyText", "energyText").ForEach(e => 
-        {
-            VisualElement Text = e as VisualElement;
-        });
-
-        #endregion
-
-        #region USING EVENTS DECLARATION (FOR IOS)
-
-        visualTree.Query("EnergyButton", "energyButton").ForEach(e => {e.RegisterCallback<PointerDownEvent>(OnClickActivate);});
-
-        visualTree.Query("EnergyButton", "energyButton").ForEach(e => {e.RegisterCallback<PointerUpEvent>(OnClickDeactivate);});
+        visualTree.Query("Button", "buttonInv").ForEach(e => {e.RegisterCallback<PointerCaptureEvent>(OnCapture);});
+        //visualTree.Query("QuitButton", "quitButton").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickRemove);});
 
         #endregion
 
@@ -146,22 +142,6 @@ public class InventoryUI : PanelRenderer
         visualTree.Query("EnergyText", "energyText").ForEach(e => 
         {
             VisualElement Text = e as VisualElement;
-        });
-
-        #endregion
-
-        #region USING EVENTS DECLARATION (FOR WEBGL)
-
-        visualTree.Query("EnergyButton", "energyButton").ForEach(e => 
-        {
-            Button button = e as Button;
-            button.clicked += HandleActivation;
-        });
-
-        visualTree.Query("EnergyButton", "energyButton").ForEach(e => 
-        {
-            Button button = e as Button;
-            button.clicked += HandleDeactivation;
         });
 
         #endregion
@@ -250,33 +230,11 @@ public class InventoryUI : PanelRenderer
            }
     }
 
-    #endregion
-
-    #region USING EVENT
-
-    ///<summary>This event is called to activate the energy zone</summary>
-    private void OnClickActivate(PointerDownEvent evt)
+    private void OnCapture(PointerCaptureEvent evt)
     {
-
+        Debug.Log("Has captured");
     }
 
-    ///<summary>This event is called to deactivate the energy zone</summary>
-    private void OnClickDeactivate(PointerUpEvent evt)
-    {
-
-    }
-
-    ///<summary>This method is called if the game runs in WebGL. It handle the zone activation</summary>
-    private void HandleActivation()
-    {
-
-    }
-
-    ///<summary>This method is called if the game runs in WebGL. It handle the zone deactivation</summary>
-    private void HandleDeactivation()
-    {
-
-    }
     #endregion
 
     #region MOVING EVENTS  
@@ -333,4 +291,5 @@ public class InventoryUI : PanelRenderer
     }
 
     #endregion
+
 }
