@@ -7,9 +7,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
+    private PlayerController m_controllers;
     public Camera m_cam;
     public UnityEngine.AI.NavMeshAgent m_agent;
 
@@ -23,19 +25,18 @@ public class PlayerController : MonoBehaviour
         m_hasTaken.Value = false;
     }
 
-    private void FollowNavMesh()
+    public void FollowNavMesh()
     {
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
 
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 10000))
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 1000f))
             {
-                Debug.Log("WALKING THERE");
+                Debug.Log(hit.collider);
                 m_agent.destination = hit.point;
             }
         }
-
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
             m_hasTaken.Value = true;
         }
     }
-    
+
     private void Update()
     {
         FollowNavMesh();

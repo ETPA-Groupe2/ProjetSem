@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Unity.UIElements.Runtime;
-using PointerType = UnityEngine.UIElements.PointerType;
 
 public class InventoryUI : PanelRenderer
 {
@@ -54,6 +53,8 @@ public class InventoryUI : PanelRenderer
 
     private VisualElement m_gameField;
     
+    private Button m_invButton;
+
     #endregion
 
     private new void OnEnable() 
@@ -100,13 +101,55 @@ public class InventoryUI : PanelRenderer
             m_pointerStartPosition.Add(Vector2.zero);
         }
 
+        #if UNITY_IOS
+
+        #region  DISPLAYING EVENTS DECLARATION (FOR IOS)
+
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnPointerDown); });
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerMoveEvent>(OnPointerMove); });
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerUpEvent>(OnPointerUp); });
-        visualTree.Query("Button", "buttonInv").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickDisplay);});
+
+        visualTree.Query("Button", "buttonInv").ForEach(e => 
+        {
+            m_invButton = e;
+            e.RegisterCallback<PointerDownEvent>(OnClickDisplay);
+        });
         visualTree.Query("QuitButton", "quitButton").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickRemove);});
 
+        visualTree.Query("Button", "buttonInv").ForEach(e => {e.RegisterCallback<PointerCaptureEvent>(OnCapture);});
+        //visualTree.Query("QuitButton", "quitButton").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickRemove);});
+
+        #endregion
+
+        #endif
+
+        #if UNITY_WEBGL
+
+        #region DISPLAYING EVENTS DECLARATION (FOR WEBGL)
+
+        visualTree.Query("Button", "buttonInv").ForEach(e => 
+        {
+            Button button = e as Button;
+            button.clicked += HandleDisplay;
+        });
+
+        visualTree.Query("QuitButton", "quitButton").ForEach(e => 
+        {
+            Button button = e as Button;
+            button.clicked += HandleHideDisplay;
+        });
+
+        visualTree.Query("EnergyText", "energyText").ForEach(e => 
+        {
+            VisualElement Text = e as VisualElement;
+        });
+
+        #endregion
+
+        #endif
     }
+
+    #region DISPLAYING EVENTS
 
     ///<summary>Method to display the inventory items in their slots</summary>
     private void DisplayItems(bool p_hasTaken)
@@ -130,16 +173,16 @@ public class InventoryUI : PanelRenderer
         
     }
 
+    ///<summary>This event is called to show the inventory</summary>
     private void OnClickDisplay(PointerDownEvent evt)
     {
-        if (evt.pointerType != PointerType.touch)
+        if (evt.pointerType != UnityEngine.UIElements.PointerType.touch)
         {
             return;
         }
 
         if (evt.currentTarget == evt.target)
         {
-            Debug.Log("That's the inventory button");
            if(m_invMenu.resolvedStyle.visibility == Visibility.Hidden && m_craftMenu.resolvedStyle.visibility == Visibility.Hidden)
            {
                m_invMenu.style.visibility = Visibility.Visible;
@@ -148,9 +191,10 @@ public class InventoryUI : PanelRenderer
         }
     }
 
+    ///<summary>This event is called to hide the inventory</summary>
     private void OnClickRemove(PointerDownEvent evt)
     {
-        if (evt.pointerType != PointerType.touch)
+        if (evt.pointerType != UnityEngine.UIElements.PointerType.touch)
         {
             return;
         }
@@ -166,10 +210,37 @@ public class InventoryUI : PanelRenderer
         }
     }
 
+    ///<summary>This method is called if the game is run in WebGL. It handle the displaying of the Inventory</summary>
+    private void HandleDisplay()
+    {
+        if(m_invMenu.resolvedStyle.visibility == Visibility.Hidden && m_craftMenu.resolvedStyle.visibility == Visibility.Hidden)
+           {
+               m_invMenu.style.visibility = Visibility.Visible;
+               m_craftMenu.style.visibility = Visibility.Visible;
+           }
+    }
 
+    ///<summary>This method is called if the game is run in WebGL. It handle the hiding of the Inventory</summary>
+    private void HandleHideDisplay()
+    {
+         if(m_invMenu.resolvedStyle.visibility == Visibility.Visible && m_craftMenu.resolvedStyle.visibility == Visibility.Visible)
+           {
+               m_invMenu.style.visibility = Visibility.Hidden;
+               m_craftMenu.style.visibility = Visibility.Hidden;
+           }
+    }
+
+    private void OnCapture(PointerCaptureEvent evt)
+    {
+        Debug.Log("Has captured");
+    }
+
+    #endregion
+
+    #region MOVING EVENTS  
      private void OnPointerDown(PointerDownEvent evt)
     {
-        if (evt.pointerType != PointerType.touch)
+        if (evt.pointerType != UnityEngine.UIElements.PointerType.touch)
         {
             return;
         }
@@ -218,4 +289,7 @@ public class InventoryUI : PanelRenderer
             evt.target.ReleasePointer(evt.pointerId);
         }    
     }
+
+    #endregion
+
 }

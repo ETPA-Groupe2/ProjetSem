@@ -1,5 +1,5 @@
 .menu {
-    width: 40%;
+    width: 30%;
     height: 65%;
     background-color: rgba(38, 38, 38, 0.58);
     border-left-width: 4px;
@@ -27,6 +27,8 @@
     margin-top: 35px;
     margin-bottom: 35px;
     overflow: visible;
+    left: -20%;
+    top: 15%;
 }
 
 .menu-label {
@@ -113,6 +115,12 @@
 }
 
 .gameField {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .Slot:hover {
@@ -130,10 +138,10 @@
 }
 
 .buttonInv {
-    left: 30%;
-    top: 45%;
-    width: 14%;
-    height: 7%;
+    left: 60%;
+    top: 35%;
+    width: 18%;
+    height: 15%;
     font-size: 12%;
     border-left-width: 10px;
     border-right-width: 10px;
@@ -143,11 +151,11 @@
     border-bottom-left-radius: 3%;
     border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
-    border-left-color: rgba(48, 9, 9, 255);
-    border-right-color: rgba(48, 9, 9, 255);
-    border-top-color: rgba(48, 9, 9, 255);
-    border-bottom-color: rgba(48, 9, 9, 255);
-    background-color: rgba(200, 82, 82, 255);
+    border-left-color: rgb(48, 9, 9);
+    border-right-color: rgb(48, 9, 9);
+    border-top-color: rgb(48, 9, 9);
+    border-bottom-color: rgb(48, 9, 9);
+    background-color: rgb(200, 82, 82);
     -unity-text-align: middle-left;
     align-items: center;
     justify-content: space-around;
@@ -163,11 +171,11 @@
     height: 41%;
     left: 93%;
     top: -117%;
-    background-color: rgba(255, 0, 0, 255);
-    border-left-color: rgba(255, 0, 0, 255);
-    border-right-color: rgba(255, 0, 0, 255);
-    border-top-color: rgba(255, 0, 0, 255);
-    border-bottom-color: rgba(255, 0, 0, 255);
+    background-color: rgb(255, 0, 0);
+    border-left-color: rgb(255, 0, 0);
+    border-right-color: rgb(255, 0, 0);
+    border-top-color: rgb(255, 0, 0);
+    border-bottom-color: rgb(255, 0, 0);
     border-left-width: 46px;
     border-right-width: 46px;
     border-top-width: 46px;
@@ -177,5 +185,83 @@
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
     font-size: 71px;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.buttonInv:active {
+    border-left-color: rgb(174, 226, 101);
+    border-right-color: rgb(174, 226, 101);
+    border-top-color: rgb(174, 226, 101);
+    border-bottom-color: rgb(174, 226, 101);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    background-color: rgb(174, 226, 101);
+}
+
+.unity-button {
+}
+
+.energyButton {
+    left: 3%;
+    top: 30%;
+    width: 15%;
+    height: 25%;
+    border-left-width: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: rgba(172, 255, 241, 255);
+    -unity-text-align: middle-center;
+    font-size: 60px;
+    visibility: hidden;
+    display: flex;
+}
+
+.energyButton:hover {
+    border-left-color: rgba(218, 255, 232, 255);
+    border-right-color: rgba(218, 255, 232, 255);
+    border-top-color: rgba(218, 255, 232, 255);
+    border-bottom-color: rgba(218, 255, 232, 255);
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    width: 15%;
+    height: 25%;
+    font-size: 50px;
+    -unity-text-align: middle-center;
+}
+
+.energyButton:active {
+    background-color: rgba(218, 255, 232, 255);
+    border-left-color: rgba(218, 255, 232, 255);
+    border-right-color: rgba(218, 255, 232, 255);
+    border-top-color: rgba(218, 255, 232, 255);
+    border-bottom-color: rgba(218, 255, 232, 255);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    width: 15%;
+    height: 25%;
+    font-size: 10px;
+    -unity-text-align: middle-center;
+}
+
+.buttonInv:hover {
+    border-left-color: rgb(174, 226, 101);
+    border-right-color: rgb(174, 226, 101);
+    border-top-color: rgb(174, 226, 101);
+    border-bottom-color: rgb(174, 226, 101);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
 }
