@@ -109,15 +109,10 @@ public class InventoryUI : PanelRenderer
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerMoveEvent>(OnPointerMove); });
         visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerUpEvent>(OnPointerUp); });
 
-        visualTree.Query("Button", "buttonInv").ForEach(e => 
-        {
-            m_invButton = e;
-            e.RegisterCallback<PointerDownEvent>(OnClickDisplay);
-        });
+        visualTree.Query("Button", "buttonInv").ForEach(e => {e.RegisterCallback<PointerDownEvent>(OnClickDisplay);});
         visualTree.Query("QuitButton", "quitButton").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickRemove);});
 
-        visualTree.Query("Button", "buttonInv").ForEach(e => {e.RegisterCallback<PointerCaptureEvent>(OnCapture);});
-        //visualTree.Query("QuitButton", "quitButton").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickRemove);});
+        //visualTree.Query("Button", "buttonInv").ForEach(e => {e.RegisterCallback<PointerCaptureEvent>(OnCapture);});
 
         #endregion
 
@@ -137,11 +132,6 @@ public class InventoryUI : PanelRenderer
         {
             Button button = e as Button;
             button.clicked += HandleHideDisplay;
-        });
-
-        visualTree.Query("EnergyText", "energyText").ForEach(e => 
-        {
-            VisualElement Text = e as VisualElement;
         });
 
         #endregion
@@ -228,11 +218,6 @@ public class InventoryUI : PanelRenderer
                m_invMenu.style.visibility = Visibility.Hidden;
                m_craftMenu.style.visibility = Visibility.Hidden;
            }
-    }
-
-    private void OnCapture(PointerCaptureEvent evt)
-    {
-        Debug.Log("Has captured");
     }
 
     #endregion
