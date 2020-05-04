@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
         if(item)
         {
-            m_inventory.AddItem(item.m_item, 1);
+            m_inventory.AddItem(item.m_item);
             Destroy(other.gameObject);
             m_hasTaken.Value = true;
         }

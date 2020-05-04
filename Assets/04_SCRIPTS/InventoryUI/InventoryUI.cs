@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Unity.UIElements.Runtime;
+using UnityEngine.Events;
 
 public class InventoryUI : PanelRenderer
 {
@@ -101,13 +102,19 @@ public class InventoryUI : PanelRenderer
             m_pointerStartPosition.Add(Vector2.zero);
         }
 
+        /*visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnPointerDown); });
+        visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerMoveEvent>(OnPointerMove); });
+        visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerUpEvent>(OnPointerUp); });*/
+
+        visualTree.Query("Drop", "Slot").ForEach(e => {e.RegisterCallback<DragEnterEvent>(OnDragNDrop);});
+        visualTree.Query("Drop", "Slot").ForEach(e => {e.RegisterCallback<DragLeaveEvent>(OnDragNLeave);});
+        visualTree.Query("Drop", "Slot").ForEach(e => {e.RegisterCallback<DragUpdatedEvent>(OnDragUpdated);});
+        visualTree.Query("Drop", "Slot").ForEach(e => {e.RegisterCallback<DragPerformEvent>(OnDragPerform);});
+        visualTree.Query("Drop", "Slot").ForEach(e => {e.RegisterCallback<DragExitedEvent>(OnDragExit);});
+
         #if UNITY_IOS
 
         #region  DISPLAYING EVENTS DECLARATION (FOR IOS)
-
-        visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnPointerDown); });
-        visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerMoveEvent>(OnPointerMove); });
-        visualTree.Query("Slot", "Slot").ForEach(e => { e.RegisterCallback<PointerUpEvent>(OnPointerUp); });
 
         visualTree.Query("Button", "buttonInv").ForEach(e => {e.RegisterCallback<PointerDownEvent>(OnClickDisplay);});
         visualTree.Query("QuitButton", "quitButton").ForEach(e => { e.RegisterCallback<PointerDownEvent>(OnClickRemove);});
@@ -121,6 +128,26 @@ public class InventoryUI : PanelRenderer
         #if UNITY_WEBGL
 
         #region DISPLAYING EVENTS DECLARATION (FOR WEBGL)
+
+        visualTree.Query("Button", "buttonInv").ForEach(e => 
+        {
+            Button button = e as Button;
+            button.clicked += HandleDisplay;
+        });
+
+        visualTree.Query("QuitButton", "quitButton").ForEach(e => 
+        {
+            Button button = e as Button;
+            button.clicked += HandleHideDisplay;
+        });
+
+        #endregion
+
+        #endif
+
+        #if UNITY_STANDALONE_WIN
+
+        #region DISPLAYING EVENTS DECLARATION (FOR WINDOWS)
 
         visualTree.Query("Button", "buttonInv").ForEach(e => 
         {
@@ -223,14 +250,40 @@ public class InventoryUI : PanelRenderer
     #endregion
 
     #region MOVING EVENTS  
-     private void OnPointerDown(PointerDownEvent evt)
+
+    private void OnDragNDrop(DragEnterEvent evt)
     {
-        if (evt.pointerType != UnityEngine.UIElements.PointerType.touch)
+        Debug.Log("Hey");
+    }
+
+    private void OnDragNLeave(DragLeaveEvent evt)
+    {
+        Debug.Log("Hey");
+    }
+
+    private void OnDragUpdated(DragUpdatedEvent evt)
+    {
+        Debug.Log("Hey");
+    }
+
+    private void OnDragPerform(DragPerformEvent evt)
+    {
+        Debug.Log("Hey");
+    }
+
+    private void OnDragExit(DragExitedEvent evt)
+    {
+        Debug.Log("Hey");
+    }
+
+    /*private void OnPointerDown(PointerDownEvent evt)
+    {
+        /*if (evt.pointerType != UnityEngine.UIElements.PointerType.touch)
         {
             return;
-        }
+        }*/
 
-        if (evt.currentTarget == evt.target)
+       /* if (evt.currentTarget == evt.target)
         {
             evt.target.CapturePointer(evt.pointerId);
             
@@ -274,6 +327,72 @@ public class InventoryUI : PanelRenderer
             evt.target.ReleasePointer(evt.pointerId);
         }    
     }
+
+    /*public class DraggableLabel : Label
+    {
+        public static string s_DragDataType = "DraggableLabel";
+ 
+        enum DragState
+        {
+            AtRest,
+            Ready,
+            Dragging
+        }
+ 
+        private DragState m_DragState;
+ 
+        public DraggableLabel()
+        {
+            m_DragState = DragState.AtRest;
+ 
+            RegisterCallback<MouseDownEvent>(OnMouseDownEvent);
+            RegisterCallback<MouseMoveEvent>(OnMouseMoveEvent);
+            RegisterCallback<MouseUpEvent>(OnMouseUpEvent);
+        }
+ 
+        void OnMouseDownEvent(MouseDownEvent e)
+        {
+            if (e.target == this && e.button == 0)
+            {
+                PrepareDraggingBox();
+            }
+        }
+ 
+        public void PrepareDraggingBox()
+        {
+            m_DragState = DragState.Ready;
+        }
+ 
+        void OnMouseMoveEvent(MouseMoveEvent e)
+        {
+            if (m_DragState == DragState.Ready)
+            {
+                DragAndDrop.PrepareStartDrag();
+                DragAndDrop.SetGenericData(s_DragDataType, this);
+                DragAndDrop.StartDrag(text);
+                StartDraggingBox();
+            }
+        }
+ 
+        void OnMouseUpEvent(MouseUpEvent e)
+        {
+            if (m_DragState == DragState.Ready && e.button == 0)
+            {
+                StopDraggingBox();
+            }
+        }
+ 
+        public void StartDraggingBox()
+        {
+            AddToClassList("dragged");
+            m_DragState = DragState.Dragging;
+        }
+ 
+        public void StopDraggingBox()
+        {
+            RemoveFromClassList("dragged");
+            m_DragState = DragState.AtRest;
+        }*/
 
     #endregion
 

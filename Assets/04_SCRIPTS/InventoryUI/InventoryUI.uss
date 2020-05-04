@@ -57,6 +57,7 @@
     border-top-color: rgb(161, 161, 161);
     border-top-width: 3px;
     border-left-width: 4px;
+    display: flex;
 }
 
 .slotMenu {
@@ -68,6 +69,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
+    display: flex;
 }
 
 .Slot {
@@ -104,6 +106,7 @@
     align-items: center;
     position: absolute;
     left: 0;
+    display: flex;
 }
 
 .item {
@@ -112,6 +115,7 @@
     width: 100%;
     height: 100%;
     top: 0;
+    display: flex;
 }
 
 .gameField {
@@ -121,6 +125,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
 }
 
 .Slot:hover {
@@ -132,9 +137,11 @@
     border-right-width: 7px;
     border-top-width: 7px;
     border-bottom-width: 7px;
+    display: flex;
 }
 
 .dropArea {
+    display: flex;
 }
 
 .buttonInv {
@@ -160,6 +167,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+    display: flex;
 }
 
 .menu:hover {
@@ -186,6 +194,7 @@
     border-bottom-right-radius: 100%;
     font-size: 71px;
     color: rgb(255, 255, 255);
+    display: flex;
 }
 
 .buttonInv:active {
@@ -202,9 +211,11 @@
     border-top-right-radius: 2%;
     border-bottom-right-radius: 2%;
     background-color: rgb(174, 226, 101);
+    display: flex;
 }
 
 .unity-button {
+    display: flex;
 }
 
 .energyButton {
@@ -217,7 +228,7 @@
     border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-    background-color: rgba(172, 255, 241, 255);
+    background-color: rgb(172, 255, 241);
     -unity-text-align: middle-center;
     font-size: 60px;
     visibility: hidden;
@@ -225,10 +236,10 @@
 }
 
 .energyButton:hover {
-    border-left-color: rgba(218, 255, 232, 255);
-    border-right-color: rgba(218, 255, 232, 255);
-    border-top-color: rgba(218, 255, 232, 255);
-    border-bottom-color: rgba(218, 255, 232, 255);
+    border-left-color: rgb(218, 255, 232);
+    border-right-color: rgb(218, 255, 232);
+    border-top-color: rgb(218, 255, 232);
+    border-bottom-color: rgb(218, 255, 232);
     border-left-width: 10px;
     border-right-width: 10px;
     border-top-width: 10px;
@@ -240,11 +251,11 @@
 }
 
 .energyButton:active {
-    background-color: rgba(218, 255, 232, 255);
-    border-left-color: rgba(218, 255, 232, 255);
-    border-right-color: rgba(218, 255, 232, 255);
-    border-top-color: rgba(218, 255, 232, 255);
-    border-bottom-color: rgba(218, 255, 232, 255);
+    background-color: rgb(218, 255, 232);
+    border-left-color: rgb(218, 255, 232);
+    border-right-color: rgb(218, 255, 232);
+    border-top-color: rgb(218, 255, 232);
+    border-bottom-color: rgb(218, 255, 232);
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
@@ -264,4 +275,5 @@
     border-right-width: 3px;
     border-top-width: 3px;
     border-bottom-width: 3px;
+    display: flex;
 }
