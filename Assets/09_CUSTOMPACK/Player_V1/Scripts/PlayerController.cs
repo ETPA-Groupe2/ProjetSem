@@ -8,16 +8,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
+using GD2Lib;
 
 public class PlayerController : MonoBehaviour
 {
-    private PlayerController m_controllers;
+    [Header("--- THE PLAYER'S PARAMETERS ---")]
+
     public Camera m_cam;
     public UnityEngine.AI.NavMeshAgent m_agent;
 
     public s_InventoryObject m_inventory;
 
     public s_VarBool m_hasTaken;
+
+    [Header("--- THE NUMBER OF RESOURCES IN INVENTORY ---")]
+
+    [Tooltip("This is the number for the bomb resources")]
+    [SerializeField] private IntVar m_bombeResource;
+
+    [Tooltip("This is the number for the glide resources")]
+    [SerializeField] private IntVar m_glideResource;
+
+    [Tooltip("This is the number for the generator resources")]
+    [SerializeField] private IntVar m_generatorResource;
+
 
     private void Start()
     {
@@ -30,8 +44,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
-
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 1000f))
+            
+            if (Physics.Raycast(m_cam.ScreenPointToRay(Input.mousePosition), out hit, 1000f))
             {
                 Debug.Log(hit.collider);
                 m_agent.destination = hit.point;
@@ -48,6 +62,24 @@ public class PlayerController : MonoBehaviour
             m_inventory.AddItem(item.m_item);
             Destroy(other.gameObject);
             m_hasTaken.Value = true;
+        }
+
+        if(other.TryGetComponent<IBombResource>(out IBombResource bomb))
+        {
+            m_bombeResource.Value++;
+            Destroy(other.gameObject);
+        }
+
+        if(other.TryGetComponent<IGlideResource>(out IGlideResource glide))
+        {
+            m_glideResource.Value++;
+            Destroy(other.gameObject);
+        }
+
+        if(other.TryGetComponent<IGeneratorResources>(out IGeneratorResources generator))
+        {
+            m_generatorResource.Value++;
+            Destroy(other.gameObject);
         }
     }
 

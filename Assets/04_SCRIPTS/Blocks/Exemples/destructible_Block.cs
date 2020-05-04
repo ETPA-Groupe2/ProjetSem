@@ -14,8 +14,10 @@ public class destructible_Block : Blocks
         m_anim.Play("cube_destroy");
         Debug.Log("yakalelo yakalelo");
         Instantiate(m_Ressources, transform.position, transform.rotation);
-           
-        
+        if(TryGetComponent<Collider>(out Collider myCollider))
+        {
+            myCollider.enabled = false;
+        }
     }
 
 }
