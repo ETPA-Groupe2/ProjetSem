@@ -24,13 +24,13 @@ public class PlayerController : MonoBehaviour
     [Header("--- THE NUMBER OF RESOURCES IN INVENTORY ---")]
 
     [Tooltip("This is the number for the bomb resources")]
-    [SerializeField] private IntVar m_bombeResource;
+    public IntVar m_bombeResource;
 
     [Tooltip("This is the number for the glide resources")]
-    [SerializeField] private IntVar m_glideResource;
+    public IntVar m_glideResource;
 
     [Tooltip("This is the number for the generator resources")]
-    [SerializeField] private IntVar m_generatorResource;
+    public IntVar m_generatorResource;
 
 
     private void Start()

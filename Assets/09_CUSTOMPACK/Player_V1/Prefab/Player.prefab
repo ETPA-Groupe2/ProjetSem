@@ -113,6 +113,10 @@ MonoBehaviour:
   m_agent: {fileID: 5766993879752682152}
   m_inventory: {fileID: 11400000, guid: 2169d9450dc2c634d89e392a3b632995, type: 2}
   m_hasTaken: {fileID: 11400000, guid: 69c48c94694bedd45a3dce94ec8a0233, type: 2}
+  m_bombeResource: {fileID: 11400000, guid: 5aebfaaa617c01d409a2b42cbf116c7c, type: 2}
+  m_glideResource: {fileID: 11400000, guid: 451404dd552193e42b2c9c0f4b03bcc7, type: 2}
+  m_generatorResource: {fileID: 11400000, guid: 34e40193284d3ad43aa132ba03bc15ec,
+    type: 2}
 --- !u!195 &5766993879752682152
 NavMeshAgent:
   m_ObjectHideFlags: 0
