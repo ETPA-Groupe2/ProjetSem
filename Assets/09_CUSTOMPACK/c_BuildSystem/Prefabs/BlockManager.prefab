@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7651947980029051430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7651947980029051425}
+  - component: {fileID: 6469654468426941069}
+  - component: {fileID: 7651947980029051424}
+  m_Layer: 0
+  m_Name: BlockManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7651947980029051425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651947980029051430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6469654468426941069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651947980029051430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8e1375a4f28ad46a6428dbb5ed34e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allBlockTypes:
+  - blockName: Dirt
+    blockMat: {fileID: 2100000, guid: e220c84cf37a4aa4bafbd0deb6925de8, type: 2}
+  - blockName: Grass
+    blockMat: {fileID: 2100000, guid: 89a0c386615a75f4c88072e9ff100a01, type: 2}
+  - blockName: Blood
+    blockMat: {fileID: 2100000, guid: b8b91338ec0a2634dbe324f2aa1a8d34, type: 2}
+  - blockName: YellowStone
+    blockMat: {fileID: 2100000, guid: 02aa1a9c720b9644db540d5423721392, type: 2}
+  - blockName: Brick
+    blockMat: {fileID: 2100000, guid: 5daacab6411ae8040a131b4705ad279e, type: 2}
+--- !u!114 &7651947980029051424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651947980029051430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a8a65ec42130b4a9361d8dea14fc79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_playerCamera: {fileID: 0}
+  buildableSurfacesLayer:
+    serializedVersion: 2
+    m_Bits: 1536
+  m_blockTemplatePrefab: {fileID: 7754777984096578285, guid: 0d997943ab8a402419dd28f1dde9b218,
+    type: 3}
+  m_blockPrefab: {fileID: 4090733648218576938, guid: d9766c74840b91b459e6e90f97e281d3,
+    type: 3}
+  m_templateMaterial: {fileID: 2100000, guid: 5daacab6411ae8040a131b4705ad279e, type: 2}
