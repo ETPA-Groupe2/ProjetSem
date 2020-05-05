@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using GD2Lib;
 
 public class DisplayCraft : MonoBehaviour
 {
@@ -10,20 +9,20 @@ public class DisplayCraft : MonoBehaviour
 
     [Header("-- Bomb Parameters -- ", order = 1)]
 
-    [SerializeField] private IntVar m_bombeResourceInt;
+    [SerializeField] private s_IntVar m_bombeResourceInt;
     [SerializeField] private Text m_bombText; 
     [SerializeField] private Button m_bombButton;
 
 
     [Header("-- Glide Parameters -- ", order = 1)]
 
-    [SerializeField] private IntVar m_glideResourceInt;
+    [SerializeField] private s_IntVar m_glideResourceInt;
     [SerializeField] private Text m_glideText; 
     [SerializeField] private Button m_glideButton;
     
 
     [Header("-- Generator Parameters -- ", order = 1)]
-    [SerializeField] private IntVar m_generatorResourceInt;
+    [SerializeField] private s_IntVar m_generatorResourceInt;
     [SerializeField] private Text m_genText; 
     [SerializeField] private Button m_genButton;
 

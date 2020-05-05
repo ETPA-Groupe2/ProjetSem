@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
-using GD2Lib;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,13 +23,13 @@ public class PlayerController : MonoBehaviour
     [Header("--- THE NUMBER OF RESOURCES IN INVENTORY ---")]
 
     [Tooltip("This is the number for the bomb resources")]
-    public IntVar m_bombeResource;
+    public s_IntVar m_bombeResource;
 
     [Tooltip("This is the number for the glide resources")]
-    public IntVar m_glideResource;
+    public s_IntVar m_glideResource;
 
     [Tooltip("This is the number for the generator resources")]
-    public IntVar m_generatorResource;
+    public s_IntVar m_generatorResource;
 
 
     private void Start()
