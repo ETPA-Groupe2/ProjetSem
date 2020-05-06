@@ -75,7 +75,7 @@ public class BuildingSystem : MonoBehaviour
             {
                 RaycastHit buildPosHit;
 
-                if (Physics.Raycast(m_playerCamera.ScreenPointToRay(Input.mousePosition), out buildPosHit, 30, buildableSurfacesLayer))
+                if (Physics.Raycast(m_playerCamera.ScreenPointToRay(Input.mousePosition), out buildPosHit, 1000, buildableSurfacesLayer))
                 {
                     if (m_canBuild && m_bomb)
                     { 
@@ -169,7 +169,16 @@ public class BuildingSystem : MonoBehaviour
     {
         Debug.Log("Come on");
         Destroy(m_currentTemplateBlock.gameObject);
-        m_bombeResourceInt.Value = 0;
+        if(m_bombeResourceInt.Value>2)
+        {
+            m_bombeResourceInt.Value -=2;
+        }
+        else
+        {
+            m_bombeResourceInt.Value = 0;
+        }
+
+      
         GameObject newBlock = Instantiate(m_blockPrefab[0], p_pos, Quaternion.identity);   
     }
     
