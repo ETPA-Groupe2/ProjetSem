@@ -7,6 +7,8 @@ TagManager:
   - BlueBlock
   - PurpleBlock
   - Zone
+  - DestructibleBlock
+  - RedBlock
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - 
   - 
   - Ground
-  - 
+  - pressure_button
   - 
   - 
   - 
