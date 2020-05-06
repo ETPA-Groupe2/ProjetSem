@@ -16,11 +16,10 @@ public class Pressure : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        m_event.Raise();
+        if (!other.gameObject.CompareTag("Player"))
+        {
+            m_event.Raise();
+        }
     }
 
-    void OnTriggerExit(Collider other)
-    {
-
-    }
 }
