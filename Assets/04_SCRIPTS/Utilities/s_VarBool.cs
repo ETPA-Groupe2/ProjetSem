@@ -11,7 +11,7 @@ using System;
 [CreateAssetMenu(fileName = "New Bool Var", menuName = "ProjectLib/New Bool Var")]
 public class s_VarBool : ScriptableObject
 {
-    private bool m_value;
+    public bool m_value;
     public bool Value
     {
         get{return m_value;}

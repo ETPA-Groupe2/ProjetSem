@@ -22,5 +22,10 @@ public class BlueBlock : Blocks
         m_blueBlockTR.AddForce((transform.position + new Vector3(0,0,-1)) * m_force); 
         Debug.Log("Ca marche woula");
     }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        IZone z = other.GetComponent<IZone>();
+    }
     
 }
