@@ -117,6 +117,7 @@ MonoBehaviour:
   m_glideResource: {fileID: 11400000, guid: 451404dd552193e42b2c9c0f4b03bcc7, type: 2}
   m_generatorResource: {fileID: 11400000, guid: 691f30fef9c3d5e408ea97ec3c378d96,
     type: 2}
+  m_canBuild: {fileID: 11400000, guid: fcbb900b42afc2e43bf96f09e9a4cdfd, type: 2}
 --- !u!195 &5766993879752682152
 NavMeshAgent:
   m_ObjectHideFlags: 0

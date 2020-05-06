@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour
     [Tooltip("This is the number for the generator resources")]
     public s_IntVar m_generatorResource;
 
+    [SerializeField] private s_VarBool m_canBuild;
+
 
     private void Start()
     {
@@ -46,7 +48,6 @@ public class PlayerController : MonoBehaviour
             
             if (Physics.Raycast(m_cam.ScreenPointToRay(Input.mousePosition), out hit, 1000f))
             {
-                Debug.Log(hit.collider);
                 m_agent.destination = hit.point;
             }
         }
@@ -69,13 +70,13 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if(other.TryGetComponent<IGlideResource>(out IGlideResource glide))
+        else if(other.TryGetComponent<IGlideResource>(out IGlideResource glide))
         {
             m_glideResource.Value++;
             Destroy(other.gameObject);
         }
 
-        if(other.TryGetComponent<IGeneratorResources>(out IGeneratorResources generator))
+        else if(other.TryGetComponent<IGeneratorResources>(out IGeneratorResources generator))
         {
             m_generatorResource.Value++;
             Destroy(other.gameObject);
@@ -84,6 +85,10 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        FollowNavMesh();
+        if(m_canBuild.Value == false)
+        {
+            FollowNavMesh();
+        }
+        
     }
 }
