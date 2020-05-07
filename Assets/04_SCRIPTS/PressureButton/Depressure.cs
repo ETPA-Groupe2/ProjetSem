@@ -13,7 +13,7 @@ public class Depressure : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
 
-        if (!other.gameObject.CompareTag("Player"))
+        if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("Zone"))
         {
             Event.Raise();
         }
