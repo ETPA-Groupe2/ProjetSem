@@ -32,9 +32,11 @@ public class DraggableBlock : MonoBehaviour
     {
         if(m_dragging)
         {
-            Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y - m_offset.y, m_zPosition);
-            transform.position = m_mainCamera.ScreenToWorldPoint(pos);
-        }
+            Vector3 meh = transform.position;
+            Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y - m_offset.z , m_zPosition);
+            meh.x = 4f;
+            
+        }  
     }
 
     private void OnMouseEnter() 
@@ -54,7 +56,7 @@ public class DraggableBlock : MonoBehaviour
         OnBeginDrag.Invoke();
 
         m_dragging = true;
-        m_offset.y = m_mainCamera.WorldToScreenPoint(transform.position).y - Input.mousePosition.y;
+        m_offset.z = m_mainCamera.WorldToScreenPoint(transform.position).y - Input.mousePosition.y; 
     }
 
     public void EndDrag()

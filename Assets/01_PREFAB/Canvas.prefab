@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -102,7 +102,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -152,7 +152,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3762112118133164450}
-          m_MethodName: HandleBuildMode
+          m_MethodName: HandleBuildBomb
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -201,7 +201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 110.16138, y: 72.20221}
+  m_AnchoredPosition: {x: 110.16211, y: 72.203125}
   m_SizeDelta: {x: 143.35, y: 69.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &556591991918395480
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.097232126, g: 0.88855535, b: 0.8962264, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.27085125, g: 0.9056604, b: 0.24350302, a: 1}
     m_SelectedColor: {r: 0.22692874, g: 0.745283, b: 0.03163936, a: 1}
     m_DisabledColor: {r: 0.764151, g: 0.025231415, b: 0.025231415, a: 0.5019608}
@@ -300,8 +300,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4837699427710070859, guid: 9488be115942cc346bda215d4374ea0f,
-            type: 3}
+        - m_Target: {fileID: 0}
           m_MethodName: HandleActivation
           m_Mode: 1
           m_Arguments:
@@ -316,8 +315,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4837699427710070859, guid: 9488be115942cc346bda215d4374ea0f,
-            type: 3}
+        - m_Target: {fileID: 0}
           m_MethodName: HandleDeactivation
           m_Mode: 1
           m_Arguments:
@@ -702,7 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -759,7 +757,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4215383309490623199}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3762112118133164450}
+        m_MethodName: HandleBuildMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &5743097574193116899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -791,7 +800,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3762112118133164450}
-          m_MethodName: HandleBuildMode
+          m_MethodName: HandleBuildGen
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -890,7 +899,7 @@ GameObject:
   - component: {fileID: 6673536567994906536}
   - component: {fileID: 8932526326888556629}
   m_Layer: 5
-  m_Name: Text
+  m_Name: BombeTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1314,7 +1323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1403,7 +1412,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3762112118133164450}
-          m_MethodName: HandleBuildMode
+          m_MethodName: HandleBuildGlide
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1458,7 +1467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.91688156, y: 0.52833337}
   m_AnchorMax: {x: 0.91688156, y: 0.52833337}
-  m_AnchoredPosition: {x: -1.786499, y: -5.800007}
+  m_AnchoredPosition: {x: -1.7871094, y: -5.800049}
   m_SizeDelta: {x: 164.18036, y: 362.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4619773726587473150
@@ -1482,7 +1491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.96264976, b: 0.9386792, a: 0.392}
+  m_Color: {r: 0.83921576, g: 0.83921576, b: 0.83921576, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1796,7 +1805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.024496254, y: 0.18166666}
   m_AnchorMax: {x: 0.024496254, y: 0.18166666}
-  m_AnchoredPosition: {x: 58.897552, y: 5.3114014}
+  m_AnchoredPosition: {x: 58.898438, y: 5.3115234}
   m_SizeDelta: {x: 208.47, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3782985291946522168
