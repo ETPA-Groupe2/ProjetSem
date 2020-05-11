@@ -54,6 +54,7 @@ public class DraggableBlock : MonoBehaviour
     {
         EndDrag();
     }
+
     public void BeginDrag()
     {
         OnBeginDrag.Invoke();

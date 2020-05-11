@@ -875,7 +875,7 @@ PrefabInstance:
     - target: {fileID: 3762112118133164450, guid: 3959ac4849d421d4788d2183629a3a04,
         type: 3}
       propertyPath: buildableSurfacesLayer.m_Bits
-      value: 1
+      value: 4096
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3959ac4849d421d4788d2183629a3a04, type: 3}
@@ -10342,10 +10342,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3914543733981856131, guid: e0dbd9f16ce313b47b512b06e308672b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3914543734234437704, guid: e0dbd9f16ce313b47b512b06e308672b,
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.8346062
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914543734234437716, guid: e0dbd9f16ce313b47b512b06e308672b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914543734442805297, guid: e0dbd9f16ce313b47b512b06e308672b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914543734862768997, guid: e0dbd9f16ce313b47b512b06e308672b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0dbd9f16ce313b47b512b06e308672b, type: 3}
