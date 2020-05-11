@@ -167,7 +167,7 @@ public class BuildingSystem : MonoBehaviour
     // Assigne nom, material, et ID //
     private void PlaceBomb(Vector3 p_pos)
     {
-        p_pos.y = 2.2f;
+        p_pos.y = m_playerTrans.position.y+1;
         Debug.Log("Come on");
         Destroy(m_currentTemplateBlock.gameObject);
         if(m_bombeResourceInt.Value>2)
@@ -185,7 +185,7 @@ public class BuildingSystem : MonoBehaviour
     
     private void PlaceGlide(Vector3 p_pos)
     {
-        p_pos.y = 2;
+        p_pos.y = m_playerTrans.position.y+1;
         Debug.Log("Come out");
         Destroy(m_currentTemplateBlock.gameObject);
         m_glideResourceInt.Value = 0;
@@ -194,7 +194,7 @@ public class BuildingSystem : MonoBehaviour
 
     private void PlaceGen(Vector3 p_pos)
     {
-        p_pos.y = 2;
+        p_pos.y = m_playerTrans.position.y+1;
         Debug.Log("Come in");
         Destroy(m_currentTemplateBlock.gameObject);
         m_generatorResourceInt.Value = 0;
