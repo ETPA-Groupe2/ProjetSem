@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/00_SCENES/proto_TutoV3.unity
+    path: Assets/00_SCENES/Proto_v4/proto_TutoV4.unity
     guid: 6323011214ee28e4286d05eb6efab8ba
   - enabled: 1
     path: Assets/00_SCENES/End.unity
