@@ -51,7 +51,7 @@ public class Energy : MonoBehaviour
             }
         }
 
-        //Reduces the size of the sphere
+        /*//Reduces the size of the sphere
         if (m_collider.m_isTrigger == false && m_maxReached == false)
         {
             m_timer += Time.deltaTime;
@@ -60,7 +60,7 @@ public class Energy : MonoBehaviour
                 m_timer = m_timer - m_waitTime;
                 m_energy++;
             }
-        }
+        }*/
 
         #region EnergyBooleans
         //Booleans to check if the energy is at minimum or maximum

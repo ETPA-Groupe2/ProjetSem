@@ -30,10 +30,12 @@ public class Collider_Change : MonoBehaviour, IZone
     IEnumerator LerpBack;
 
     [Tooltip("Check if we're triggering the zone")]public bool m_isTrigger = false;
+    private bool m_isDead = false;
 
     [Tooltip("Lerping size of the collider.")] public float m_x, m_y, m_z;
 
     [SerializeField] private List<GD2Lib.Event> m_event;
+
 
     private void Start() 
     {
@@ -61,6 +63,11 @@ public class Collider_Change : MonoBehaviour, IZone
     public void HandleActivation()
     {
         m_isTrigger = true;
+
+        if(m_isDead != true)
+        {
+            gameObject.SetActive(true);
+        }
 
         if(Lerp != null)
             StopCoroutine(Lerp);
@@ -95,8 +102,9 @@ public class Collider_Change : MonoBehaviour, IZone
         {
             m_sphere.transform.localScale = Vector3.Lerp(m_sphere.transform.localScale, m_scaleChange, Time.deltaTime*m_timeSpeed);
 
-            if(m_energy.m_energy>0)
+            if(m_energy.m_energy<0)
             {
+                StartCoroutine(LerpBackRoutine());
                 yield return false;
             }
             else
@@ -114,11 +122,14 @@ public class Collider_Change : MonoBehaviour, IZone
 
             if(m_energy.m_energy<=0)
             {
+                m_isDead = true;
+                gameObject.SetActive(false);
                 yield return false;
             }
             else
             {
                 yield return new WaitForEndOfFrame();
+                gameObject.SetActive(false);
             }
         } 
     }

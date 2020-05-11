@@ -108,7 +108,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_event: {fileID: 11400000, guid: c0ead18c40b971c4798dab5f14aadea5, type: 2}
-  m_particles: {fileID: 0}
+  m_particles: {fileID: 2257978421925623113, guid: 82883078a609e4f4b9b58589e5eec78d,
+    type: 3}
   m_pollutionLvl: 0
   m_explosionFx: {fileID: 3242812923037427448, guid: 2094a847faf546e4abc62619a250ce80,
     type: 3}

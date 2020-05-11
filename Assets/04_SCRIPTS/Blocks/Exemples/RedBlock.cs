@@ -25,13 +25,10 @@ public class RedBlock : Blocks , IExplosion
     [SerializeField]private float m_blastRadius = 5f;
 
 
-    
-
     public override void handleReaction(GD2Lib.Event p_event, object[] p_params)
     {
         // call void explosion with a delay of 3s
-        Invoke("Explosion", 3f);
-        
+        Invoke("Explosion", 3f);  
     }
 
     public void Explosion()

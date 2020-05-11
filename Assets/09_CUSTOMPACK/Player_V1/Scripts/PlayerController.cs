@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private s_VarBool m_canBuild;
 
+    [SerializeField] private LayerMask m_movingLayer;
+
 
     private void Start()
     {

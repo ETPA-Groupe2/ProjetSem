@@ -12,7 +12,6 @@ public class DraggableBlock : MonoBehaviour
     [SerializeField] private Vector3 m_offset;
     [SerializeField] private Camera m_mainCamera;
     [SerializeField] private bool m_dragging; 
-
     [SerializeField] private UnityEvent OnBeginDrag;
     [SerializeField] private UnityEvent OnEndDrag;
 
@@ -24,7 +23,9 @@ public class DraggableBlock : MonoBehaviour
     {
         m_mainCamera = Camera.main;
         m_zPosition = m_mainCamera.WorldToScreenPoint(transform.position).z;
-        //m_yPosition = m_mainCamera.WorldToScreenPoint(transform.position).y;
+
+        Vector3 posInit = transform.position;
+        m_yPosition = posInit.y+2;
     }
 
     // Update is called once per frame
@@ -32,8 +33,12 @@ public class DraggableBlock : MonoBehaviour
     {
         if(m_dragging)
         {
-            Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y - m_offset.y, m_zPosition);
-            transform.position = m_mainCamera.ScreenToWorldPoint(pos);
+            Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, m_zPosition-m_offset.y);
+
+            Vector3 curPos = Camera.main.ScreenToWorldPoint(pos);
+            curPos.y = m_yPosition;
+
+            transform.position = curPos;
         }
     }
 
@@ -52,9 +57,9 @@ public class DraggableBlock : MonoBehaviour
     public void BeginDrag()
     {
         OnBeginDrag.Invoke();
-
+        
         m_dragging = true;
-        m_offset.y = m_mainCamera.WorldToScreenPoint(transform.position).y - Input.mousePosition.y;
+        m_offset = transform.position - m_mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, m_zPosition));
     }
 
     public void EndDrag()

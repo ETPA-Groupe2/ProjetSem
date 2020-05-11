@@ -77,19 +77,19 @@ public class BuildingSystem : MonoBehaviour
 
                 if (Physics.Raycast(m_playerCamera.ScreenPointToRay(Input.mousePosition), out buildPosHit, 1000, buildableSurfacesLayer))
                 {
-                    if (m_canBuild && m_bomb)
+                    if (m_canBuild.Value && m_bomb)
                     { 
                         PlaceBomb(buildPosHit.point);
                         m_bomb = false;
                         m_buildModeOn = false;
                     }
-                    else if(m_canBuild && m_glide)
+                    else if(m_canBuild.Value && m_glide)
                     {
                         PlaceGlide(buildPosHit.point);
                         m_glide = false;
                         m_buildModeOn = false;
                     }
-                    else if(m_canBuild && m_gen)
+                    else if(m_canBuild.Value && m_gen)
                     {
                         PlaceGen(buildPosHit.point);
                         m_gen = false;
@@ -167,6 +167,7 @@ public class BuildingSystem : MonoBehaviour
     // Assigne nom, material, et ID //
     private void PlaceBomb(Vector3 p_pos)
     {
+        p_pos.y = 2.2f;
         Debug.Log("Come on");
         Destroy(m_currentTemplateBlock.gameObject);
         if(m_bombeResourceInt.Value>2)
@@ -184,6 +185,7 @@ public class BuildingSystem : MonoBehaviour
     
     private void PlaceGlide(Vector3 p_pos)
     {
+        p_pos.y = 2;
         Debug.Log("Come out");
         Destroy(m_currentTemplateBlock.gameObject);
         m_glideResourceInt.Value = 0;
@@ -192,6 +194,7 @@ public class BuildingSystem : MonoBehaviour
 
     private void PlaceGen(Vector3 p_pos)
     {
+        p_pos.y = 2;
         Debug.Log("Come in");
         Destroy(m_currentTemplateBlock.gameObject);
         m_generatorResourceInt.Value = 0;
