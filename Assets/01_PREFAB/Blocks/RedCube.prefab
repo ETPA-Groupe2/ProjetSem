@@ -128,7 +128,7 @@ MonoBehaviour:
   m_particles: {fileID: 2257978421925623113, guid: 82883078a609e4f4b9b58589e5eec78d,
     type: 3}
   m_pollutionLvl: 0
-  m_explosionFx: {fileID: 3242812923037427448, guid: 2094a847faf546e4abc62619a250ce80,
+  m_explosionFx: {fileID: 3242812923037427448, guid: a747d7d48ee64b140b60063cf8a41220,
     type: 3}
   m_blastRadius: 10
 --- !u!114 &4376090704186035528
