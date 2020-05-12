@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-
+    [Header("Button reference")]
+    [Tooltip("Put here the button you want to use to reload the last checkpoint")]
     [SerializeField] private TriggerButton m_triggerButton;
-
-    private void Start()
-    {
-        //m_triggerButton = GameObject.Find("TriggerButton").GetComponent<TriggerButton>();
-    }
 
     void OnTriggerEnter(Collider other)
     {
       if (other.gameObject.CompareTag ("Player"))
-        {
+        { 
             m_triggerButton.m_lastCheckpoint = gameObject.transform.position;
         }
     }
