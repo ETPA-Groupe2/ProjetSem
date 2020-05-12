@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5195011542211405151}
   - component: {fileID: 3838023209590955881}
   - component: {fileID: 7385882143623504784}
+  - component: {fileID: 801579581480148634}
   m_Layer: 0
   m_Name: Murs_sans_fenetre
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &801579581480148634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9098180138704983884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 32.294125, y: 0.7110317, z: 11.946681}
+  m_Center: {x: 15.64568, y: -0.0000004917383, z: 5.9733405}
