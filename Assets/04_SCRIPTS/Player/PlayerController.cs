@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private LayerMask m_movingLayer;
 
+    public bool m_loadCheckpoint = false;
+
 
     private void Start()
     {
@@ -87,7 +89,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if(m_canBuild.Value == false)
+        if(m_canBuild.Value == false && m_loadCheckpoint == false)
         {
             FollowNavMesh();
         }
