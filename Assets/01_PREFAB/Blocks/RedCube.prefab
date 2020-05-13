@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 7245811283532733089}
   - component: {fileID: 2450589677491029240}
   - component: {fileID: 4376090704186035528}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: RedCube
-  m_TagString: Untagged
+  m_TagString: RedBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,8 +94,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.5018845, y: 3.3565462, z: 3.2903137}
+  m_Center: {x: 0.017425537, y: -0.014933705, z: 1.5109551}
 --- !u!54 &7245811283532733089
 Rigidbody:
   m_ObjectHideFlags: 0
