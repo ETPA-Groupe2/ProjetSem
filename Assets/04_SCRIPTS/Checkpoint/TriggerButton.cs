@@ -1,26 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerButton : MonoBehaviour
 {
-    [Tooltip("Set the player spawnpoint position")]
-    public Vector3 m_lastCheckpoint;
     [SerializeField] Transform m_player;
-   
-    [Tooltip("Put the player here")]
-    [SerializeField] public PlayerController m_stopNavMesh;
+   //[SerializeField] GameObject m_navmesh;
 
-    public void RequestReload()
-    {
-        m_stopNavMesh.m_loadCheckpoint = true;
-        m_player.transform.position = m_lastCheckpoint;
-        m_stopNavMesh.m_agent.destination = m_lastCheckpoint;
-        Invoke("BoolCheckpoint", 0.1f);
+    void Start()
+    {  
+        m_player.transform.position = CPPersistence.Instance.SpawnPoint;
+        Debug.Log(CPPersistence.Instance.SpawnPoint);
+        //m_navmesh.SetActive(false);
+        //Invoke("EnableNavMesh", 0.1f);
     }
 
-    void BoolCheckpoint()
+   /* void EnableNavMesh()
     {
-        m_stopNavMesh.m_loadCheckpoint = false;
+        m_navmesh.SetActive(true);
+    }*/
+    public void RequestReload()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

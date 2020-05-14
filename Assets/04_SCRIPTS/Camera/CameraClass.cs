@@ -23,15 +23,8 @@ public class CameraClass : MonoBehaviour
     [Tooltip("Transform of the player")]
     public Transform m_playerTransform;
        
-    /// <summary>
-    /// Used to calculate the camera position
-    /// </summary>
-    private Vector3 m_cameraOffset;
-
-    void Start()
-    {
-        m_cameraOffset = transform.position - m_playerTransform.position;
-    }
+    [Tooltip("Set the camera as you want it to be positioned in relation to the player (changes visible only in Play Mode)")]
+    [SerializeField] private Vector3 m_cameraOffset;
 
     void Update()
     {
