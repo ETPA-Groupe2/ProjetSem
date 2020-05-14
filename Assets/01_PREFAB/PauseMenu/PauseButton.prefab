@@ -221,4 +221,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BackToHUBButton: {fileID: 0}
   m_ResumeGameButton: {fileID: 0}
-  m_HUBScene: tempScene2
+  m_HUBScene: Hub

@@ -2392,11 +2392,6 @@ PrefabInstance:
       propertyPath: m_ResumeGameButton
       value: 
       objectReference: {fileID: 9186010598852812393}
-    - target: {fileID: 1977406496145628962, guid: 65e018ce45c51a540b86244da08b4773,
-        type: 3}
-      propertyPath: m_HUBScene
-      value: Hub
-      objectReference: {fileID: 0}
     - target: {fileID: 2139835829574884990, guid: 65e018ce45c51a540b86244da08b4773,
         type: 3}
       propertyPath: m_LocalPosition.x
