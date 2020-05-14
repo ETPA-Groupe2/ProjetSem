@@ -127,10 +127,11 @@ MonoBehaviour:
   m_event: {fileID: 11400000, guid: c0ead18c40b971c4798dab5f14aadea5, type: 2}
   m_particles: {fileID: 2257978421925623113, guid: 82883078a609e4f4b9b58589e5eec78d,
     type: 3}
-  m_pollutionLvl: 0
+  m_pollutionLvl: 1
   m_explosionFx: {fileID: 3242812923037427448, guid: a747d7d48ee64b140b60063cf8a41220,
     type: 3}
   m_blastRadius: 10
+  m_globalPollution: {fileID: 11400000, guid: 3d4bd683230f0634e8334ec522ed6a1f, type: 2}
 --- !u!114 &4376090704186035528
 MonoBehaviour:
   m_ObjectHideFlags: 0
