@@ -29,11 +29,17 @@ public class CPPersistence : MonoBehaviour
 
     [SerializeField] Transform m_spawnpoint;
     private Vector3 m_lastCP = Vector3.zero;
+    private GameObject m_sp;
 
     void Start()
     {
-        DontDestroyOnLoad(m_spawnpoint);
+        m_sp = GameObject.Find("SpawnPoint");
+        if (m_sp!=null)
+        {
+            DontDestroyOnLoad(m_sp);
+        }   
     }
+
     public void SetSpawnpoint (Vector3 p_spawnPoint)
     {
         m_lastCP = p_spawnPoint;
