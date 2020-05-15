@@ -1,25 +1,32 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Johann Theron                         *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TriggerButton : MonoBehaviour
 {
+    [Tooltip("Put here the player transform")]
     [SerializeField] Transform m_player;
-   //[SerializeField] GameObject m_navmesh;
+    [Tooltip("Put here the navmesh gameObject")]
+    [SerializeField] GameObject m_navmesh;
 
     void Start()
     {  
         m_player.transform.position = CPPersistence.Instance.SpawnPoint;
         Debug.Log(CPPersistence.Instance.SpawnPoint);
-        //m_navmesh.SetActive(false);
-        //Invoke("EnableNavMesh", 0.1f);
+
+        Invoke("EnableNavMesh", 0.1f);
     }
 
-   /* void EnableNavMesh()
+    void EnableNavMesh()
     {
         m_navmesh.SetActive(true);
-    }*/
+    }
     public void RequestReload()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

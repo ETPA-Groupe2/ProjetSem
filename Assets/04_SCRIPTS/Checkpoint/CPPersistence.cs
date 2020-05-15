@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Johann Theron                         *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,6 +30,10 @@ public class CPPersistence : MonoBehaviour
     [SerializeField] Transform m_spawnpoint;
     private Vector3 m_lastCP = Vector3.zero;
 
+    void Start()
+    {
+        DontDestroyOnLoad(m_spawnpoint);
+    }
     public void SetSpawnpoint (Vector3 p_spawnPoint)
     {
         m_lastCP = p_spawnPoint;
