@@ -28,6 +28,8 @@ public class PollutionRate : MonoBehaviour
     [Tooltip("Minimal pollution level to be in the E Rate interval")]
     [SerializeField] private float m_minScoreRateE;
 
+    public string m_rateString;
+
     void Update()
     {
         m_pollutionLevelText.text = "Pollution Level : " + m_globalPollution.Value;
@@ -39,30 +41,37 @@ public class PollutionRate : MonoBehaviour
         if (m_globalPollution.Value >= m_minScoreRateS && m_globalPollution.Value <= m_minScoreRateAPlus-1f)
         {
             Debug.Log("Rate S");
+            m_rateString = "S";
         }
         if (m_globalPollution.Value >= m_minScoreRateAPlus && m_globalPollution.Value <= m_minScoreRateA-1f)
         {
             Debug.Log("Rate A+");
+            m_rateString = "A+";
         }
         if (m_globalPollution.Value >= m_minScoreRateA && m_globalPollution.Value <= m_minScoreRateB-1f)
         {
             Debug.Log("Rate A");
+            m_rateString = "A";
         }
         if (m_globalPollution.Value >= m_minScoreRateB && m_globalPollution.Value <= m_minScoreRateC-1f)
         {
             Debug.Log("Rate B");
+            m_rateString = "B";
         }
         if (m_globalPollution.Value >= m_minScoreRateC  && m_globalPollution.Value <= m_minScoreRateD-1f)
         {
             Debug.Log("Rate C");
+            m_rateString = "C";
         }
         if (m_globalPollution.Value >= m_minScoreRateD && m_globalPollution.Value <= m_minScoreRateE-1f)
         {
             Debug.Log("Rate D");
+            m_rateString = "D";
         }
         if (m_globalPollution.Value >= m_minScoreRateE)
         {
             Debug.Log("Rate E");
+            m_rateString = "E";
         }
         #endregion
     }

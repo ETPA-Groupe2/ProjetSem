@@ -11,8 +11,9 @@ public class Checkpoint : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
       if (other.gameObject.CompareTag ("Player"))
-        { 
-            m_triggerButton.m_lastCheckpoint = gameObject.transform.position;
+        {
+            Debug.Log("CHECKPOINT PASSED");
+            CPPersistence.Instance.SetSpawnpoint (gameObject.transform.position);
         }
     }
 }

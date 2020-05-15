@@ -107,6 +107,7 @@ MonoBehaviour:
   m_zoomSmoothness: 0.1
   m_followSmoothness: 0.5
   m_playerTransform: {fileID: 0}
+  m_cameraOffset: {x: 0, y: 30, z: 15}
 --- !u!114 &5086823671027931630
 MonoBehaviour:
   m_ObjectHideFlags: 0
