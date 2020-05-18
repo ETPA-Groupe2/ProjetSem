@@ -50,6 +50,7 @@ public class BuildingSystem : MonoBehaviour
     [SerializeField] private Transform m_playerTrans;
 
     [SerializeField] private Vector3 m_blockTrans;
+    [SerializeField] private Transform m_blockTempPos;
 
     [SerializeField] private float m_posBlockOffset;
 
@@ -69,6 +70,11 @@ public class BuildingSystem : MonoBehaviour
         if (m_buildModeOn)
         {
             m_canBuild.Value = true;
+            m_canBuildBomb.Value = false;
+            m_canBuildGlide.Value = false;
+            m_canBuildGen.Value = false;
+            m_blockTempPos = m_currentTemplateBlock.transform;
+
             if(Input.GetMouseButton(0))
             {
                 RaycastHit buildPosHit;
@@ -77,19 +83,19 @@ public class BuildingSystem : MonoBehaviour
                 {
                     if (m_canBuild.Value && m_bomb)
                     { 
-                        PlaceBomb(buildPosHit.point);
+                        PlaceBomb(m_currentTemplateBlock.transform.position);
                         m_bomb = false;
                         m_buildModeOn = false;
                     }
                     else if(m_canBuild.Value && m_glide)
                     {
-                        PlaceGlide(buildPosHit.point);
+                        PlaceGlide(m_currentTemplateBlock.transform.position);
                         m_glide = false;
                         m_buildModeOn = false;
                     }
                     else if(m_canBuild.Value && m_gen)
                     {
-                        PlaceGen(buildPosHit.point);
+                        PlaceGen(m_currentTemplateBlock.transform.position);
                         m_gen = false;
                         m_buildModeOn = false;
                     }
@@ -165,7 +171,7 @@ public class BuildingSystem : MonoBehaviour
     // Assigne nom, material, et ID //
     private void PlaceBomb(Vector3 p_pos)
     {
-        p_pos.y = m_playerTrans.position.y+1;
+        //p_pos.y = m_playerTrans.position.y+1;
         Debug.Log("Come on");
         Destroy(m_currentTemplateBlock.gameObject);
         if(m_bombeResourceInt.Value>2)

@@ -25,7 +25,7 @@ public class DraggableBlock : MonoBehaviour
         m_zPosition = m_mainCamera.WorldToScreenPoint(transform.position).z;
 
         Vector3 posInit = transform.position;
-        m_yPosition = posInit.y+2;
+        m_yPosition = posInit.y;
     }
 
     // Update is called once per frame
@@ -33,7 +33,7 @@ public class DraggableBlock : MonoBehaviour
     {
         if(m_dragging)
         {
-            Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, m_zPosition-m_offset.y);
+            Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, m_zPosition);
 
             Vector3 curPos = Camera.main.ScreenToWorldPoint(pos);
             curPos.y = m_yPosition;
