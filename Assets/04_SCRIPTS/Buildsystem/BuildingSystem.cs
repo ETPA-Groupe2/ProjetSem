@@ -57,8 +57,6 @@ public class BuildingSystem : MonoBehaviour
     private bool m_glide = false;
     private bool m_gen = false;
 
-
-       
     //BuildMode ON/OFF en appuyant sur "e"//
 
     private void Update()

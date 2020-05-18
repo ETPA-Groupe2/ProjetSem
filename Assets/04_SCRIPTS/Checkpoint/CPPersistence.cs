@@ -14,7 +14,6 @@ public class CPPersistence : MonoBehaviour
         {
             if (m_instance == null)
             {
-                Debug.Log("PAS D'INSTANCE");
                 m_instance = FindObjectOfType<CPPersistence>();
                 if (m_instance == null)
                 {

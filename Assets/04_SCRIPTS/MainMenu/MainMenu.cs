@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour
     [Tooltip("Put here the return to main menu button of the credits screen")]
     [SerializeField] GameObject m_creditsBackButton;
 
+
     void Start()
     {
         m_creditsText.SetActive(false);
@@ -38,7 +39,6 @@ public class MainMenu : MonoBehaviour
 
     public void DisplayCredits()
     {
-        Debug.Log("Does credits works ?");
         m_creditsText.SetActive(true);
         m_creditsBackButton.SetActive(true);
         m_playButton.SetActive(false);

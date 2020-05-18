@@ -18,8 +18,6 @@ public class TriggerButton : MonoBehaviour
     void Start()
     {  
         m_player.transform.position = CPPersistence.Instance.SpawnPoint;
-        Debug.Log(CPPersistence.Instance.SpawnPoint);
-
         Invoke("EnableNavMesh", 0.1f);
     }
 

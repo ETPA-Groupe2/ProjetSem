@@ -29,15 +29,22 @@ public class RedBlock : Blocks , IExplosion
     [Tooltip("Put the GlobalPollution float var")]
     [SerializeField] s_VarFloat m_globalPollution;
 
+    AudioSource m_explosionSound;
+
+    void Start()
+    {
+        m_explosionSound = GetComponent<AudioSource>();
+    }
 
     public override void handleReaction(GD2Lib.Event p_event, object[] p_params)
     {
         // call void explosion with a delay of 3s
-        Invoke("Explosion", TimeBeforeExplosion);  
+        Invoke("Explosion", TimeBeforeExplosion);
     }
 
     public void Explosion()
     {
+        m_explosionSound.Play(0);
         // Increases the pollution level
         m_globalPollution.Value += m_pollutionLvl;
         //call fx explosion on the position of the cube 
@@ -50,7 +57,7 @@ public class RedBlock : Blocks , IExplosion
             IExplosion e = nearbyObject.GetComponent<IExplosion>();
 
             if (nearbyObject.TryGetComponent<Animator>(out Animator anim))
-            { 
+            {
                 anim.Play("explosion_anim");
             }
             if(e != null)
