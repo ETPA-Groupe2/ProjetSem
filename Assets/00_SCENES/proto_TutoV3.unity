@@ -2391,6 +2391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_anim: {fileID: 224184577}
   m_eventAnim: {fileID: 11400000, guid: 84494e309f7ec7b4aaee58ab9c522a14, type: 2}
+  m_noButtonEnabled: 0
 --- !u!95 &224184577
 Animator:
   serializedVersion: 3
@@ -3231,6 +3232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_anim: {fileID: 346401575}
   m_eventAnim: {fileID: 11400000, guid: 42938892062e7594bbf991bb9267a7bd, type: 2}
+  m_noButtonEnabled: 0
 --- !u!95 &346401575
 Animator:
   serializedVersion: 3
@@ -19963,6 +19965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_anim: {fileID: 2089228960}
   m_eventAnim: {fileID: 11400000, guid: 2e454f0d7ca07ec459556aa359c9793c, type: 2}
+  m_noButtonEnabled: 0
 --- !u!4 &2089228963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2b5fb7c364b74649aa7fed04c03b683,
