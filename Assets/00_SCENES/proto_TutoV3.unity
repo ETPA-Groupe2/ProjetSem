@@ -7698,6 +7698,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1310211361}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &226555656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1343127903871688076, guid: 821a080ef44b8a543840e010061f0cba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1477865942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &226555657
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226555656}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.615, y: 2.3890002, z: 0.65}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.08, y: 0.061000004, z: 2.67}
+  m_TimeToStationary: 0.5
 --- !u!4 &231137345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2464785393204248429, guid: 4661c378a28561a45bd6eff813707bbb,
@@ -18711,6 +18733,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 636270472}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &647306540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1343127903871688076, guid: 821a080ef44b8a543840e010061f0cba,
+    type: 3}
+  m_PrefabInstance: {fileID: 428639919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &647306541
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647306540}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.702, y: 2.3890002, z: 1.4440001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.006, y: 0.061000004, z: 1.4330001}
+  m_TimeToStationary: 0.5
 --- !u!1001 &649488062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24760,7 +24804,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   intensityFromLight: 1
   intensityModeAdvanced: 0
-  intensityInside: 2.75
+  intensityInside: 1.12
   intensityOutside: 1.12
   blendingMode: 0
   spotAngleFromLight: 1
@@ -25716,6 +25760,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 882480815}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &885113672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8690101847c383248ad3c3272291783f,
+    type: 3}
+  m_PrefabInstance: {fileID: 26018607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &885113673
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885113672}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.702, y: 2.3890002, z: 1.4440001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.006, y: 0.061000004, z: 1.4330001}
+  m_TimeToStationary: 0.5
 --- !u!1001 &885749010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31392,7 +31458,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   intensityFromLight: 1
   intensityModeAdvanced: 0
-  intensityInside: 2.75
+  intensityInside: 1.87
   intensityOutside: 1.87
   blendingMode: 0
   spotAngleFromLight: 1
@@ -39106,7 +39172,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   intensityFromLight: 1
   intensityModeAdvanced: 0
-  intensityInside: 2.75
+  intensityInside: 3
   intensityOutside: 3
   blendingMode: 0
   spotAngleFromLight: 1
@@ -40830,6 +40896,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.403862, y: 4.778258, z: 2.8883603}
   m_Center: {x: -0.0060071945, y: 0.06081187, z: 1.4332515}
+--- !u!208 &1411042261
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411042259}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.702, y: 2.3890002, z: 1.4440001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.006, y: 0.061000004, z: 1.4330001}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1421988918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41888,7 +41970,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   intensityFromLight: 1
   intensityModeAdvanced: 0
-  intensityInside: 2.75
+  intensityInside: 1.49
   intensityOutside: 1.49
   blendingMode: 0
   spotAngleFromLight: 1
@@ -51262,6 +51344,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8a663ee53e983b43aaddb5a1db6c51b, type: 3}
+--- !u!1 &1779503867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1343127903871688076, guid: 821a080ef44b8a543840e010061f0cba,
+    type: 3}
+  m_PrefabInstance: {fileID: 488321458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &1779503868
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779503867}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.702, y: 2.3890002, z: 1.4440001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.006, y: 0.061000004, z: 1.4330001}
+  m_TimeToStationary: 0.5
 --- !u!4 &1781143906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1779010577549325349, guid: 0b514fcf16b704943922682e09d29612,
@@ -61241,7 +61345,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   intensityFromLight: 1
   intensityModeAdvanced: 0
-  intensityInside: 2.75
+  intensityInside: 3
   intensityOutside: 3
   blendingMode: 0
   spotAngleFromLight: 1

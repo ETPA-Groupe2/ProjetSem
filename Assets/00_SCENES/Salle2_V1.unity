@@ -550,10 +550,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 303059617}
     m_Modifications:
+    - target: {fileID: 6359587044746095831, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
       propertyPath: m_Name
       value: Pile_de_carton (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045990299379, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7933815742530945332, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
@@ -790,10 +805,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 303059617}
     m_Modifications:
+    - target: {fileID: 6359587044746095831, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
       propertyPath: m_Name
       value: Pile_de_carton (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045990299379, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7933815742530945332, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
@@ -1837,7 +1867,7 @@ PrefabInstance:
     - target: {fileID: 2802305038614665508, guid: 953de98e1ea30454b97ad9c231e11e16,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2802305038614665508, guid: 953de98e1ea30454b97ad9c231e11e16,
         type: 3}
@@ -2527,7 +2557,7 @@ PrefabInstance:
     - target: {fileID: 8928595945086988013, guid: 7572056d219465642bd1d372dba589b9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8928595945086988013, guid: 7572056d219465642bd1d372dba589b9,
         type: 3}
@@ -2916,6 +2946,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Machinerie_grande (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212424521619704489, guid: 154178a25187fb84688ed62a3607f282,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 154178a25187fb84688ed62a3607f282, type: 3}
@@ -3575,6 +3610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyau_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692094425947591603, guid: b01e023c4dd1f894f8b852602311810c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e023c4dd1f894f8b852602311810c, type: 3}
 --- !u!4 &186453458 stripped
@@ -4035,6 +4075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Machinerie_petite (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204319062597065684, guid: 331a4a059f455cf48a6eb86062bcf870,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331a4a059f455cf48a6eb86062bcf870, type: 3}
@@ -4848,10 +4893,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 303059617}
     m_Modifications:
+    - target: {fileID: 6359587044746095831, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
       propertyPath: m_Name
       value: Pile_de_carton (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045990299379, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7933815742530945332, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
@@ -5148,10 +5208,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 303059617}
     m_Modifications:
+    - target: {fileID: 6359587044746095831, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
       propertyPath: m_Name
       value: Pile_de_carton (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045990299379, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7933815742530945332, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
@@ -6712,6 +6787,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d47484ff4d7c55439f0c3ba48bb0f40, type: 3}
+--- !u!1 &337421995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+    type: 3}
+  m_PrefabInstance: {fileID: 337421994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &337421996
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337421995}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 9.89, y: 0.88400006, z: 3.5660002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 3.5660002}
+  m_TimeToStationary: 0.5
 --- !u!1001 &339314461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6778,6 +6875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyau_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692094425947591603, guid: b01e023c4dd1f894f8b852602311810c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e023c4dd1f894f8b852602311810c, type: 3}
@@ -7172,7 +7274,7 @@ PrefabInstance:
     - target: {fileID: 2802305038614665508, guid: 953de98e1ea30454b97ad9c231e11e16,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2802305038614665508, guid: 953de98e1ea30454b97ad9c231e11e16,
         type: 3}
@@ -7353,7 +7455,7 @@ PrefabInstance:
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
@@ -8590,6 +8692,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyau_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692094425947591603, guid: b01e023c4dd1f894f8b852602311810c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e023c4dd1f894f8b852602311810c, type: 3}
 --- !u!4 &486958859 stripped
@@ -9547,6 +9654,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d47484ff4d7c55439f0c3ba48bb0f40, type: 3}
+--- !u!1 &528565166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+    type: 3}
+  m_PrefabInstance: {fileID: 528565165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &528565167
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528565166}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 9.89, y: 0.88400006, z: 3.5660002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 3.5660002}
+  m_TimeToStationary: 0.5
 --- !u!4 &530168855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5195011542211405151, guid: e6517fabc8ccafa4cae284878d83b72f,
@@ -10641,7 +10770,7 @@ PrefabInstance:
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
@@ -11822,7 +11951,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2144074708}
-  - {fileID: 1840592814}
   - {fileID: 2001603400}
   - {fileID: 1373042819}
   - {fileID: 1710112541}
@@ -13735,8 +13863,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_anim (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d47484ff4d7c55439f0c3ba48bb0f40, type: 3}
+--- !u!1 &774278360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+    type: 3}
+  m_PrefabInstance: {fileID: 774278359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &774278361
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774278360}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 10.195, y: 1, z: 3.725}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 3.5660002}
+  m_TimeToStationary: 0.5
 --- !u!1001 &775515255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15573,7 +15728,7 @@ PrefabInstance:
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
@@ -17398,6 +17553,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyau_6 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2487876671523696386, guid: 5e7823c506e84ea4caa67f409f9bbff8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e7823c506e84ea4caa67f409f9bbff8, type: 3}
 --- !u!4 &1050876470 stripped
@@ -17504,8 +17664,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_anim (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d47484ff4d7c55439f0c3ba48bb0f40, type: 3}
+--- !u!1 &1052347409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+    type: 3}
+  m_PrefabInstance: {fileID: 1052347408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &1052347410
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052347409}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 11.55, y: 1.15, z: 3.805}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 3.89}
+  m_TimeToStationary: 0.5
 --- !u!4 &1057268195 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6488696185898767971, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
@@ -18731,7 +18918,7 @@ PrefabInstance:
     - target: {fileID: 389470698597818784, guid: b01e023c4dd1f894f8b852602311810c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 389470698597818784, guid: b01e023c4dd1f894f8b852602311810c,
         type: 3}
@@ -18752,6 +18939,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyau_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692094425947591603, guid: b01e023c4dd1f894f8b852602311810c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e023c4dd1f894f8b852602311810c, type: 3}
@@ -19030,6 +19222,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Machinerie_grande (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212424521619704489, guid: 154178a25187fb84688ed62a3607f282,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 154178a25187fb84688ed62a3607f282, type: 3}
@@ -20404,6 +20601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machinerie_grande (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8212424521619704489, guid: 154178a25187fb84688ed62a3607f282,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 154178a25187fb84688ed62a3607f282, type: 3}
 --- !u!4 &1268420201 stripped
@@ -20752,7 +20954,7 @@ PrefabInstance:
     - target: {fileID: 5162037010567755962, guid: 154178a25187fb84688ed62a3607f282,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5162037010567755962, guid: 154178a25187fb84688ed62a3607f282,
         type: 3}
@@ -21063,7 +21265,7 @@ PrefabInstance:
     - target: {fileID: 4773095621966492258, guid: 3bba4f46ef75b434db3b5444e9a8058a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4773095621966492258, guid: 3bba4f46ef75b434db3b5444e9a8058a,
         type: 3}
@@ -21823,6 +22025,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d47484ff4d7c55439f0c3ba48bb0f40, type: 3}
+--- !u!1 &1344139837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+    type: 3}
+  m_PrefabInstance: {fileID: 1344139836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &1344139838
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344139837}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 9.89, y: 0.88400006, z: 3.5660002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 3.5660002}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1356052303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22042,7 +22266,7 @@ PrefabInstance:
     - target: {fileID: 3360323473721768487, guid: f04ccdebe05726a49bc3f322613148dd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3360323473721768487, guid: f04ccdebe05726a49bc3f322613148dd,
         type: 3}
@@ -22212,7 +22436,7 @@ PrefabInstance:
     - target: {fileID: 5162037010567755962, guid: 154178a25187fb84688ed62a3607f282,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5162037010567755962, guid: 154178a25187fb84688ed62a3607f282,
         type: 3}
@@ -22329,6 +22553,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyau_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692094425947591603, guid: b01e023c4dd1f894f8b852602311810c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e023c4dd1f894f8b852602311810c, type: 3}
@@ -22525,10 +22754,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 303059617}
     m_Modifications:
+    - target: {fileID: 6359587044746095831, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
       propertyPath: m_Name
       value: Pile_de_carton (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045167559463, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359587045990299379, guid: fa7277f5d82f4bd4c9715ff460031639,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7933815742530945332, guid: fa7277f5d82f4bd4c9715ff460031639,
         type: 3}
@@ -22893,7 +23137,7 @@ PrefabInstance:
     - target: {fileID: 389470698597818784, guid: b01e023c4dd1f894f8b852602311810c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 389470698597818784, guid: b01e023c4dd1f894f8b852602311810c,
         type: 3}
@@ -22914,6 +23158,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyau_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692094425947591603, guid: b01e023c4dd1f894f8b852602311810c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e023c4dd1f894f8b852602311810c, type: 3}
@@ -25352,6 +25601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machinerie_petite (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8204319062597065684, guid: 331a4a059f455cf48a6eb86062bcf870,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331a4a059f455cf48a6eb86062bcf870, type: 3}
 --- !u!4 &1547026663 stripped
@@ -25741,8 +25995,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_anim (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d47484ff4d7c55439f0c3ba48bb0f40, type: 3}
+--- !u!1 &1569495374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+    type: 3}
+  m_PrefabInstance: {fileID: 1569495373}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &1569495375
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569495374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 9.89, y: 0.88400006, z: 3.5660002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 3.5660002}
+  m_TimeToStationary: 0.5
 --- !u!1 &1575345911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 930294c06770a604cbfbeadb4d1e2626,
@@ -27078,6 +27359,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machinerie_grande (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8212424521619704489, guid: 154178a25187fb84688ed62a3607f282,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 154178a25187fb84688ed62a3607f282, type: 3}
 --- !u!4 &1668179822 stripped
@@ -27242,6 +27528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Machinerie_petite
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204319062597065684, guid: 331a4a059f455cf48a6eb86062bcf870,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331a4a059f455cf48a6eb86062bcf870, type: 3}
@@ -27748,7 +28039,7 @@ PrefabInstance:
     - target: {fileID: 6238612993275033982, guid: 48c256fca655ae549a4dbd63cbbf12ea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6238612993275033982, guid: 48c256fca655ae549a4dbd63cbbf12ea,
         type: 3}
@@ -28853,7 +29144,7 @@ PrefabInstance:
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
@@ -29158,6 +29449,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Machinerie_grande (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212424521619704489, guid: 154178a25187fb84688ed62a3607f282,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 154178a25187fb84688ed62a3607f282, type: 3}
@@ -29557,80 +29853,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930294c06770a604cbfbeadb4d1e2626, type: 3}
---- !u!1001 &1840592813
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 639245701}
-    m_Modifications:
-    - target: {fileID: 630779730802501074, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_Name
-      value: Conduit_aeration
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -21.035748
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.0486178
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -82.59569
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.70710695
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.00000036507845
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00000037316534
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4511378716536412097, guid: 68c2baef68c071e4b82ff43a67e510d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 360
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 68c2baef68c071e4b82ff43a67e510d3, type: 3}
---- !u!4 &1840592814 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1840592813}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1845701211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29833,6 +30055,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d47484ff4d7c55439f0c3ba48bb0f40, type: 3}
+--- !u!1 &1862059863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7806747054326899824, guid: 3d47484ff4d7c55439f0c3ba48bb0f40,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862059862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &1862059864
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862059863}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 9.89, y: 0.88400006, z: 3.5660002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 3.5660002}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1865537888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30238,7 +30482,7 @@ PrefabInstance:
     - target: {fileID: 8928595945086988013, guid: 7572056d219465642bd1d372dba589b9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8928595945086988013, guid: 7572056d219465642bd1d372dba589b9,
         type: 3}
@@ -30794,6 +31038,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Machinerie_grande (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212424521619704489, guid: 154178a25187fb84688ed62a3607f282,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 154178a25187fb84688ed62a3607f282, type: 3}
@@ -31523,6 +31772,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machinerie_grande (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8212424521619704489, guid: 154178a25187fb84688ed62a3607f282,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 154178a25187fb84688ed62a3607f282, type: 3}
 --- !u!4 &1960884426 stripped
@@ -32099,7 +32353,7 @@ PrefabInstance:
     - target: {fileID: 2802305038614665508, guid: 953de98e1ea30454b97ad9c231e11e16,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2802305038614665508, guid: 953de98e1ea30454b97ad9c231e11e16,
         type: 3}
@@ -32461,7 +32715,7 @@ PrefabInstance:
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1503621175806287121, guid: 5e7823c506e84ea4caa67f409f9bbff8,
         type: 3}
@@ -33239,6 +33493,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyau_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692094425947591603, guid: b01e023c4dd1f894f8b852602311810c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e023c4dd1f894f8b852602311810c, type: 3}
