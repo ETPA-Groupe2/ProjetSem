@@ -12,6 +12,12 @@ public class Door_anim_script : MonoBehaviour
     [HideInInspector]
     public bool m_noButtonEnabled = false;
 
+    AudioSource m_openSound;
+
+    private void Start()
+    {
+        m_openSound = GetComponent<AudioSource>();
+    }
     private void OnEnable()
     {
         if (m_eventAnim != null)
@@ -27,10 +33,9 @@ public class Door_anim_script : MonoBehaviour
             m_noButtonEnabled = false;
     }
 
-
-
     void PlayAnim(GD2Lib.Event p_event, object[] p_params)
     {
+        m_openSound.Play(0);
         m_anim.Play("DoorIsOpen");
     }
 }

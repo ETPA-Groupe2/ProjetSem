@@ -22,7 +22,7 @@ public class RedBlock : Blocks , IExplosion
         //check if the explosion took place
     private bool m_exploded = false;
         // radius of the explosion 
-    [SerializeField]private float m_blastRadius = 5f;
+    [SerializeField] private float m_blastRadius = 5f;
 
     [SerializeField] private float TimeBeforeExplosion = 3f;
 
@@ -30,6 +30,8 @@ public class RedBlock : Blocks , IExplosion
     [SerializeField] s_VarFloat m_globalPollution;
 
     AudioSource m_explosionSound;
+
+    [SerializeField] private MeshRenderer m_meshRenderer;
 
     void Start()
     {
@@ -40,11 +42,16 @@ public class RedBlock : Blocks , IExplosion
     {
         // call void explosion with a delay of 3s
         Invoke("Explosion", TimeBeforeExplosion);
+        Invoke("PlaySound", TimeBeforeExplosion-0.1f);
     }
 
+    void PlaySound()
+    {
+        //Plays the explosion sound
+        m_explosionSound.Play(0);
+    }
     public void Explosion()
     {
-        m_explosionSound.Play(0);
         // Increases the pollution level
         m_globalPollution.Value += m_pollutionLvl;
         //call fx explosion on the position of the cube 
@@ -65,10 +72,17 @@ public class RedBlock : Blocks , IExplosion
                 e.onTouch();
             }
         }
-
-        Destroy(gameObject);
+        //Disable the mesh
+        m_meshRenderer.enabled = false;
+        //Destroy the object once the sound is played
+        Invoke("DestroyObject", 1.5f);
         m_exploded = true;
 
+    }
+
+    void DestroyObject()
+    {
+        Destroy(gameObject);
     }
 
     public void onTouch()

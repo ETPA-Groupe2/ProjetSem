@@ -58,8 +58,13 @@ public class BuildingSystem : MonoBehaviour
     private bool m_glide = false;
     private bool m_gen = false;
 
-    //BuildMode ON/OFF en appuyant sur "e"//
+    AudioSource m_buildSound;
 
+    //BuildMode ON/OFF en appuyant sur "e"//
+    private void Start()
+    {
+        m_buildSound = GetComponent<AudioSource>();
+    }
     private void Update()
     {
 
@@ -171,6 +176,7 @@ public class BuildingSystem : MonoBehaviour
     // Assigne nom, material, et ID //
     private void PlaceBomb(Vector3 p_pos)
     {
+        m_buildSound.Play(0);
         //p_pos.y = m_playerTrans.position.y+1;
         Debug.Log("Come on");
         Destroy(m_currentTemplateBlock.gameObject);
@@ -189,6 +195,7 @@ public class BuildingSystem : MonoBehaviour
     
     private void PlaceGlide(Vector3 p_pos)
     {
+        m_buildSound.Play(0);
         p_pos.y = m_playerTrans.position.y+1;
         Debug.Log("Come out");
         Destroy(m_currentTemplateBlock.gameObject);
@@ -198,6 +205,7 @@ public class BuildingSystem : MonoBehaviour
 
     private void PlaceGen(Vector3 p_pos)
     {
+        m_buildSound.Play(0);
         p_pos.y = m_playerTrans.position.y+1;
         Debug.Log("Come in");
         Destroy(m_currentTemplateBlock.gameObject);
