@@ -9893,12 +9893,22 @@ PrefabInstance:
     - target: {fileID: 1372451345155418258, guid: c3d90e931a44f7b4096dd317176e3928,
         type: 3}
       propertyPath: m_Size.y
-      value: 6.0124416
+      value: 6.012442
       objectReference: {fileID: 0}
     - target: {fileID: 1372451345155418258, guid: c3d90e931a44f7b4096dd317176e3928,
         type: 3}
       propertyPath: m_Center.y
       value: 2.5062208
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372451345155418258, guid: c3d90e931a44f7b4096dd317176e3928,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 10.246671
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372451345155418258, guid: c3d90e931a44f7b4096dd317176e3928,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 4.623336
       objectReference: {fileID: 0}
     - target: {fileID: 2889707105055578326, guid: c3d90e931a44f7b4096dd317176e3928,
         type: 3}
@@ -9918,7 +9928,7 @@ PrefabInstance:
     - target: {fileID: 2889707105055578326, guid: c3d90e931a44f7b4096dd317176e3928,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2889707105055578326, guid: c3d90e931a44f7b4096dd317176e3928,
         type: 3}
@@ -9933,7 +9943,7 @@ PrefabInstance:
     - target: {fileID: 2889707105055578326, guid: c3d90e931a44f7b4096dd317176e3928,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2889707105055578326, guid: c3d90e931a44f7b4096dd317176e3928,
         type: 3}
@@ -9943,7 +9953,7 @@ PrefabInstance:
     - target: {fileID: 2889707105055578326, guid: c3d90e931a44f7b4096dd317176e3928,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 2889707105055578326, guid: c3d90e931a44f7b4096dd317176e3928,
         type: 3}
@@ -9965,6 +9975,12 @@ PrefabInstance:
       propertyPath: m_triggerButton
       value: 
       objectReference: {fileID: 25827052}
+    - target: {fileID: 8937751238097306507, guid: c3d90e931a44f7b4096dd317176e3928,
+        type: 3}
+      propertyPath: m_checkPointFX
+      value: 
+      objectReference: {fileID: 1846551442454063595, guid: 70c248b0da6ce204e94355b5d295501c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3d90e931a44f7b4096dd317176e3928, type: 3}
 --- !u!1001 &1016923472

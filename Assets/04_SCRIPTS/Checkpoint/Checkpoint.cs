@@ -12,6 +12,7 @@ public class Checkpoint : MonoBehaviour
     [Header("Button reference")]
     [Tooltip("Put here the button you want to use to reload the last checkpoint")]
     [SerializeField] private TriggerButton m_triggerButton;
+    [SerializeField] private GameObject m_checkPointFX;
 
     void OnTriggerEnter(Collider other)
     {
@@ -19,6 +20,7 @@ public class Checkpoint : MonoBehaviour
         {
             Debug.Log("CHECKPOINT PASSED");
             CPPersistence.Instance.SetSpawnpoint (gameObject.transform.position);
+            Instantiate(m_checkPointFX,transform.position, transform.rotation);
         }
     }
 }
