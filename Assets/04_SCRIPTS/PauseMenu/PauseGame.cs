@@ -18,11 +18,13 @@ public class PauseGame : MonoBehaviour
     [SerializeField] GameObject m_ResumeGameButton;
     [Tooltip("Name of the HUB scene")]
     [SerializeField] string m_HUBScene;
+    [SerializeField] GameObject m_menuFond;
 
     void Start()
     {
         m_BackToHUBButton.SetActive(false);
         m_ResumeGameButton.SetActive(false);
+        m_menuFond.SetActive(false);
     }
 
     public void BackOnClick()
@@ -35,6 +37,7 @@ public class PauseGame : MonoBehaviour
         Time.timeScale = 1f;
         m_BackToHUBButton.SetActive(false);
         m_ResumeGameButton.SetActive(false);
+        m_menuFond.SetActive(false);
     }
 
     public void TogglePause()
@@ -45,6 +48,7 @@ public class PauseGame : MonoBehaviour
             Debug.Log("GAME NOT PAUSED");
             m_BackToHUBButton.SetActive(false);
             m_ResumeGameButton.SetActive(false);
+            m_menuFond.SetActive(false);
         }
         else
         {
@@ -52,6 +56,7 @@ public class PauseGame : MonoBehaviour
             Debug.Log("GAME PAUSED");
             m_BackToHUBButton.SetActive(true);
             m_ResumeGameButton.SetActive(true);
+            m_menuFond.SetActive(true);
         }
     }
 }
