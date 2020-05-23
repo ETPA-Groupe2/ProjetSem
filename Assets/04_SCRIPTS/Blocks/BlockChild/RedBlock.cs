@@ -75,7 +75,7 @@ public class RedBlock : Blocks , IExplosion
         //Disable the mesh
         m_meshRenderer.enabled = false;
         //Destroy the object once the sound is played
-        Invoke("DestroyObject", 1.5f);
+        Invoke("DestroyObject", 2f);
         m_exploded = true;
 
     }

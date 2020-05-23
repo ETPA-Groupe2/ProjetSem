@@ -108,12 +108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_sphere: {fileID: 4837699427710070862}
   m_timeSpeed: 0
-  m_scaleChange: {x: 0, y: 0, z: 0}
-  m_initialScale: {x: 0, y: 0, z: 0}
-  m_sphereRad: 0
-  m_zoneType: {fileID: 0}
   m_energy: {fileID: 0}
   m_isTrigger: 0
   m_x: 0
   m_y: 0
   m_z: 0
+  m_event: []

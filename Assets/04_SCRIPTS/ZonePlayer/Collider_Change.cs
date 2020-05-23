@@ -25,7 +25,11 @@ public class Collider_Change : MonoBehaviour, IZone
 
     //for energy value
     public Energy m_energy;
-    
+
+    [SerializeField] private AudioSource m_EnableZoneSound;
+    [SerializeField] private AudioSource m_DisableZoneSound;
+    [SerializeField] private AudioSource m_ZoneSound;
+
     IEnumerator Lerp;
     IEnumerator LerpBack;
 
@@ -39,10 +43,11 @@ public class Collider_Change : MonoBehaviour, IZone
 
     private void Start() 
     {
-         //We take the initial scale of the sphere
+        m_ZoneSound = GetComponent<AudioSource>();
+        //We take the initial scale of the sphere
         m_initialScale = m_sphere.transform.localScale;
     }
-    
+
 
     private void OnTriggerEnter(Collider other) 
     {
@@ -67,6 +72,8 @@ public class Collider_Change : MonoBehaviour, IZone
         if(m_isDead != true)
         {
             gameObject.SetActive(true);
+            m_EnableZoneSound = GetComponent<AudioSource>();
+            m_EnableZoneSound.Play(0);
         }
 
         if(Lerp != null)
