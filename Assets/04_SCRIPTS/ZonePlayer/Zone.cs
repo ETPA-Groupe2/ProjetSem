@@ -6,7 +6,7 @@ using GD2Lib;
 /// <summary>
 ///  script for increase/decrease area
 /// </summary>
-public class Collider_Change : MonoBehaviour, IZone
+public class Zone : MonoBehaviour, IZone
 {
 
     [Header("--- PLAYER'S ZONE SETTINGS ---")]
@@ -36,6 +36,7 @@ public class Collider_Change : MonoBehaviour, IZone
 
     [SerializeField] private List<GD2Lib.Event> m_event;
 
+    [SerializeField] private List<s_TransformVar> m_vectorCollider;
 
     private void Start() 
     {
@@ -47,17 +48,36 @@ public class Collider_Change : MonoBehaviour, IZone
     private void OnTriggerEnter(Collider other) 
     {
         Blocks b = other.GetComponent<Blocks>();
-        if(b != null)
+        GlideBlock bg = other.GetComponent<GlideBlock>();
+        if(b != null && bg == null)
         {
             for(int i = 0; i<m_event.Count; i++)
             {
-                if(b.m_event == m_event[i])
+                if (b.m_event == m_event[i])
                 {
                     m_event[i].Raise();
                 }
             }
         }
+        else if(bg != null)
+        {
+            for(int i = 0; i<m_vectorCollider.Count; i++)
+            {
+                if(bg.m_vectorCollider == m_vectorCollider[i])
+                {
+                    for(int j = 0; j<m_event.Count; j++)
+                    {
+                        if (bg.m_event == m_event[j])
+                        {
+                            m_event[j].Raise(transform.position - m_vectorCollider[i].Value.position);
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
+
 
      ///<summaryIt handle the zone activation</summary>
     public void HandleActivation()
@@ -101,7 +121,7 @@ public class Collider_Change : MonoBehaviour, IZone
         while(true)
         {
             m_sphere.transform.localScale = Vector3.Lerp(m_sphere.transform.localScale, m_scaleChange, Time.deltaTime*m_timeSpeed);
-
+           
             if(m_energy.m_energy<0)
             {
                 StartCoroutine(LerpBackRoutine());

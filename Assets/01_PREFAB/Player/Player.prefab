@@ -118,6 +118,10 @@ MonoBehaviour:
   m_generatorResource: {fileID: 11400000, guid: 691f30fef9c3d5e408ea97ec3c378d96,
     type: 2}
   m_canBuild: {fileID: 11400000, guid: fcbb900b42afc2e43bf96f09e9a4cdfd, type: 2}
+  m_movingLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  m_loadCheckpoint: 0
 --- !u!195 &5766993879752682152
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -285,14 +289,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_event.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 1771968ddaa7cd246bf5616c64949a5d,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4837699427710070859, guid: 9488be115942cc346bda215d4374ea0f,
         type: 3}
       propertyPath: m_event.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 72581dd28c98fec46bbf518fe6a60331,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4837699427710070862, guid: 9488be115942cc346bda215d4374ea0f,
         type: 3}
       propertyPath: m_Name
@@ -341,6 +343,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8453784048896522510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18b4755bd3fe4c84ba22a4123dc8f658, type: 3}
+  m_Script: {fileID: 11500000, guid: e28d958a8d0a6254eb04182dda09f687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

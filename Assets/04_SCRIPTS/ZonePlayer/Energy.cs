@@ -36,7 +36,7 @@ public class Energy : MonoBehaviour
     [SerializeField] private float m_waitTime=0.1f;
     [Header("Sphere properties")]
     [Tooltip("Collider of the sphere")]
-    [SerializeField] private Collider_Change m_collider;
+    [SerializeField] private Zone m_collider;
 
 
 

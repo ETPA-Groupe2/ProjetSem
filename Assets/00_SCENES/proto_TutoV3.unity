@@ -20696,7 +20696,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18b4755bd3fe4c84ba22a4123dc8f658, type: 3}
+  m_Script: {fileID: 11500000, guid: e28d958a8d0a6254eb04182dda09f687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &698026194 stripped
@@ -21228,7 +21228,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   intensityFromLight: 1
   intensityModeAdvanced: 0
-  intensityInside: 2.75
+  intensityInside: 2
   intensityOutside: 2
   blendingMode: 0
   spotAngleFromLight: 1
@@ -50555,21 +50555,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: p_CameraPrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 5901986391903340986, guid: 9cb8ab099eac83c40bf10af3f6a705eb,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5901986391903340986, guid: 9cb8ab099eac83c40bf10af3f6a705eb,
-        type: 3}
-      propertyPath: m_OcclusionCulling
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5901986391903340986, guid: 9cb8ab099eac83c40bf10af3f6a705eb,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5901986391903340987, guid: 9cb8ab099eac83c40bf10af3f6a705eb,
         type: 3}
