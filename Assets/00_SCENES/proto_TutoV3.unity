@@ -50663,7 +50663,7 @@ PrefabInstance:
     - target: {fileID: 1779010577549325349, guid: 0b514fcf16b704943922682e09d29612,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.29
+      value: -27.63
       objectReference: {fileID: 0}
     - target: {fileID: 1779010577549325349, guid: 0b514fcf16b704943922682e09d29612,
         type: 3}
@@ -50673,7 +50673,7 @@ PrefabInstance:
     - target: {fileID: 1779010577549325349, guid: 0b514fcf16b704943922682e09d29612,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -101.82
+      value: -64.41
       objectReference: {fileID: 0}
     - target: {fileID: 1779010577549325349, guid: 0b514fcf16b704943922682e09d29612,
         type: 3}
@@ -57361,7 +57361,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   intensityFromLight: 1
   intensityModeAdvanced: 0
-  intensityInside: 2.75
+  intensityInside: 3
   intensityOutside: 3
   blendingMode: 0
   spotAngleFromLight: 1
