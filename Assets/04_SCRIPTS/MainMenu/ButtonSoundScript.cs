@@ -10,4 +10,10 @@ public class ButtonSoundScript : MonoBehaviour
     {
         m_audioObject.GetComponent<AudioSource>().Play();
     }
+
+    private void Start()
+    {
+       // DontDestroyOnLoad(m_audioObject);
+    }
 }
+
