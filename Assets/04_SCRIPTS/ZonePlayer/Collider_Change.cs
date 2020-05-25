@@ -26,9 +26,7 @@ public class Collider_Change : MonoBehaviour, IZone
     //for energy value
     public Energy m_energy;
 
-    [SerializeField] private AudioSource m_EnableZoneSound;
-    [SerializeField] private AudioSource m_DisableZoneSound;
-    [SerializeField] private AudioSource m_ZoneSound;
+    [SerializeField] private ZoneSoundManager m_zsm;
 
     IEnumerator Lerp;
     IEnumerator LerpBack;
@@ -43,7 +41,6 @@ public class Collider_Change : MonoBehaviour, IZone
 
     private void Start() 
     {
-        m_ZoneSound = GetComponent<AudioSource>();
         //We take the initial scale of the sphere
         m_initialScale = m_sphere.transform.localScale;
     }
@@ -67,13 +64,13 @@ public class Collider_Change : MonoBehaviour, IZone
      ///<summaryIt handle the zone activation</summary>
     public void HandleActivation()
     {
+        m_zsm.EnableSound();
         m_isTrigger = true;
 
         if(m_isDead != true)
         {
-            gameObject.SetActive(true);
-            m_EnableZoneSound = GetComponent<AudioSource>();
-            m_EnableZoneSound.Play(0);
+            gameObject.SetActive(true);    
+
         }
 
         if(Lerp != null)
@@ -89,9 +86,11 @@ public class Collider_Change : MonoBehaviour, IZone
     ///<summary>It handle the zone deactivation</summary>
     public void HandleDeactivation()
     {
+        m_zsm.StopZoneSound();
+        m_zsm.DisableSound();
         m_isTrigger = false;
 
-        if(LerpBack != null)
+        if (LerpBack != null)
             StopCoroutine(LerpBack);
         if(Lerp != null)
             StopCoroutine(Lerp);
@@ -104,12 +103,12 @@ public class Collider_Change : MonoBehaviour, IZone
     IEnumerator LerpRoutine()
     {
         m_scaleChange = new Vector3(m_x, m_y, m_z);
-
-        while(true)
+        m_zsm.ZoneSound();
+        while (true)
         {
             m_sphere.transform.localScale = Vector3.Lerp(m_sphere.transform.localScale, m_scaleChange, Time.deltaTime*m_timeSpeed);
 
-            if(m_energy.m_energy<0)
+            if (m_energy.m_energy<0)
             {
                 StartCoroutine(LerpBackRoutine());
                 yield return false;
@@ -124,7 +123,7 @@ public class Collider_Change : MonoBehaviour, IZone
     IEnumerator LerpBackRoutine()
     {
        while(true)
-        {
+        {        
             m_sphere.transform.localScale = Vector3.Lerp(m_sphere.transform.localScale, m_initialScale, Time.deltaTime*m_timeSpeed);
 
             if(m_energy.m_energy<=0)
