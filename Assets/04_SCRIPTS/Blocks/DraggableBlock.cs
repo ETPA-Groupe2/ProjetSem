@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems; 
 
 public class DraggableBlock : MonoBehaviour
 {
@@ -9,11 +10,11 @@ public class DraggableBlock : MonoBehaviour
 
     [SerializeField] private float m_zPosition;
     [SerializeField] private float m_yPosition;
-    [SerializeField] private Vector3 m_offset;
     [SerializeField] private Camera m_mainCamera;
     [SerializeField] private bool m_dragging; 
     [SerializeField] private UnityEvent OnBeginDrag;
     [SerializeField] private UnityEvent OnEndDrag;
+    [SerializeField] private s_VarBool m_dragOver;
 
     #endregion
 
@@ -39,6 +40,17 @@ public class DraggableBlock : MonoBehaviour
             curPos.y = m_yPosition;
 
             transform.position = curPos;
+
+            #if UNITY_ANDROID
+
+            Vector3 pos = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, m_zPosition);
+
+            Vector3 curPos = Camera.main.ScreenToWorldPoint(pos);
+            curPos.y = m_yPosition;
+
+            transform.position = curPos;
+
+            #endif
         }
     }
 
@@ -54,19 +66,40 @@ public class DraggableBlock : MonoBehaviour
     {
         EndDrag();
     }
-
     public void BeginDrag()
     {
         OnBeginDrag.Invoke();
         
         m_dragging = true;
-        m_offset = transform.position - m_mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, m_zPosition));
     }
+
+    #if UNITY_ANDROID
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.Log("Down");
+
+        if(!m_dragging)
+        {
+            m_dragOver.m_value = false;
+            BeginDrag();
+        }
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        Debug.Log("Up");
+
+        OnEndDrag.Invoke();
+        m_dragOver.m_value = true;
+        m_dragging = false;
+    }
+
+    #endif
 
     public void EndDrag()
     {
         OnEndDrag.Invoke();
-
         m_dragging = false;
     }
 }

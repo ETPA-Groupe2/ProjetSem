@@ -7,6 +7,7 @@ public class destructible_Block : Blocks
 {
     [SerializeField] private Animator m_anim;
     [SerializeField] private GameObject m_Ressources;
+    [SerializeField] private GameObject m_dustFx;
 
     AudioSource m_destroySound;
 
@@ -19,6 +20,7 @@ public class destructible_Block : Blocks
         m_destroySound.Play(0);
         m_anim.Play("cube_destroy");
         Instantiate(m_Ressources, transform.position, transform.rotation);
+        Instantiate(m_dustFx, transform.position, transform.rotation);
         if(TryGetComponent<Collider>(out Collider myCollider))
         {
             myCollider.enabled = false;

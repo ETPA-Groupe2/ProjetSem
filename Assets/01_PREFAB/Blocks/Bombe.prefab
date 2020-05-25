@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 647748682470797500}
   - component: {fileID: 7245811283532733089}
   - component: {fileID: 2450589677491029240}
-  - component: {fileID: 4376090704186035528}
   - component: {fileID: 9209544377939861512}
   - component: {fileID: 6329014556376459645}
   - component: {fileID: 2838799357148522214}
@@ -140,19 +139,6 @@ MonoBehaviour:
   m_beepSound: {fileID: 6329014556376459645}
   m_meshRenderer: {fileID: 623961585936235042}
   m_anim: {fileID: 2838799357148522214}
---- !u!114 &4376090704186035528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7873435704613143701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3cf5a04b5f0a2a4ebb9068553824c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_item: {fileID: 11400000, guid: d82a27425df0503458519d7a181551b6, type: 2}
 --- !u!82 &9209544377939861512
 AudioSource:
   m_ObjectHideFlags: 0

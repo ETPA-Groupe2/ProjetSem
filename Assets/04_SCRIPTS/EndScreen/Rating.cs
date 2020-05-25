@@ -42,6 +42,6 @@ public class Rating : MonoBehaviour
     //Temporary
     void LoadEndScene()
     {
-        SceneManager.LoadScene("End");
+        SceneManager.LoadScene("Salle2_V1");
     }
 }

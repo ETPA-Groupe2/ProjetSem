@@ -58,6 +58,8 @@ public class BuildingSystem : MonoBehaviour
     private bool m_glide = false;
     private bool m_gen = false;
 
+    [SerializeField] private s_VarBool m_dragOver;
+
     AudioSource m_buildSound;
 
     //BuildMode ON/OFF en appuyant sur "e"//
@@ -112,7 +114,51 @@ public class BuildingSystem : MonoBehaviour
         {
             m_canBuild.Value = false;
         }
-           
+
+        #if UNITY_ANDROID
+
+        if (m_buildModeOn && m_dragOver.m_value)
+        {
+            m_canBuild.Value = true;
+            m_canBuildBomb.Value = false;
+            m_canBuildGlide.Value = false;
+            m_canBuildGen.Value = false;
+            m_blockTempPos = m_currentTemplateBlock.transform;
+
+            if(Input.GetMouseButton(0))
+            {
+                RaycastHit buildPosHit;
+
+                if (Physics.Raycast(m_playerCamera.ScreenPointToRay(Input.mousePosition), out buildPosHit, 1000, buildableSurfacesLayer))
+                {
+                    if (m_canBuild.Value && m_bomb)
+                    { 
+                        PlaceBomb(m_currentTemplateBlock.transform.position);
+                        m_bomb = false;
+                        m_buildModeOn = false;
+                    }
+                    else if(m_canBuild.Value && m_glide)
+                    {
+                        PlaceGlide(m_currentTemplateBlock.transform.position);
+                        m_glide = false;
+                        m_buildModeOn = false;
+                    }
+                    else if(m_canBuild.Value && m_gen)
+                    {
+                        PlaceGen(m_currentTemplateBlock.transform.position);
+                        m_gen = false;
+                        m_buildModeOn = false;
+                    }
+                } 
+            }
+        
+        }
+        else
+        {
+            m_canBuild.Value = false;
+        }
+
+        #endif   
 
         if (!m_buildModeOn && m_currentTemplateBlock != null)
         {
