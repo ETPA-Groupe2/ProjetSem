@@ -33,6 +33,8 @@ public class RedBlock : Blocks , IExplosion
 
     [SerializeField] private MeshRenderer m_meshRenderer;
 
+    [SerializeField] private Animator m_anim;
+
     void Start()
     {
         m_explosionSound = GetComponent<AudioSource>();
@@ -41,8 +43,10 @@ public class RedBlock : Blocks , IExplosion
     public override void handleReaction(GD2Lib.Event p_event, object[] p_params)
     {
         // call void explosion with a delay of 3s
+        m_anim.Play("BombColorChange");
         Invoke("Explosion", TimeBeforeExplosion);
         Invoke("PlaySound", TimeBeforeExplosion-0.1f);
+
     }
 
     void PlaySound()

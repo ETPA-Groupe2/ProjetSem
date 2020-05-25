@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2450589677491029240}
   - component: {fileID: 4376090704186035528}
   - component: {fileID: 9209544377939861512}
+  - component: {fileID: 2838799357148522214}
   m_Layer: 12
   m_Name: Bombe
   m_TagString: RedBlock
@@ -135,6 +136,7 @@ MonoBehaviour:
   TimeBeforeExplosion: 3
   m_globalPollution: {fileID: 11400000, guid: 3d4bd683230f0634e8334ec522ed6a1f, type: 2}
   m_meshRenderer: {fileID: 623961585936235042}
+  m_anim: {fileID: 2838799357148522214}
 --- !u!114 &4376090704186035528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,3 +246,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &2838799357148522214
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873435704613143701}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89b541530466dd24894ac2116b038aac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
