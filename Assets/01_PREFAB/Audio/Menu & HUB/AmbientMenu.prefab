@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 245235915879384546}
   - component: {fileID: 715898482649295429}
-  - component: {fileID: 139720366612579524}
+  - component: {fileID: 1445580928193845728}
   m_Layer: 0
   m_Name: AmbientMenu
   m_TagString: Untagged
@@ -42,7 +42,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c0bbcabd7dee4514dbbfe9ea62f0085b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -128,7 +128,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &139720366612579524
+--- !u!114 &1445580928193845728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,6 +137,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4169015279258970932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ac470c40f356b147affcef3bcf369b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 69fb8227dea6df546a6f1a01987775aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_boolean: {fileID: 0}

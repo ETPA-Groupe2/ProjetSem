@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public bool m_isMoving = false;
+    bool m_canIdle = true;
     private PlayerAnimationManager m_animManager;
 
 
@@ -104,7 +105,7 @@ public class PlayerController : MonoBehaviour
         {   
             if(m_isMoving == false)
             {
-                m_animManager.RunAnim();
+               m_animManager.RunAnim();
             }
             m_isMoving = true;       
         }

@@ -885,6 +885,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_loadCheckpoint: 0
+  m_isMoving: 0
 --- !u!195 &7089294445389043138
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1163,11 +1164,6 @@ PrefabInstance:
     - target: {fileID: 7811379809192950875, guid: f9da2b51a24cfe84084183cadab61ca4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7811379809192950875, guid: f9da2b51a24cfe84084183cadab61ca4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811379809192950875, guid: f9da2b51a24cfe84084183cadab61ca4,

@@ -97,10 +97,6 @@ public class Zone : MonoBehaviour, IZone
             {
                 m_animManager.ZoneAnim();
             }
-            else if(m_playerController.m_isMoving == true)
-            {
-                m_animManager.RunZoneAnim();
-            }
         }
 
         if(Lerp != null)
@@ -122,10 +118,7 @@ public class Zone : MonoBehaviour, IZone
         {
             m_animManager.DisableZoneAnim();
         }
-        else if(m_playerController.m_isMoving == true)
-        {
-            m_animManager.StopAnim();
-        }
+        
         m_isTrigger = false;
 
         if(LerpBack != null)

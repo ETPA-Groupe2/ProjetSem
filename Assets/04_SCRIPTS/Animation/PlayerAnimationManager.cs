@@ -26,11 +26,6 @@ public class PlayerAnimationManager : MonoBehaviour
     {
         m_anim.Play("Stop_Run");
     }
-    
-    public void RunZoneAnim()
-    {
-        m_anim.Play("Run_Zone");
-    }
 
     public void IdleAnim()
     {
