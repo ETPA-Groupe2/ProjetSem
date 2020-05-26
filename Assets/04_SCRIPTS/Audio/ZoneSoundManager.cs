@@ -22,4 +22,9 @@ public class ZoneSoundManager : MonoBehaviour
     {
         m_ZoneSound.Play(0);
     }
+
+    public void StopZoneSound()
+    {
+        m_ZoneSound.Stop();
+    }
 }

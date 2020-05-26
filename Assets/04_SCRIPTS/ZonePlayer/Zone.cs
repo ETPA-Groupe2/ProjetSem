@@ -107,7 +107,8 @@ public class Zone : MonoBehaviour, IZone
     ///<summary>It handle the zone deactivation</summary>
     public void HandleDeactivation()
     {
-        m_zone.DisableSound();
+        m_zone.StopZoneSound();
+        m_zone.DisableSound();       
         m_isTrigger = false;
 
         if(LerpBack != null)

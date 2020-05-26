@@ -38,8 +38,6 @@ public class Energy : MonoBehaviour
     [Tooltip("Collider of the sphere")]
     [SerializeField] private Zone m_collider;
 
-
-
     void Update()
     {
         //Displays the energy
