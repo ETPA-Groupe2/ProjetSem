@@ -9,10 +9,10 @@ public class CheckCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Zone"))
+        if(other.gameObject.CompareTag("Player"))
         {
             m_isTriggered = true;
-            Debug.Log("TRIGGERED");
+            Debug.Log("OUIJESUISLA");
         }
     }
 }
