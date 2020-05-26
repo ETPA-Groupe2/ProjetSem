@@ -79945,6 +79945,11 @@ PrefabInstance:
       propertyPath: m_cam
       value: 
       objectReference: {fileID: 1751495912}
+    - target: {fileID: 4947635263437209771, guid: 5990d7e2e6c5b0342832f91427ef01cf,
+        type: 3}
+      propertyPath: m_loadCheckpoint
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6168212031292015667, guid: 5990d7e2e6c5b0342832f91427ef01cf,
         type: 3}
       propertyPath: m_displayEnergy
@@ -80028,6 +80033,31 @@ PrefabInstance:
     - target: {fileID: 7089294445389043138, guid: 5990d7e2e6c5b0342832f91427ef01cf,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089294445389043138, guid: 5990d7e2e6c5b0342832f91427ef01cf,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089294445389043138, guid: 5990d7e2e6c5b0342832f91427ef01cf,
+        type: 3}
+      propertyPath: m_Speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089294445389043138, guid: 5990d7e2e6c5b0342832f91427ef01cf,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089294445389043138, guid: 5990d7e2e6c5b0342832f91427ef01cf,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089294445389043138, guid: 5990d7e2e6c5b0342832f91427ef01cf,
+        type: 3}
+      propertyPath: m_AutoBraking
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8020422605513039997, guid: 5990d7e2e6c5b0342832f91427ef01cf,
@@ -105888,7 +105918,7 @@ PrefabInstance:
     - target: {fileID: 1779010577549325349, guid: 0b514fcf16b704943922682e09d29612,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.8
+      value: -10.3
       objectReference: {fileID: 0}
     - target: {fileID: 1779010577549325349, guid: 0b514fcf16b704943922682e09d29612,
         type: 3}
@@ -105898,7 +105928,7 @@ PrefabInstance:
     - target: {fileID: 1779010577549325349, guid: 0b514fcf16b704943922682e09d29612,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1779010577549325349, guid: 0b514fcf16b704943922682e09d29612,
         type: 3}

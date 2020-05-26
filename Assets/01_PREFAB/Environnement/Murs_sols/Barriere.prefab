@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5980071341313151278}
   - component: {fileID: 126648725165387223}
   - component: {fileID: -2510278393864142849}
+  - component: {fileID: 5385561679560279941}
   m_Layer: 0
   m_Name: Barriere
   m_TagString: Untagged
@@ -93,3 +94,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 19.724434, y: 0.6869179, z: 5.2015867}
   m_Center: {x: 9.750355, y: -0.16856506, z: 2.2931669}
+--- !u!208 &5385561679560279941
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872692965519857931}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 9.862, y: 0.34300002, z: 2.601}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 9.75, y: -0.16900001, z: 2.2930002}
+  m_TimeToStationary: 0.5
