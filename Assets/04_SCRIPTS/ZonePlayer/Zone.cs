@@ -23,12 +23,16 @@ public class Zone : MonoBehaviour, IZone
     ///<summary>Initial scale of the sphere</summary>
     private Vector3 m_initialScale;
 
+    [Header("Script references")]
     //for energy value
     public Energy m_energy;
-    
+
+    [SerializeField] private ZoneSoundManager m_zone;
+
     IEnumerator Lerp;
     IEnumerator LerpBack;
 
+    [HideInInspector]
     [Tooltip("Check if we're triggering the zone")]public bool m_isTrigger = false;
     private bool m_isDead = false;
 
@@ -87,6 +91,7 @@ public class Zone : MonoBehaviour, IZone
         if(m_isDead != true)
         {
             gameObject.SetActive(true);
+            m_zone.EnableSound();
         }
 
         if(Lerp != null)
@@ -102,6 +107,7 @@ public class Zone : MonoBehaviour, IZone
     ///<summary>It handle the zone deactivation</summary>
     public void HandleDeactivation()
     {
+        m_zone.DisableSound();
         m_isTrigger = false;
 
         if(LerpBack != null)
@@ -116,6 +122,7 @@ public class Zone : MonoBehaviour, IZone
     
     IEnumerator LerpRoutine()
     {
+        m_zone.ZoneSound();
         m_scaleChange = new Vector3(m_x, m_y, m_z);
 
         while(true)
@@ -136,11 +143,10 @@ public class Zone : MonoBehaviour, IZone
 
     IEnumerator LerpBackRoutine()
     {
-       while(true)
-        {
-            m_sphere.transform.localScale = Vector3.Lerp(m_sphere.transform.localScale, m_initialScale, Time.deltaTime*m_timeSpeed);
-
-            if(m_energy.m_energy<=0)
+        while (true)
+        {      
+            m_sphere.transform.localScale = Vector3.Lerp(m_sphere.transform.localScale, m_initialScale, Time.deltaTime*m_timeSpeed);    
+            if (m_energy.m_energy<=0)
             {
                 m_isDead = true;
                 gameObject.SetActive(false);

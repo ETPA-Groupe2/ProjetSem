@@ -12224,6 +12224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_anim: {fileID: 224184577}
   m_eventAnim: {fileID: 11400000, guid: 84494e309f7ec7b4aaee58ab9c522a14, type: 2}
+  m_noButtonEnabled: 0
 --- !u!95 &224184577
 Animator:
   serializedVersion: 3
@@ -16592,13 +16593,13 @@ Transform:
   - {fileID: 62742537}
   - {fileID: 1510246600}
   - {fileID: 1941236370}
+  - {fileID: 1908584218}
+  - {fileID: 1076696126}
   - {fileID: 1362503119}
   - {fileID: 617293746}
   - {fileID: 1362906992}
-  - {fileID: 1908584218}
   - {fileID: 467501160}
   - {fileID: 677792821}
-  - {fileID: 1076696126}
   - {fileID: 804934341}
   - {fileID: 2063514916}
   - {fileID: 1472892390}
@@ -17840,6 +17841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_anim: {fileID: 346401575}
   m_eventAnim: {fileID: 11400000, guid: 42938892062e7594bbf991bb9267a7bd, type: 2}
+  m_noButtonEnabled: 0
 --- !u!95 &346401575
 Animator:
   serializedVersion: 3
@@ -55665,7 +55667,7 @@ Transform:
   m_LocalScale: {x: 8.988412, y: 1, z: 5.817776}
   m_Children: []
   m_Father: {fileID: 318892228}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &1076696127
 BoxCollider:
@@ -95332,7 +95334,7 @@ Transform:
   m_LocalScale: {x: 8.988412, y: 1, z: 5.5748205}
   m_Children: []
   m_Father: {fileID: 318892228}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &1908584219
 BoxCollider:
@@ -104652,6 +104654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_anim: {fileID: 2089228960}
   m_eventAnim: {fileID: 11400000, guid: 2e454f0d7ca07ec459556aa359c9793c, type: 2}
+  m_noButtonEnabled: 0
 --- !u!4 &2089228963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2b5fb7c364b74649aa7fed04c03b683,
