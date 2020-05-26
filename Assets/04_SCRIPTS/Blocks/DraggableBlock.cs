@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.EventSystems; 
 
 public class DraggableBlock : MonoBehaviour
 {
@@ -15,6 +14,11 @@ public class DraggableBlock : MonoBehaviour
     [SerializeField] private UnityEvent OnBeginDrag;
     [SerializeField] private UnityEvent OnEndDrag;
     [SerializeField] private s_VarBool m_dragOver;
+
+    [SerializeField] private Plane objPlane;
+    [SerializeField] private Vector3 m0;
+    [SerializeField] private GameObject gObj;
+
 
     #endregion
 
@@ -29,9 +33,23 @@ public class DraggableBlock : MonoBehaviour
         m_yPosition = posInit.y;
     }
 
+    #if UNITY_ANDROID
+    private Ray GenerateRay(Vector3 touchPos)
+    {
+        Vector3 mousePosFar = new Vector3(touchPos.x, touchPos.y, Camera.main.farClipPlane);
+        Vector3 mousePosNear = new Vector3(touchPos.x, touchPos.y, Camera.main.nearClipPlane);
+
+        Vector3 mousePosF = Camera.main.ScreenToWorldPoint(mousePosFar);
+        Vector3 mousePosN = Camera.main.ScreenToWorldPoint(mousePosNear);
+
+        Ray mr = new Ray(mousePosN, mousePosF-mousePosN);
+        return mr;
+    }
+    #endif
     // Update is called once per frame
     void Update()
     {
+        #if UNITY_EDITOR
         if(m_dragging)
         {
             Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, m_zPosition);
@@ -40,20 +58,52 @@ public class DraggableBlock : MonoBehaviour
             curPos.y = m_yPosition;
 
             transform.position = curPos;
-
-            #if UNITY_ANDROID
-
-            Vector3 pos = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, m_zPosition);
-
-            Vector3 curPos = Camera.main.ScreenToWorldPoint(pos);
-            curPos.y = m_yPosition;
-
-            transform.position = curPos;
-
-            #endif
         }
+        #endif
+
+        #if UNITY_ANDROID
+        
+        Debug.Log(gObj);
+        if(Input.touchCount > 0)
+        {
+            if(Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                Ray mouseRay = GenerateRay(Input.GetTouch(0).position);
+                RaycastHit hit;
+
+                if(Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit))
+                {
+                    if(hit.transform.gameObject == gObj)
+                    {
+                        //gObj = hit.transform.gameObject;
+                        objPlane = new Plane(Camera.main.transform.forward*-1, gObj.transform.position);
+
+                        Ray mRay = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+                        float rayDistance;
+                        objPlane.Raycast(mRay, out rayDistance);
+                        m0 = gObj.transform.position - mRay.GetPoint(rayDistance);
+                    }
+                    
+                }
+            }
+
+            else if(Input.GetTouch(0).phase == TouchPhase.Moved && gObj)
+            {
+                Ray mRay = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+                float rayDistance;
+                if(objPlane.Raycast(mRay, out rayDistance))
+                    gObj.transform.position = mRay.GetPoint(rayDistance) + m0;
+            }
+            else if(Input.GetTouch(0).phase == TouchPhase.Ended && gObj)
+            {
+                m_dragOver.m_value = true;
+                //gObj = null;
+            }
+        }
+        #endif
     }
 
+    #if UNITY_EDITOR
     private void OnMouseEnter() 
     {
         if(!m_dragging)
@@ -66,37 +116,15 @@ public class DraggableBlock : MonoBehaviour
     {
         EndDrag();
     }
+    #endif
+
     public void BeginDrag()
     {
         OnBeginDrag.Invoke();
         
         m_dragging = true;
     }
-
-    #if UNITY_ANDROID
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Debug.Log("Down");
-
-        if(!m_dragging)
-        {
-            m_dragOver.m_value = false;
-            BeginDrag();
-        }
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        Debug.Log("Up");
-
-        OnEndDrag.Invoke();
-        m_dragOver.m_value = true;
-        m_dragging = false;
-    }
-
-    #endif
-
+    
     public void EndDrag()
     {
         OnEndDrag.Invoke();

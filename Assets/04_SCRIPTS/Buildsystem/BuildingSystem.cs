@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class BuildingSystem : MonoBehaviour
 {
@@ -69,10 +68,11 @@ public class BuildingSystem : MonoBehaviour
     }
     private void Update()
     {
-
+        Debug.Log(m_buildModeOn);
     // Attention le raycast ici gère les distance d'affichage en gros //
     // Pour que le joueur puisse construire de plus loin, changer le buildPosHit //
     // L'idée avec les screenpointtoray c'est que le raycast se lance depuis le milieu de l ecran    tout le temps, mais ça suggère que la camera suive le joueur quoi //
+        /*#if UNITY_EDITOR
 
         if (m_buildModeOn)
         {
@@ -115,9 +115,11 @@ public class BuildingSystem : MonoBehaviour
             m_canBuild.Value = false;
         }
 
+        #endif  */
+
         #if UNITY_ANDROID
 
-        if (m_buildModeOn && m_dragOver.m_value)
+        if (m_buildModeOn)
         {
             m_canBuild.Value = true;
             m_canBuildBomb.Value = false;
@@ -125,47 +127,58 @@ public class BuildingSystem : MonoBehaviour
             m_canBuildGen.Value = false;
             m_blockTempPos = m_currentTemplateBlock.transform;
 
-            if(Input.GetMouseButton(0))
+            if(m_dragOver.m_value)
             {
-                RaycastHit buildPosHit;
-
-                if (Physics.Raycast(m_playerCamera.ScreenPointToRay(Input.mousePosition), out buildPosHit, 1000, buildableSurfacesLayer))
+                if(Input.touchCount > 0)
                 {
-                    if (m_canBuild.Value && m_bomb)
-                    { 
-                        PlaceBomb(m_currentTemplateBlock.transform.position);
-                        m_bomb = false;
-                        m_buildModeOn = false;
-                    }
-                    else if(m_canBuild.Value && m_glide)
+                    if(Input.GetTouch(0).phase == TouchPhase.Ended)
                     {
-                        PlaceGlide(m_currentTemplateBlock.transform.position);
-                        m_glide = false;
-                        m_buildModeOn = false;
-                    }
-                    else if(m_canBuild.Value && m_gen)
-                    {
-                        PlaceGen(m_currentTemplateBlock.transform.position);
-                        m_gen = false;
-                        m_buildModeOn = false;
-                    }
-                } 
-            }
-        
-        }
-        else
-        {
-            m_canBuild.Value = false;
-        }
+                        Debug.Log("Meh");
+                        RaycastHit buildPosHit;
 
-        #endif   
+                        if (Physics.Raycast(m_playerCamera.ScreenPointToRay(Input.GetTouch(0).position), out buildPosHit, 1000, buildableSurfacesLayer))
+                        {
+                            if (m_canBuild.Value && m_bomb)
+                            { 
+                                PlaceBomb(m_currentTemplateBlock.transform.position);
+                                m_bomb = false;
+                                m_dragOver.m_value = false;
+                                m_buildModeOn = false;
+                            }
+                            else if(m_canBuild.Value && m_glide)
+                            {
+                                PlaceGlide(m_currentTemplateBlock.transform.position);
+                                m_glide = false;
+                                m_dragOver.m_value = false;
+                                m_buildModeOn = false;
+                            }
+                            else if(m_canBuild.Value && m_gen)
+                            {
+                                PlaceGen(m_currentTemplateBlock.transform.position);
+                                m_gen = false;
+                                m_dragOver.m_value = false;
+                                m_buildModeOn = false;
+                            }
+                        } 
+                    }
+               
+                }
+        
+            }
+            else
+            {
+                m_canBuild.Value = false;
+            }
+        }
+            
+
 
         if (!m_buildModeOn && m_currentTemplateBlock != null)
         {
             Destroy(m_currentTemplateBlock.gameObject);
             m_canBuild.Value = false;
         }
-           
+        #endif           
     }
 
     #region HANDLING SYSTEM FOR BLOCKS
