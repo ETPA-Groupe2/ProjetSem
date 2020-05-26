@@ -16,6 +16,8 @@ public class SecondDialog : MonoBehaviour
     public GameObject m_ImageFond;
     public GameObject m_Player;
     public GameObject m_DialogueManager;
+    public GameObject m_CraftBombButton;
+    public GameObject m_fondCraft;
 
 
     void Start()
@@ -63,7 +65,10 @@ public class SecondDialog : MonoBehaviour
             m_zoneButton.SetActive(true);
             m_ImageFond.SetActive(false);
             m_Player.SetActive(true);
+            m_CraftBombButton.SetActive(true);
+            m_fondCraft.SetActive(true);
             m_DialogueManager.SetActive(false);
+      
 
         }
     }
