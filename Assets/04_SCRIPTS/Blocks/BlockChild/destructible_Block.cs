@@ -21,10 +21,16 @@ public class destructible_Block : Blocks
         m_anim.Play("cube_destroy");
         Instantiate(m_Ressources, transform.position, transform.rotation);
         Instantiate(m_dustFx, transform.position, transform.rotation);
+        Invoke("destroy", 3f);
         if(TryGetComponent<Collider>(out Collider myCollider))
         {
             myCollider.enabled = false;
         }
+    }
+
+    void destroy()
+    {
+        Destroy(gameObject);
     }
 
 }

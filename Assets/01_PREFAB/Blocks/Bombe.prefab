@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 9209544377939861512}
   - component: {fileID: 6329014556376459645}
   - component: {fileID: 2838799357148522214}
+  - component: {fileID: 975293529174649889}
   m_Layer: 12
   m_Name: Bombe
   m_TagString: RedBlock
@@ -96,8 +97,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5018845, y: 3.3565462, z: 3.2903137}
-  m_Center: {x: 0.017425537, y: -0.014933705, z: 1.5109551}
+  m_Size: {x: 2.8428307, y: 2.5576992, z: 3.1694002}
+  m_Center: {x: 0.0034370422, y: 0.012579918, z: 1.4504983}
 --- !u!54 &7245811283532733089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -350,3 +351,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!208 &975293529174649889
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873435704613143701}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.562, y: 1.562, z: 1.5020001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 1.5020001}
+  m_TimeToStationary: 0.5

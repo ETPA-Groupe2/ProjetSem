@@ -6,6 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GD2Lib;
 
 public abstract class Blocks : MonoBehaviour
 {

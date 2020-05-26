@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5538517670835447633}
   - component: {fileID: 8560321725729046181}
   - component: {fileID: 6758465427039277348}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 7439156663480743393}
   - component: {fileID: 8237645781341161564}
   - component: {fileID: 6758465426283288819}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 823076300143529238}
   - component: {fileID: 9010839102363717346}
   - component: {fileID: 6758465426151538178}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 3269679032770619498}
   - component: {fileID: 6515879165416143425}
   - component: {fileID: 6758465426211548807}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 5517937907298691201}
   - component: {fileID: 7580333042309672179}
   - component: {fileID: 6758465426682506333}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,9 +478,10 @@ GameObject:
   - component: {fileID: 6758465425774892576}
   - component: {fileID: 6758465425774892575}
   - component: {fileID: 7754556795056820673}
-  m_Layer: 0
+  - component: {fileID: 418527090873037988}
+  m_Layer: 12
   m_Name: cube_basic_anim
-  m_TagString: Untagged
+  m_TagString: DestructibleBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -520,8 +521,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.6615868, y: 3.1427555, z: 2.4582539}
+  m_Center: {x: -0.16355419, y: 1.0713778, z: -0.16398335}
 --- !u!95 &6758465425774892576
 Animator:
   serializedVersion: 3
@@ -657,6 +658,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &418527090873037988
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380806292819641910}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4463787821474856087
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +686,7 @@ GameObject:
   - component: {fileID: 1607240277891044125}
   - component: {fileID: 4457470623808482971}
   - component: {fileID: 6758465425850574658}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +779,7 @@ GameObject:
   - component: {fileID: 1511923690980041349}
   - component: {fileID: 3280789976315976337}
   - component: {fileID: 6758465425575637267}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +872,7 @@ GameObject:
   - component: {fileID: 4923562894695290652}
   - component: {fileID: 7219184758932033897}
   - component: {fileID: 6758465425549100941}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +965,7 @@ GameObject:
   - component: {fileID: 8251579735774867319}
   - component: {fileID: 2669219775920480150}
   - component: {fileID: 6758465426282882738}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1041,7 +1058,7 @@ GameObject:
   - component: {fileID: 530785536414490016}
   - component: {fileID: 3517603495449183106}
   - component: {fileID: 6758465425674038689}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bloc Basique_Part_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
