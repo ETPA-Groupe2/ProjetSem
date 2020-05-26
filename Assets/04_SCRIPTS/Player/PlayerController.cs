@@ -37,11 +37,18 @@ public class PlayerController : MonoBehaviour
 
     public bool m_loadCheckpoint = false;
 
+    Vector3 m_oldPos;
+
+    [HideInInspector]
+    public bool m_isMoving = false;
+    private PlayerAnimationManager m_animManager;
+
 
     private void Start()
     {
         m_agent = GetComponent<NavMeshAgent>();
         m_hasTaken.Value = false;
+        m_animManager = GetComponent<PlayerAnimationManager>();
     }
 
     public void FollowNavMesh()
@@ -49,7 +56,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
-            
             if (Physics.Raycast(m_cam.ScreenPointToRay(Input.mousePosition), out hit, 1000f))
             {
                 m_agent.destination = hit.point;
@@ -93,6 +99,21 @@ public class PlayerController : MonoBehaviour
         {
             FollowNavMesh();
         }
-        
+
+        if(m_oldPos != transform.position)
+        {   
+            if(m_isMoving == false)
+            {
+                m_animManager.RunAnim();
+            }
+            m_isMoving = true;       
+        }
+        else
+        {
+            m_animManager.StopRunAnim();
+            m_isMoving = false;
+        }
+        m_oldPos = transform.position;
+        Debug.Log(m_isMoving);
     }
 }

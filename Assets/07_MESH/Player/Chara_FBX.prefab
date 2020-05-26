@@ -802,6 +802,7 @@ GameObject:
   - component: {fileID: 7089294445389043138}
   - component: {fileID: 5933729650304305906}
   - component: {fileID: 2713604190536687381}
+  - component: {fileID: 1570099923192074157}
   m_Layer: 0
   m_Name: Chara_FBX
   m_TagString: Untagged
@@ -935,6 +936,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9425861, y: 1.2982653, z: 0.44861135}
   m_Center: {x: 0.0019473606, y: 0.64561146, z: -0.09506448}
+--- !u!114 &1570099923192074157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8020422605513039997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eacc656df2e69e4eb4d8d58bfadcb65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_anim: {fileID: 2049048546062618212}
 --- !u!1 &8315162219820216497
 GameObject:
   m_ObjectHideFlags: 0

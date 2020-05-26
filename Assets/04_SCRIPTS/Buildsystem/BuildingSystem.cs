@@ -68,7 +68,6 @@ public class BuildingSystem : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(m_buildModeOn);
     // Attention le raycast ici gère les distance d'affichage en gros //
     // Pour que le joueur puisse construire de plus loin, changer le buildPosHit //
     // L'idée avec les screenpointtoray c'est que le raycast se lance depuis le milieu de l ecran    tout le temps, mais ça suggère que la camera suive le joueur quoi //

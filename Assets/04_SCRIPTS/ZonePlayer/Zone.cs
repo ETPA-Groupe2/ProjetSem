@@ -15,7 +15,7 @@ public class Zone : MonoBehaviour, IZone
     public GameObject m_sphere;
 
     [Tooltip("Time at which the zone increase / Decrease")]
-    [SerializeField]private float m_timeSpeed;
+    [SerializeField] private float m_timeSpeed;
 
     ///<summary>New scale of the sphere</summary>
     private Vector3 m_scaleChange;
@@ -28,7 +28,8 @@ public class Zone : MonoBehaviour, IZone
     public Energy m_energy;
 
     [SerializeField] private ZoneSoundManager m_zone;
-
+    [SerializeField] private PlayerAnimationManager m_animManager;
+    [SerializeField] private PlayerController m_playerController;
     IEnumerator Lerp;
     IEnumerator LerpBack;
 
@@ -92,6 +93,14 @@ public class Zone : MonoBehaviour, IZone
         {
             gameObject.SetActive(true);
             m_zone.EnableSound();
+            if(m_playerController.m_isMoving == false)
+            {
+                m_animManager.ZoneAnim();
+            }
+            else if(m_playerController.m_isMoving == true)
+            {
+                m_animManager.RunZoneAnim();
+            }
         }
 
         if(Lerp != null)
@@ -108,7 +117,15 @@ public class Zone : MonoBehaviour, IZone
     public void HandleDeactivation()
     {
         m_zone.StopZoneSound();
-        m_zone.DisableSound();       
+        m_zone.DisableSound();
+        if(m_playerController.m_isMoving == false)
+        {
+            m_animManager.DisableZoneAnim();
+        }
+        else if(m_playerController.m_isMoving == true)
+        {
+            m_animManager.StopAnim();
+        }
         m_isTrigger = false;
 
         if(LerpBack != null)
