@@ -78,7 +78,7 @@ public class GlideBlock : Blocks
             m_zAxis = false;
         }
 
-        else if (!other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Ground") && !other.gameObject.CompareTag("Player"))
+        else if (!other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Default") && !other.gameObject.CompareTag("Player"))
         {
             transform.Translate(Vector3.zero);
             m_xAxis = false;
