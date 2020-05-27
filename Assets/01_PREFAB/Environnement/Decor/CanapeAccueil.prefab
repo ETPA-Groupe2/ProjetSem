@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 328753108256726377}
   - component: {fileID: 8778907152329582431}
   - component: {fileID: 3091854054477159334}
+  - component: {fileID: 8570248403917846465}
   m_Layer: 0
   m_Name: CanapeAccueil
   m_TagString: Untagged
@@ -81,3 +82,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &8570248403917846465
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662744730491711354}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.010000001, y: 0.032, z: 0.035}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.008, y: -0.013, z: -0.024}
+  m_TimeToStationary: 0.5

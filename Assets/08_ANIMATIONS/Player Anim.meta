@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/08_ANIMATIONS/Player Anim.meta
 guid: 9100ba0b6941e9b47a4b82dbaeb2e495
+=======
+guid: 2cc59b0b04234fe40ad072ef848bf1e9
+>>>>>>> Texture_V2:Assets/09_CUSTOMPACK/CustomPack/UIERuntime/Samples.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -16,7 +16,7 @@ public class Door_anim_script : MonoBehaviour
 
     private void Start()
     {
-        m_openSound = GetComponent<AudioSource>();
+      m_openSound = GetComponent<AudioSource>();
     }
     private void OnEnable()
     {

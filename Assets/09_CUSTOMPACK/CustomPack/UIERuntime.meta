@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3d2817aa9d9860a46b223975b74448ec
+=======
+<<<<<<< HEAD:Assets/00_SCENES/Scene.meta
+guid: 9789889c1f41c914a9648ec7e6fb5201
+=======
+guid: 3d2817aa9d9860a46b223975b74448ec
+>>>>>>> Texture_V2:Assets/09_CUSTOMPACK/CustomPack/UIERuntime.meta
+>>>>>>> Texture_V2
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

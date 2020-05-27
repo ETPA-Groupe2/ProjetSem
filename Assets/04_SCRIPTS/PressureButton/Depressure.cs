@@ -15,7 +15,7 @@ public class Depressure : MonoBehaviour
 
         if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("Zone"))
         {
-            Debug.Log("Yakalelo");
+            Debug.Log("Yakalelo wallah le bouton y marche po ");
             Event.Raise();
         }
     }
