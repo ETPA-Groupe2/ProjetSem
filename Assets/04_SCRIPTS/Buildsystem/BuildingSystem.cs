@@ -71,7 +71,7 @@ public class BuildingSystem : MonoBehaviour
     // Attention le raycast ici gère les distance d'affichage en gros //
     // Pour que le joueur puisse construire de plus loin, changer le buildPosHit //
     // L'idée avec les screenpointtoray c'est que le raycast se lance depuis le milieu de l ecran    tout le temps, mais ça suggère que la camera suive le joueur quoi //
-        /*#if UNITY_EDITOR
+        #if UNITY_EDITOR
 
         if (m_buildModeOn)
         {
@@ -114,7 +114,7 @@ public class BuildingSystem : MonoBehaviour
             m_canBuild.Value = false;
         }
 
-        #endif  */
+        #endif
 
         #if UNITY_ANDROID
 
