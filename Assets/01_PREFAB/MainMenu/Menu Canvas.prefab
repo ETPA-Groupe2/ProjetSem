@@ -89,7 +89,6 @@ GameObject:
   - component: {fileID: 6096418372303205821}
   - component: {fileID: 2409222218710834997}
   - component: {fileID: 7027168047691379787}
-  - component: {fileID: 7175101449513379632}
   - component: {fileID: 6430972017470878234}
   m_Layer: 5
   m_Name: CreditsButton
@@ -97,7 +96,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &852915335202280643
 RectTransform:
   m_ObjectHideFlags: 0
@@ -219,19 +218,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7175101449513379632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857000030573083369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e84451b21fa9efc49b0734d67a12d871, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_clickSound: {fileID: 8300000, guid: 3280b7066253a6743b6c1811bf34df0e, type: 3}
 --- !u!114 &6430972017470878234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4074784864484119571
 RectTransform:
   m_ObjectHideFlags: 0
@@ -468,7 +454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8070565997899152789
 RectTransform:
   m_ObjectHideFlags: 0
@@ -639,10 +625,10 @@ RectTransform:
   m_Father: {fileID: 1464806797416580202}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 114}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -571.18134, y: 431.17737}
+  m_SizeDelta: {x: 75.1, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2236313391744961945
 CanvasRenderer:
@@ -752,7 +738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &817155754286701520
 RectTransform:
   m_ObjectHideFlags: 0
@@ -993,7 +979,7 @@ Canvas:
   m_GameObject: {fileID: 8846940910605322947}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1017,12 +1003,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
