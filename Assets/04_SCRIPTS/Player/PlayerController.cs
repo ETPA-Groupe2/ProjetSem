@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public bool m_isMoving = false;
-    bool m_canIdle = true;
     private PlayerAnimationManager m_animManager;
 
 
@@ -122,6 +121,6 @@ public class PlayerController : MonoBehaviour
             m_isMoving = false;
         }
         m_oldPos = transform.position;
-        Debug.Log(m_isMoving);
+
     }
 }
