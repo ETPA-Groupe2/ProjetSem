@@ -24,12 +24,17 @@ public class PlayerAnimationManager : MonoBehaviour
 
     public void StopRunAnim()
     {
-        m_anim.Play("Stop_Run");
+        if (m_anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+            m_anim.Play("Stop_Run");
     }
 
+    //int m_speedHash = Animator.StringToHash("Speed");
     public void IdleAnim()
-    {
+    {   
+        if(m_anim.GetCurrentAnimatorStateInfo(0).IsName("Stop_Run"))
         m_anim.Play("Start_Idle");
+        //Set anim
+        //m_anim.SetFloat(m_speedHash, 2f);
     }
 
     public void StopAnim()
