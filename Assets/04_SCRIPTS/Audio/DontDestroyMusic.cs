@@ -5,12 +5,14 @@ using UnityEngine;
 public class DontDestroyMusic : MonoBehaviour
 {
     [HideInInspector]
-    public bool m_inGame = false;
+    public bool m_inGame;
 
     public static DontDestroyMusic m_instanceMusic;
 
     void Awake()
     {
+        m_inGame = false;
+
         if (m_instanceMusic)
         {
             Destroy(gameObject);  

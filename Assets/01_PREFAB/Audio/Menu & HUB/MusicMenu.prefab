@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 704948955228725006}
   m_Layer: 0
   m_Name: MusicMenu
-  m_TagString: Untagged
+  m_TagString: Menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,3 +140,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ac470c40f356b147affcef3bcf369b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_inGame: 1

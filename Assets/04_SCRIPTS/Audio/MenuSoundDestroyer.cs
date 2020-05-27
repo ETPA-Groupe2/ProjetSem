@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class MenuSoundDestroyer : MonoBehaviour
 {
-    [SerializeField] DontDestroyMusic m_bool;
+    private GameObject[] m_menu;
 
-    void Start()
+void Start()
     {
-        m_bool.m_inGame = true;  
+        m_menu = new GameObject[2];
+
+        m_menu = GameObject.FindGameObjectsWithTag("Menu");
+
+        if (m_menu != null)
+        {
+            for (int i = 0; i < m_menu.Length; i++)
+            {
+                Destroy(m_menu[i].gameObject);
+            }
+        }
+
+
     }
 
 }

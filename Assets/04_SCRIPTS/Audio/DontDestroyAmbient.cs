@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DontDestroyAmbient : MonoBehaviour
 {
-    [SerializeField] DontDestroyMusic m_boolean;
+    [SerializeField] DontDestroyMusic m_bool;
 
     public static DontDestroyAmbient m_instanceAmbient;
 
@@ -22,7 +22,8 @@ public class DontDestroyAmbient : MonoBehaviour
     }
     void Update()
     {
-        if(m_boolean.m_inGame == true)
+        Debug.Log(m_bool.m_inGame);
+        if(m_bool.m_inGame == true)
         {
             Destroy(gameObject);
         }
