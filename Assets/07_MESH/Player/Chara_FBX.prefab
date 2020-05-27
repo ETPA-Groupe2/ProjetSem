@@ -876,6 +876,7 @@ MonoBehaviour:
   m_agent: {fileID: 7089294445389043138}
   m_inventory: {fileID: 11400000, guid: 2169d9450dc2c634d89e392a3b632995, type: 2}
   m_hasTaken: {fileID: 11400000, guid: 69c48c94694bedd45a3dce94ec8a0233, type: 2}
+  m_moveFeedback: {fileID: 0}
   m_bombeResource: {fileID: 11400000, guid: 5aebfaaa617c01d409a2b42cbf116c7c, type: 2}
   m_glideResource: {fileID: 11400000, guid: 451404dd552193e42b2c9c0f4b03bcc7, type: 2}
   m_generatorResource: {fileID: 11400000, guid: 691f30fef9c3d5e408ea97ec3c378d96,
@@ -905,7 +906,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.3
-  m_BaseOffset: 0.5
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &5933729650304305906
