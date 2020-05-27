@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7136011204166653125}
   - component: {fileID: 871605028836755126}
   - component: {fileID: 4813167003618984131}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 4.039, y: 5.0480003, z: 4.439}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 4577486425649576214}
   - component: {fileID: 5853432122268160572}
   - component: {fileID: 1211667591660643588}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 4.039, y: 9.183001, z: 2.2910001}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 5569482001584850253}
   - component: {fileID: 7815225389571646606}
   - component: {fileID: 6515436314479280931}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +362,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 4.039, y: 6.946, z: 4.467}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 7609628397848595899}
   - component: {fileID: 5412827881580984941}
   - component: {fileID: 1762786906797304762}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +490,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 3.371, y: 3.5640001, z: 5.0080004}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 892048956333090005}
   - component: {fileID: 8079116027384787942}
   - component: {fileID: 1646200636077862918}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: wall_voronoi_V2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 5760960771251328764}
   - component: {fileID: 8794013761731065772}
   - component: {fileID: 2746839219065969470}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -692,7 +692,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 4.039, y: 7.267, z: 3.9710002}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 1741241265193715022}
   - component: {fileID: 2715377464731421534}
   - component: {fileID: 2991640736954692845}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 3.4180002, y: 3.7630002, z: 6.4740005}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 2891376901881109848}
   - component: {fileID: 5314215021296437782}
   - component: {fileID: 4989244642631057459}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,10 +948,10 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 4.039, y: 5.6780005, z: 2.5770001}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
 --- !u!114 &4989244642631057459
@@ -984,7 +984,7 @@ GameObject:
   - component: {fileID: 8944116074876694730}
   - component: {fileID: 7941482858842399044}
   - component: {fileID: 1489054426847635939}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1076,7 +1076,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 3.663, y: 8.054001, z: 3.3850002}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -1112,7 +1112,7 @@ GameObject:
   - component: {fileID: 1121994006559200525}
   - component: {fileID: 3679805971053667419}
   - component: {fileID: 6697518324044502912}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1204,7 +1204,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 4.039, y: 5.3320003, z: 6.4740005}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -1240,7 +1240,7 @@ GameObject:
   - component: {fileID: 5409378680681804209}
   - component: {fileID: 5967863519360156721}
   - component: {fileID: 3991688319391559044}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box003_Part_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1332,7 +1332,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 1.996, y: 9.455001, z: 4.8970003}
+  m_Extents: {x: 3.105, y: 4.44, z: 3.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
