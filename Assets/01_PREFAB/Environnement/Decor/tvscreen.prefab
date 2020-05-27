@@ -88,12 +88,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4550119003428689523}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c670b4554a352a4da52db123be8f789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
   CurrentMaterial: 0
   Materials:
   - {fileID: 1766981678573033925, guid: 7591809c21aba96409f6de531b3fbe5d, type: 3}
