@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public s_InventoryObject m_inventory;
 
     public s_VarBool m_hasTaken;
+    [SerializeField] private ParticleSystem m_moveFeedback;
 
     [Header("--- THE NUMBER OF RESOURCES IN INVENTORY ---")]
 
@@ -60,6 +61,12 @@ public class PlayerController : MonoBehaviour
             if (Physics.Raycast(m_cam.ScreenPointToRay(Input.mousePosition), out hit, 1000f))
             {
                 m_agent.destination = hit.point;
+
+                Vector3 move = hit.point;
+                move.y = 1.5f;
+                m_moveFeedback.transform.position = move; 
+                
+                m_moveFeedback.Play();
             }
         }
     }

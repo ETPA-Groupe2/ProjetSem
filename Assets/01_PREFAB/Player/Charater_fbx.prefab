@@ -713,6 +713,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   m_loadCheckpoint: 0
+  m_isMoving: 0
 --- !u!54 &3243810650583387338
 Rigidbody:
   m_ObjectHideFlags: 0
