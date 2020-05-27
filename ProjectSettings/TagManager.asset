@@ -9,6 +9,7 @@ TagManager:
   - Zone
   - DestructibleBlock
   - RedBlock
+  - Menu
   layers:
   - Default
   - TransparentFX

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1445580928193845728}
   m_Layer: 0
   m_Name: AmbientMenu
-  m_TagString: Untagged
+  m_TagString: Menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c0bbcabd7dee4514dbbfe9ea62f0085b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 43b8793f7c67e2f45a99399ba5d8020b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -140,4 +140,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fb8227dea6df546a6f1a01987775aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_boolean: {fileID: 0}
+  m_bool: {fileID: 0}
