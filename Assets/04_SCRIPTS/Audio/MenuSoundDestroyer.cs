@@ -8,7 +8,7 @@ public class MenuSoundDestroyer : MonoBehaviour
 
 void Start()
     {
-        m_menu = new GameObject[2];
+        m_menu = new GameObject[3];
 
         m_menu = GameObject.FindGameObjectsWithTag("Menu");
 
@@ -19,8 +19,5 @@ void Start()
                 Destroy(m_menu[i].gameObject);
             }
         }
-
-
     }
-
 }

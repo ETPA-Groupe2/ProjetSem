@@ -2,24 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DontDestroyMusic : MonoBehaviour
+public class DontDestroyClick : MonoBehaviour
 {
-
-
-    public static DontDestroyMusic m_instanceMusic;
+    public static DontDestroyClick m_instanceClick;
 
     void Awake()
     {
-       
-
-        if (m_instanceMusic)
+        if (m_instanceClick)
         {
-            Destroy(gameObject);  
+            Destroy(gameObject);
         }
         else
         {
             DontDestroyOnLoad(gameObject);
-            m_instanceMusic = this;
+            m_instanceClick = this;
         }
     }
 }

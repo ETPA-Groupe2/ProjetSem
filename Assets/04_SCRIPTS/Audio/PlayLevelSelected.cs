@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonSoundScript : MonoBehaviour
+public class PlayLevelSelected : MonoBehaviour
 {
-    public GameObject m_audioObject;
+    GameObject m_audioObject;
 
     public void PlaySound()
     {
+        m_audioObject = GameObject.Find("LVLSelected");
         m_audioObject.GetComponent<AudioSource>().Play();
     }
-
-    private void Start()
-    {
-       // DontDestroyOnLoad(m_audioObject);
-    }
 }
-
