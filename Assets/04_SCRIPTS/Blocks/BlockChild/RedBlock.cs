@@ -19,6 +19,7 @@ public class RedBlock : Blocks , IExplosion
     
         // Fx explosion of Bomb bloc
     [SerializeField] GameObject m_explosionFx;
+   
         //check if the explosion took place
     private bool m_exploded = false;
         // radius of the explosion 
@@ -39,6 +40,8 @@ public class RedBlock : Blocks , IExplosion
     GameObject m_fx;
 
     bool m_soundAlreadyPlayed;
+
+   
 
     public override void handleReaction(GD2Lib.Event p_event, object[] p_params)
     {
@@ -88,7 +91,7 @@ public class RedBlock : Blocks , IExplosion
         //Disable the mesh
         m_meshRenderer.enabled = false;
         //Destroy the object once the sound is played
-        Invoke("DestroyObject", 2f);
+        Invoke("DestroyObject", 1f);
         m_exploded = true;  
     }
 

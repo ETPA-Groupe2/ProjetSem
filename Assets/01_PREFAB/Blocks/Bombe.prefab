@@ -36,7 +36,7 @@ Transform:
   m_LocalPosition: {x: -7.201454, y: -1.1551473, z: -25.846144}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8060737040498376042}
+  - {fileID: 2219519591689757061}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
@@ -368,7 +368,7 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 1.5020001}
   m_TimeToStationary: 0.5
---- !u!1001 &1614069155629760426
+--- !u!1001 &7455286653829309253
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -435,26 +435,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8771656346727924416, guid: 0dec371876a3beb408be3c66132984f0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: -1.9746379
-      objectReference: {fileID: 0}
-    - target: {fileID: 8771656346727924416, guid: 0dec371876a3beb408be3c66132984f0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: -1.9746379
-      objectReference: {fileID: 0}
-    - target: {fileID: 8771656346727924416, guid: 0dec371876a3beb408be3c66132984f0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: -1.9746379
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dec371876a3beb408be3c66132984f0, type: 3}
---- !u!4 &8060737040498376042 stripped
+--- !u!4 &2219519591689757061 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8771656346727924416, guid: 0dec371876a3beb408be3c66132984f0,
     type: 3}
-  m_PrefabInstance: {fileID: 1614069155629760426}
+  m_PrefabInstance: {fileID: 7455286653829309253}
   m_PrefabAsset: {fileID: 0}
