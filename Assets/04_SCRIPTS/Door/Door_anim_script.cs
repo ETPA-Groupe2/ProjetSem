@@ -33,7 +33,7 @@ public class Door_anim_script : MonoBehaviour
             m_noButtonEnabled = false;
     }
 
-    void PlayAnim(GD2Lib.Event p_event, object[] p_params)
+    public void PlayAnim(GD2Lib.Event p_event, object[] p_params)
     {
         m_openSound.Play(0);
         m_anim.Play("DoorIsOpen");
