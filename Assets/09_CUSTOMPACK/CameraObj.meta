@@ -1,6 +1,7 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 246a9e29a5d3409429d5c3c973441054
 =======
 <<<<<<< HEAD:Assets/01_PREFAB/Player_and_anim.meta
@@ -12,6 +13,9 @@ guid: 246a9e29a5d3409429d5c3c973441054
 =======
 guid: 246a9e29a5d3409429d5c3c973441054
 >>>>>>> Habillage_Lvl2
+=======
+guid: 246a9e29a5d3409429d5c3c973441054
+>>>>>>> origin/Integration_Menu
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
