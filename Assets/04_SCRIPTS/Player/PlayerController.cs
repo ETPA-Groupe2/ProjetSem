@@ -57,12 +57,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
-            if (Physics.Raycast(m_cam.ScreenPointToRay(Input.mousePosition), out hit, 1000f))
+            if (Physics.Raycast(m_cam.ScreenPointToRay(Input.mousePosition), out hit, 1000f, m_movingLayer))
             {
                 m_agent.destination = hit.point;
-
+                Debug.Log(hit.point);
                 Vector3 move = hit.point;
-                move.y = 1.5f;
+                //move.y = 1.5f;
                 m_moveFeedback.transform.position = move; 
                 
                 m_moveFeedback.Play();
