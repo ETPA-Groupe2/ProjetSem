@@ -17,6 +17,8 @@ public class Pressure : MonoBehaviour
     [Header("Event")]
     [Tooltip("The event you want to play when the button is pressed")]
     [SerializeField] GD2Lib.Event Event;
+
+    public GameObject RedLight;
     
 
     void OnTriggerEnter(Collider other)
@@ -25,6 +27,7 @@ public class Pressure : MonoBehaviour
         if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("Zone"))
         {
             Event.Raise();
+            RedLight.SetActive(false);
         }
     }
 
