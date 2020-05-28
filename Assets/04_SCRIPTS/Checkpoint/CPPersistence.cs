@@ -19,16 +19,22 @@ public class CPPersistence : MonoBehaviour
                 {
                     GameObject gameObj = new GameObject();
                     m_instance = gameObj.AddComponent<CPPersistence>();
+
+                    DontDestroyOnLoad(m_instance.gameObject);
                 }
-                DontDestroyOnLoad(m_instance.gameObject);
+               
             }
             return m_instance;
         }
 }
 
-    [SerializeField] Transform m_spawnpoint;
-    private Vector3 m_lastCP = Vector3.zero;
     private GameObject m_sp;
+
+    [Tooltip("Put here the player transform")]
+    [SerializeField] Transform m_player;
+
+    [Tooltip("Put here the navmesh gameObject")]
+    [SerializeField] GameObject m_navmesh;
 
     void Start()
     {
@@ -37,11 +43,14 @@ public class CPPersistence : MonoBehaviour
         {
             DontDestroyOnLoad(m_sp);
         }   
+
+        Invoke("EnableNavMesh", 0.1f);
+        m_player.transform.position = SpawnPoint;
     }
 
     public void SetSpawnpoint (Vector3 p_spawnPoint)
     {
-        m_lastCP = p_spawnPoint;
+        m_sp.transform.position = p_spawnPoint;
         Debug.Log(p_spawnPoint);
     }
 
@@ -49,12 +58,13 @@ public class CPPersistence : MonoBehaviour
     {
         get
         {
-            if (m_lastCP != Vector3.zero)
-                return m_lastCP;
-            if (m_spawnpoint == null)
-                return Vector3.zero;
-           return m_spawnpoint.position;
+           return m_sp.transform.position;
         }
+    }
+
+    void EnableNavMesh()
+    {
+        m_navmesh.SetActive(true);
     }
 }
 
