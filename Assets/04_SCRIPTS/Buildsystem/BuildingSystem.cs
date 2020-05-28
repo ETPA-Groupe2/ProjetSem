@@ -189,7 +189,7 @@ public class BuildingSystem : MonoBehaviour
         {
             m_buildModeOn = true;
             m_bomb = true;
-            m_blockTrans = new Vector3(m_playerTrans.position.x, m_playerTrans.position.y, m_playerTrans.position.z-m_posBlockOffset);
+            m_blockTrans = new Vector3(m_playerTrans.position.x, m_playerTrans.position.y+1, m_playerTrans.position.z-m_posBlockOffset);
 
             //Vector3 m_pointerPoint = Input.mousePosition;
             m_currentTemplateBlock = Instantiate(m_blockTemplatePrefab, m_blockTrans, Quaternion.identity);
