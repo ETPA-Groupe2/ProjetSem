@@ -11,7 +11,7 @@ public class Multimat : MonoBehaviour
     // Use this for initialization
 
     [Tooltip("Put the Zone detector here")]
-    [SerializeField] CheckCollision m_bool;
+    //[SerializeField] CheckCollision m_bool;
 
     bool m_matHasChanged = false;
     bool m_valueChanged = false;
@@ -23,7 +23,7 @@ public class Multimat : MonoBehaviour
 
     void Update()
     {
-        if (m_bool.m_isTriggered == true)
+       /* if (m_bool.m_isTriggered == true)
         {
             Debug.Log("IN MULTIMAT");
             if (CurrentMaterial == Materials.Length && m_matHasChanged == false)
@@ -41,6 +41,6 @@ public class Multimat : MonoBehaviour
 
             currentlyAssignedMaterials[1] = Materials[CurrentMaterial];
             GetComponent<Renderer>().materials = currentlyAssignedMaterials;
-        }
+        }*/
     }
 }

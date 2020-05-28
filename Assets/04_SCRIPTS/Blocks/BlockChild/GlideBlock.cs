@@ -59,6 +59,7 @@ public class GlideBlock : Blocks
         if(m_zAxis)
         {
             transform.Translate(0, m_dir.z*m_speed*Time.deltaTime, 0);
+            Debug.Log("allo");
         }
         if(m_xAxis)
         {

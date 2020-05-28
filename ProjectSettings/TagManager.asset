@@ -9,6 +9,8 @@ TagManager:
   - Zone
   - DestructibleBlock
   - RedBlock
+  - Gliding
+  - Ground
   layers:
   - Default
   - TransparentFX
