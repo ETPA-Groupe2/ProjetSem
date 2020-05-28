@@ -22,7 +22,7 @@ public class Pressure : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
        
-        if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("Zone"))
+        if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Ground"))
         {
             Event.Raise();
         }

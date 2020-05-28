@@ -29,25 +29,26 @@ public class GlideBlock : Blocks
 
     public override void handleReaction(GD2Lib.Event p_event, object[] p_params)
     {
-        if(GD2Lib.Event.TryParseArgs(out Vector3 dir, p_params))
+        Debug.Log("Yakalelo");
+        if (GD2Lib.Event.TryParseArgs(out Vector3 dir, p_params))
         {
             m_dir = dir.normalized;
-            if(m_dir.z >= 0.9f)
+            if(m_dir.y >= 0.7f)
             {
                 m_zAxis = true;
                 m_dir.z = -m_dir.z;
             }
-            else if(m_dir.z <= -0.9f)
+            else if(m_dir.y <= -0.7f)
             {
                 m_zAxis = true;
                 m_dir.z = -m_dir.z;
             }
 
-            if(m_dir.x <= -0.9f)
+            if(m_dir.x <= -0.7f)
             {
                 m_xAxis = true;
             }
-            else if(m_dir.x >= 0.9f)
+            else if(m_dir.x >= 0.7f)
             {
                 m_xAxis = true;
             }
@@ -58,17 +59,18 @@ public class GlideBlock : Blocks
     {
         if(m_zAxis)
         {
-            transform.Translate(0, m_dir.z*m_speed*Time.deltaTime, 0);
+            transform.Translate(m_dir.y * m_speed * Time.deltaTime, 0,0 );
             Debug.Log("allo");
         }
         if(m_xAxis)
         {
-            transform.Translate(m_dir.x*m_speed*Time.deltaTime, 0, 0);
+            transform.Translate(0, 0,-m_dir.x * m_speed * Time.deltaTime);
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
+       
         IObstacle o = other.GetComponent<IObstacle>();
 
         if(o != null)
@@ -79,8 +81,9 @@ public class GlideBlock : Blocks
             m_zAxis = false;
         }
 
-        else if (!other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Default") && !other.gameObject.CompareTag("Player"))
+        else if (!other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Ground") && !other.gameObject.CompareTag("Player"))
         {
+            
             transform.Translate(Vector3.zero);
             m_xAxis = false;
             m_zAxis = false;
