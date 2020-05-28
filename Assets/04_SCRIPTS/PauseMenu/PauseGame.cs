@@ -25,6 +25,12 @@ public class PauseGame : MonoBehaviour
         m_BackToHUBButton.SetActive(false);
         m_ResumeGameButton.SetActive(false);
         m_menuFond.SetActive(false);
+
+        if(Time.timeScale != 1f)
+        {
+            Time.timeScale = 1f;
+        }
+        
     }
 
     public void BackOnClick()
