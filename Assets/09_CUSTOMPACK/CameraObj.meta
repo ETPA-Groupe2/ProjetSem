@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 246a9e29a5d3409429d5c3c973441054
 =======
 <<<<<<< HEAD:Assets/01_PREFAB/Player_and_anim.meta
@@ -8,6 +9,9 @@ guid: 3200a6acfd8f50c40abc1aa18ba87d0c
 guid: 246a9e29a5d3409429d5c3c973441054
 >>>>>>> origin/Texture-v3:Assets/09_CUSTOMPACK/CameraObj.meta
 >>>>>>> origin/Texture-v3
+=======
+guid: 246a9e29a5d3409429d5c3c973441054
+>>>>>>> Habillage_Lvl2
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

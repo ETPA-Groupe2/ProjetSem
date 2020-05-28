@@ -59,6 +59,7 @@ public class GlideBlock : Blocks
         if(m_zAxis)
         {
             transform.Translate(0, m_dir.z*m_speed*Time.deltaTime, 0);
+            Debug.Log("allo");
         }
         if(m_xAxis)
         {
@@ -78,7 +79,7 @@ public class GlideBlock : Blocks
             m_zAxis = false;
         }
 
-        else if (!other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Ground") && !other.gameObject.CompareTag("Player"))
+        else if (!other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Default") && !other.gameObject.CompareTag("Player"))
         {
             transform.Translate(Vector3.zero);
             m_xAxis = false;
