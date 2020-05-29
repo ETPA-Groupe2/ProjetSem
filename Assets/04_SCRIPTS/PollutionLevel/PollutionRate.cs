@@ -33,6 +33,7 @@ public class PollutionRate : MonoBehaviour
     [Tooltip("Minimal pollution level to be in the E Rate interval")]
     [SerializeField] private float m_minScoreRateE;
 
+    [HideInInspector]
     public string m_rateString;
 
     void Update()

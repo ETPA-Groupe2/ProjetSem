@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb82074628755244959da611dcdc4b1, type: 3}
   m_Name: GlobalPollution
   m_EditorClassIdentifier: 
-  m_value: 8
+  m_value: 0

@@ -1744,6 +1744,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.66628456
       objectReference: {fileID: 0}
+    - target: {fileID: 6412119242918329921, guid: 5a8f4e48f8a8be24388081e81f16c6bb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6525795995859412785, guid: 5a8f4e48f8a8be24388081e81f16c6bb,
         type: 3}
       propertyPath: m_IsActive
@@ -5672,12 +5677,12 @@ MonoBehaviour:
   m_pollutionLevelText: {fileID: 612169775}
   m_globalPollution: {fileID: 11400000, guid: 3d4bd683230f0634e8334ec522ed6a1f, type: 2}
   m_minScoreRateS: 0
-  m_minScoreRateAPlus: 0
-  m_minScoreRateA: 0
-  m_minScoreRateB: 0
-  m_minScoreRateC: 0
-  m_minScoreRateD: 0
-  m_minScoreRateE: 0
+  m_minScoreRateAPlus: 43
+  m_minScoreRateA: 46
+  m_minScoreRateB: 52
+  m_minScoreRateC: 58
+  m_minScoreRateD: 64
+  m_minScoreRateE: 70
   m_rateString: 
 --- !u!1 &226555656 stripped
 GameObject:
