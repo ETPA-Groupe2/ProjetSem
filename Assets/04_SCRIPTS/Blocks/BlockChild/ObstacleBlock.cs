@@ -18,10 +18,17 @@ public class ObstacleBlock : Blocks, IObstacle
     [Tooltip("The speed of the block")] 
     [SerializeField] private float m_speed;
 
+    AudioSource m_obstacleSound;
+
+    void Start()
+    {
+        m_obstacleSound = GetComponent<AudioSource>();
+    }
+
     public Vector3 onPush(Vector3 v)
     {
         m_dir = v;
-
+        m_obstacleSound.Play(0);
         if(m_dir.z >= 0.9f)
         {
             m_zAxis = true;
@@ -61,6 +68,7 @@ public class ObstacleBlock : Blocks, IObstacle
     {
         if (!other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Ground") && !other.gameObject.CompareTag("Gliding"))
         {
+            m_obstacleSound.Stop();
             transform.Translate(Vector3.zero);
             m_xAxis = false;
             m_zAxis = false;
