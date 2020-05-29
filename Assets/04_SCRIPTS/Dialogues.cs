@@ -47,7 +47,10 @@ public class Dialogues : MonoBehaviour
 
    public void NextSentence()
     {
+        Debug.Log("NEXT");
         m_continueButton.SetActive(false);
+
+        
 
         if(index < sentences.Length - 1)
         {
