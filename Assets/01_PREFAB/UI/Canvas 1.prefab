@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 556591991918395483}
   - component: {fileID: 556591991918395482}
   - component: {fileID: 556591991918395481}
-  - component: {fileID: 6339418102100702677}
+  - component: {fileID: 3968900162688765827}
   m_Layer: 5
   m_Name: EnergyZone
   m_TagString: Untagged
@@ -322,19 +322,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!65 &6339418102100702677
-BoxCollider:
+--- !u!114 &3968900162688765827
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556591991918395484}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 90.8, y: 47.8, z: 1.28}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &556591991952932549
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +437,7 @@ GameObject:
   - component: {fileID: 556591993016708621}
   - component: {fileID: 3762112118133164450}
   - component: {fileID: 8017579442665795243}
+  - component: {fileID: 7572545000394929623}
   m_Layer: 5
   m_Name: Canvas 1
   m_TagString: Untagged
@@ -660,6 +664,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &7572545000394929623
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556591993016708620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1080.21, y: 631.54, z: 130.88}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &591686084993293338
 GameObject:
   m_ObjectHideFlags: 0

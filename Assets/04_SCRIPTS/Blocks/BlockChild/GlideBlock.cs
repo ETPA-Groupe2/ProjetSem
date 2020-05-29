@@ -33,15 +33,15 @@ public class GlideBlock : Blocks
         if (GD2Lib.Event.TryParseArgs(out Vector3 dir, p_params))
         {
             m_dir = dir.normalized;
-            if(m_dir.y >= 0.7f)
+            if(m_dir.z >= 0.7f)
             {
                 m_zAxis = true;
-                m_dir.z = -m_dir.z;
+               // m_dir.z = -m_dir.z;
             }
-            else if(m_dir.y <= -0.7f)
+            else if(m_dir.z <= -0.7f)
             {
                 m_zAxis = true;
-                m_dir.z = -m_dir.z;
+               // m_dir.z = -m_dir.z;
             }
 
             if(m_dir.x <= -0.7f)
@@ -59,7 +59,7 @@ public class GlideBlock : Blocks
     {
         if(m_zAxis)
         {
-            transform.Translate(m_dir.y * m_speed * Time.deltaTime, 0,0 );
+            transform.Translate(m_dir.z * m_speed * Time.deltaTime, 0,0 );
             Debug.Log("allo");
         }
         if(m_xAxis)
