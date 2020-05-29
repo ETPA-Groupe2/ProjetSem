@@ -997,14 +997,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1477403380866182876, guid: af89c7dffedf4324797a47a81a9186be,
         type: 3}
-      propertyPath: m_Text
-      value: "Un jeu par la Kebab Team:\n\nIohannes Mboumba, Pauline Barbet, Johann
-        Theron, Romain Poussier, Anna Deleforge\n\n\nEffets sonores:\r\n\nwww.zapsplat.com\r\n\rwww.freesound.org\r\nhttps://creativecommons.org/licenses/by/3.0/legalcode\r\n\r\nMusiques:
-        \r\n\n\rAvijit Nath - The Mystery Man\r\nInfados - Kevin MacLeod\r\r\nAnguish
-        - Kevin MacLeod\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1477403380866182876, guid: af89c7dffedf4324797a47a81a9186be,
-        type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 25
       objectReference: {fileID: 0}

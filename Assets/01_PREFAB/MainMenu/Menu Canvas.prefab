@@ -230,7 +230,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f95924ada66264a8dbeda87320d217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_audioObject: {fileID: 0}
 --- !u!1 &903292891320374279
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +512,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Cr\xE9dits:\n\nExemple de cr\xE9dits"
+  m_Text: "Un jeu par la Kebab Team:\n\nIohannes Mboumba, Pauline Barbet, Johann
+    Theron, Romain Poussier, Anna Deleforge\n\n\nEffets sonores:\r\n\nwww.zapsplat.com\r\n\n\rwww.freesound.org\r\nhttps://creativecommons.org/licenses/by/3.0/legalcode\r\n\r\nMusiques:
+    \r\n\n\rAvijit Nath - The Mystery Man\r\nInfados - Kevin MacLeod\r\r\nAnguish
+    - Kevin MacLeod\r\n"
 --- !u!1 &4655596191119878720
 GameObject:
   m_ObjectHideFlags: 0

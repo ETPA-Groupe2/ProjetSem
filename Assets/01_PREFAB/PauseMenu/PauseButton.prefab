@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1716926927490713179}
   - component: {fileID: 2615572177132496608}
   - component: {fileID: 1977406496145628962}
+  - component: {fileID: 2071755480512964984}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -141,6 +142,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e7e5468119cfad4e8e94f31cbc7c1dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BackToHUBButton: {fileID: 0}
-  m_ResumeGameButton: {fileID: 0}
-  m_HUBScene: Hub
+  m_backToHUBButton: {fileID: 0}
+  m_resumeGameButton: {fileID: 0}
+  m_reloadCPButton: {fileID: 0}
+  m_menuScene: MenuScene
+  m_menuFond: {fileID: 0}
+--- !u!114 &2071755480512964984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309043772361247276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f95924ada66264a8dbeda87320d217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -16,6 +16,8 @@ public class Checkpoint : MonoBehaviour
 
     AudioSource m_cpSound;
 
+    bool m_fxPlayed = false;
+
     private void Start()
     {
         m_cpSound = GetComponent<AudioSource>();
@@ -23,11 +25,15 @@ public class Checkpoint : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
       if (other.gameObject.CompareTag ("Player"))
-        {
-            m_cpSound.Play(0);
+        {     
             Debug.Log("CHECKPOINT PASSED");
-            CPPersistence.Instance.SetSpawnpoint (gameObject.transform.position);
-            Instantiate(m_checkPointFX,transform.position, transform.rotation);
+            if (m_fxPlayed == false)
+            {
+                CPPersistence.Instance.SetSpawnpoint(gameObject.transform.position);
+                m_cpSound.Play(0);
+                Instantiate(m_checkPointFX, transform.position, transform.rotation);
+                m_fxPlayed = true;
+            }
         }
     }
 }
