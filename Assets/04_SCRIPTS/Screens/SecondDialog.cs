@@ -13,10 +13,12 @@ public class SecondDialog : MonoBehaviour
 
     public GameObject m_continueButton;
     public GameObject m_zoneButton;
+    public GameObject m_energyText;
     public GameObject m_ImageFond;
     public GameObject m_Player;
     public GameObject m_DialogueManager;
     public GameObject m_CraftBombButton;
+    public GameObject m_bombText;
     public GameObject m_fondCraft;
 
 
@@ -24,6 +26,7 @@ public class SecondDialog : MonoBehaviour
     {
         StartCoroutine(Type());
         m_zoneButton.SetActive(false);
+        m_energyText.SetActive(false);
         m_ImageFond.SetActive(true);
         m_Player.SetActive(false);
 
@@ -63,9 +66,11 @@ public class SecondDialog : MonoBehaviour
             textDisplay.text = "";
             m_continueButton.SetActive(false);
             m_zoneButton.SetActive(true);
+            m_energyText.SetActive(false);
             m_ImageFond.SetActive(false);
             m_Player.SetActive(true);
             m_CraftBombButton.SetActive(true);
+            m_bombText.SetActive(true);
             m_fondCraft.SetActive(true);
             m_DialogueManager.SetActive(false);
       

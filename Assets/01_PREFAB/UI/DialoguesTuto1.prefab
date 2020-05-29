@@ -411,17 +411,17 @@ MonoBehaviour:
   textDisplay: {fileID: 6104624671598026974}
   sentences:
   - Djenaba ?
-  - Djenaba tu m'entends ?
-  - "Tu dois \xEAtre arriv\xE9e"
-  - Fais attention, rien n'est stable par ici
+  - Djenaba, tu m'entends ?
+  - "Tu dois \xEAtre arriv\xE9e."
+  - Fais attention, rien n'est stable par ici.
   - "L'\xE9quipe d'exploration a trouv\xE9 un engin la derni\xE8re fois qu'ils sont
-    pass\xE9s par ici"
-  - "\xE7a ressemble \xE0 une bombe alors fais attention"
-  - "Ils n'ont pas r\xE9ussi \xE0 l'activer"
-  - "Mais avec l'appareil dont on t'a \xE9quip\xE9 tu devrais pouvoir faire quelque
-    chose"
-  - "Avance toi pr\xE8s du cube et essais de l'activer"
-  - "Tu devrais pouvoir d\xE9gager le passage"
+    pass\xE9s par ici."
+  - "Ce dispositif \xE0 l'air instable, alors fais attention !"
+  - "Les autres n'ont pas r\xE9ussi \xE0 l'activer."
+  - "Mais avec l'appareil dont on t'a \xE9quip\xE9, tu devrais pouvoir faire quelque
+    chose."
+  - Approches-toi en et essaie de l'activer.
+  - "Tu devrais pouvoir d\xE9gager le passage."
   typingSpeed: 0.02
   m_continueButton: {fileID: 6104624671734192594}
   m_zoneButton: {fileID: 0}
