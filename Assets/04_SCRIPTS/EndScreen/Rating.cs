@@ -34,13 +34,13 @@ public class Rating : MonoBehaviour
         {
             m_completedSound.Play(0);
             m_pollutionRate.FinalRating();
-            m_textDisplayer.text = "Vous êtes du rang " + m_pollutionRate.m_rateString + " !";
-            Invoke("LoadEndScene", 4f);
+            m_textDisplayer.text = "Niveau terminé ! Vous êtes du rang " + m_pollutionRate.m_rateString + " !";
+            Invoke("LoadLevel2", 5f);
         }
     }
 
     //Temporary
-    void LoadEndScene()
+    void LoadLevel2()
     {
         SceneManager.LoadScene("Salle2_V1");
     }
