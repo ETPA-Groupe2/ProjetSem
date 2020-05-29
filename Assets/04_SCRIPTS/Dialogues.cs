@@ -13,6 +13,7 @@ public class Dialogues : MonoBehaviour
 
     public GameObject m_continueButton;
     public GameObject m_zoneButton;
+    public GameObject m_energyText;
     public GameObject m_ImageFond;
     public GameObject m_Player;
     public GameObject m_DialogManager;
@@ -22,6 +23,7 @@ public class Dialogues : MonoBehaviour
     {
         StartCoroutine(Type());
         m_zoneButton.SetActive(false);
+        m_energyText.SetActive(false);
         m_ImageFond.SetActive(true);
         m_Player.SetActive(false);
 
@@ -61,6 +63,7 @@ public class Dialogues : MonoBehaviour
             textDisplay.text = "";
             m_continueButton.SetActive(false);
             m_zoneButton.SetActive(true);
+            m_energyText.SetActive(true);
             m_ImageFond.SetActive(false);
             m_Player.SetActive(true);
             m_DialogManager.SetActive(false);

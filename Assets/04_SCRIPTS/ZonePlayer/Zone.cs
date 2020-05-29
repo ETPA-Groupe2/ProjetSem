@@ -87,7 +87,6 @@ public class Zone : MonoBehaviour, IZone
      ///<summaryIt handle the zone activation</summary>
     public void HandleActivation()
     {
-
         m_isTrigger = true;
 
         if(m_isDead != true)

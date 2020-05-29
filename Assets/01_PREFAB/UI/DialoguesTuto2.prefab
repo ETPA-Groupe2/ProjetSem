@@ -87,17 +87,19 @@ MonoBehaviour:
   - 'Waouh ! '
   - "C'\xE9tait dangereux ! "
   - "H\xE9 ? Qu'est-ce que c'est que \xE7a ?"
-  - Il parait qu'ils se servait de l'energie pour fabriquer des objets dangereux
-  - Mais des bombes...
-  - Fouille la zone
-  - "On devrait pouvoir se servir de ces bombes \xE0 notre avantage"
+  - Cette caisser pourrait contenir des ressources utiles...
+  - Tu pourrais essayer de fabriquer un de ces dispositifs explosifs !
+  - Fouille la zone pour trouver des ressources.
+  - "On devrait pouvoir se servir de ces dispositifs \xE0 notre avantage."
   typingSpeed: 0.02
   m_continueButton: {fileID: 6714616387397014884}
   m_zoneButton: {fileID: 0}
+  m_energyText: {fileID: 0}
   m_ImageFond: {fileID: 6714616387397913266}
   m_Player: {fileID: 0}
   m_DialogueManager: {fileID: 6714616385900196372}
   m_CraftBombButton: {fileID: 0}
+  m_bombText: {fileID: 0}
   m_fondCraft: {fileID: 0}
 --- !u!1 &6714616386280546746
 GameObject:
