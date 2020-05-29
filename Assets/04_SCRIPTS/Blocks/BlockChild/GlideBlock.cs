@@ -22,6 +22,10 @@ public class GlideBlock : Blocks
     ///<summary>The direction of the block, given by the position of the zone</summary>
     private Vector3 m_dir;
 
+    [SerializeField] AudioSource m_startGlideSound;
+    [SerializeField] AudioSource m_glideSound;
+    [SerializeField] AudioSource m_endGlideSound;
+
     void Start()
     {
         m_vectorCollider.Value = transform;
@@ -29,6 +33,8 @@ public class GlideBlock : Blocks
 
     public override void handleReaction(GD2Lib.Event p_event, object[] p_params)
     {
+        m_startGlideSound.Play(0);
+        m_glideSound.Play(0);
         Debug.Log("Yakalelo");
         if (GD2Lib.Event.TryParseArgs(out Vector3 dir, p_params))
         {
@@ -83,7 +89,8 @@ public class GlideBlock : Blocks
 
         else if (!other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Ground") && !other.gameObject.CompareTag("Player"))
         {
-            
+            m_glideSound.Stop();
+            m_endGlideSound.Play();
             transform.Translate(Vector3.zero);
             m_xAxis = false;
             m_zAxis = false;
