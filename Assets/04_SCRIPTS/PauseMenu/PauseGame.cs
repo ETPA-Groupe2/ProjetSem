@@ -11,19 +11,23 @@ using UnityEngine.SceneManagement;
 
 public class PauseGame : MonoBehaviour
 {
-    [Header("Buttons")]
-    [Tooltip("Please put the back to hub button here")]
-    [SerializeField] GameObject m_BackToHUBButton;
-    [Tooltip("Please put the resume button here")]
-    [SerializeField] GameObject m_ResumeGameButton;
+    [Header("Buttons references")]
+    [Tooltip("Put the back to hub button here")]
+    [SerializeField] GameObject m_backToHUBButton;
+    [Tooltip("Put the resume button here")]
+    [SerializeField] GameObject m_resumeGameButton;
+    [Tooltip("Put the reload checkpoint button here")]
+    [SerializeField] GameObject m_reloadCPButton;
+    [Header("Other references")]
     [Tooltip("Name of the HUB scene")]
-    [SerializeField] string m_HUBScene;
+    [SerializeField] string m_menuScene;
     [SerializeField] GameObject m_menuFond;
 
     void Start()
     {
-        m_BackToHUBButton.SetActive(false);
-        m_ResumeGameButton.SetActive(false);
+        m_backToHUBButton.SetActive(false);
+        m_resumeGameButton.SetActive(false);
+        m_reloadCPButton.SetActive(false);
         m_menuFond.SetActive(false);
 
         if(Time.timeScale != 1f)
@@ -35,14 +39,15 @@ public class PauseGame : MonoBehaviour
 
     public void BackOnClick()
     {
-        SceneManager.LoadScene(m_HUBScene);
+        SceneManager.LoadScene(m_menuScene);
     }
 
     public void ResumeOnClick()
     {
         Time.timeScale = 1f;
-        m_BackToHUBButton.SetActive(false);
-        m_ResumeGameButton.SetActive(false);
+        m_backToHUBButton.SetActive(false);
+        m_resumeGameButton.SetActive(false);
+        m_reloadCPButton.SetActive(false);
         m_menuFond.SetActive(false);
     }
 
@@ -52,16 +57,18 @@ public class PauseGame : MonoBehaviour
         {
             Time.timeScale = 1f;
             Debug.Log("GAME NOT PAUSED");
-            m_BackToHUBButton.SetActive(false);
-            m_ResumeGameButton.SetActive(false);
+            m_backToHUBButton.SetActive(false);
+            m_resumeGameButton.SetActive(false);
+            m_reloadCPButton.SetActive(false);
             m_menuFond.SetActive(false);
         }
         else
         {
             Time.timeScale = 0f;
             Debug.Log("GAME PAUSED");
-            m_BackToHUBButton.SetActive(true);
-            m_ResumeGameButton.SetActive(true);
+            m_backToHUBButton.SetActive(true);
+            m_resumeGameButton.SetActive(true);
+            m_reloadCPButton.SetActive(true);
             m_menuFond.SetActive(true);
         }
     }

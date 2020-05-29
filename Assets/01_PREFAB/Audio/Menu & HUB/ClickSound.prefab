@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4207605575835703286}
   m_Layer: 0
   m_Name: ClickSound
-  m_TagString: Menu
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
