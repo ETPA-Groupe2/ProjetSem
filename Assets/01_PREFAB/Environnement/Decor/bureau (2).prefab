@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6459253481641743785}
   - component: {fileID: 765446713216198992}
   - component: {fileID: 6500954500971035196}
+  - component: {fileID: 7352501285257305097}
   m_Layer: 0
   m_Name: bureau (2)
   m_TagString: Untagged
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9f9e9c2149b8afb4d93569678fa83583, type: 2}
+  - {fileID: -6894442470815791714, guid: d0d22036c4cc05245ae9d9a370853ed0, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,3 +94,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.403862, y: 4.778259, z: 2.8883615}
   m_Center: {x: -0.0060072206, y: 0.060811885, z: 1.433252}
+--- !u!208 &7352501285257305097
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343127903871688076}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.702, y: 2.3890002, z: 1.4440001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.006, y: 0.061000004, z: 1.4330001}
+  m_TimeToStationary: 0.5
