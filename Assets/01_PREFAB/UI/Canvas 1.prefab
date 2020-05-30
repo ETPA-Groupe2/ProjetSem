@@ -173,7 +173,6 @@ GameObject:
   - component: {fileID: 556591991918395483}
   - component: {fileID: 556591991918395482}
   - component: {fileID: 556591991918395481}
-  - component: {fileID: 3968900162688765827}
   m_Layer: 5
   m_Name: EnergyZone
   m_TagString: Untagged
@@ -322,22 +321,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &3968900162688765827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556591991918395484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &556591991952932549
 GameObject:
   m_ObjectHideFlags: 0

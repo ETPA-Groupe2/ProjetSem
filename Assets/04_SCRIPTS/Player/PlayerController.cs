@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private s_VarBool m_canBuild;
 
     [SerializeField] private LayerMask m_movingLayer;
+    [SerializeField] private LayerMask m_uiLayer;
+    [SerializeField]private GameObject m_EnergyButton;
+     [SerializeField] private GameObject m_BombButton;
 
     public bool m_loadCheckpoint = false;
 
@@ -57,17 +60,25 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
-            if (Physics.Raycast(m_cam.ScreenPointToRay(Input.mousePosition), out hit, 1000f, m_movingLayer))
+            if (Physics.Raycast(m_cam.ScreenPointToRay(Input.mousePosition), out hit, 1000f ))
             {
-                m_agent.destination = hit.point;
-                Debug.Log(hit.point);
-                Vector3 move = hit.point;
-                //move.y = 1.5f;
-                m_moveFeedback.transform.position = move; 
-                
-                m_moveFeedback.Play();
+                if(hit.transform.gameObject != m_EnergyButton && hit.transform.gameObject != m_BombButton)
+                {
+                    m_agent.destination = hit.point;
+
+                    Debug.Log(hit.transform.gameObject);
+                    Vector3 move = hit.point;
+                    //move.y = 1.5f;
+                    m_moveFeedback.transform.position = move;
+
+                    m_moveFeedback.Play();
+                }
+              
+              
             }
+           
         }
+       
     }
 
     private void OnTriggerEnter(Collider other) 
