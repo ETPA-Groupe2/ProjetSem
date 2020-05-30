@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1983c102fe56648b849bfae348c4f1, type: 3}
   m_Name: CPDialogue2
   m_EditorClassIdentifier: 
-  m_value: 1
+  m_value: 0
