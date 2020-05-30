@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 8ce085e5d05a5e644bc0f3b30926719e
 ModelImporter:
-  serializedVersion: 27
+  serializedVersion: 19300
   internalIDToNameTable:
   - first:
       1: 100000
@@ -30,9 +30,14 @@ ModelImporter:
   - first:
       43: 4300000
     second: UnityBall
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UnityBall_Body
+    second: {fileID: 2100000, guid: feb069e73b6f918468d6674766318154, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -113,6 +118,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0

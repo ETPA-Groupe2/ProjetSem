@@ -3,7 +3,17 @@ guid: 00a1f1e6b784a074b938dee6771c946f
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Murs_Fenetre_MultiMat Slot #5
+    second: {fileID: 2100000, guid: 801232c36b3c16347bbb7e3bd0f3a793, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Murs_Fenetre_MultiMat Slot #6
+    second: {fileID: 2100000, guid: 8ea63e4964017644f89d788e52896da6, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
