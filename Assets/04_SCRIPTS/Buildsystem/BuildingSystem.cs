@@ -114,7 +114,7 @@ public class BuildingSystem : MonoBehaviour
             m_canBuild.Value = false;
         }
 
-        #endif  
+        #endif
 
         #if UNITY_ANDROID
 
@@ -177,7 +177,7 @@ public class BuildingSystem : MonoBehaviour
             Destroy(m_currentTemplateBlock.gameObject);
             m_canBuild.Value = false;
         }
-        #endif           
+        #endif          
     }
 
     #region HANDLING SYSTEM FOR BLOCKS

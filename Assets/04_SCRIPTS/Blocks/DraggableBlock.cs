@@ -46,6 +46,7 @@ public class DraggableBlock : MonoBehaviour
         return mr;
     }
     #endif
+
     // Update is called once per frame
     void Update()
     {
@@ -116,7 +117,7 @@ public class DraggableBlock : MonoBehaviour
     {
         EndDrag();
     }
-    #endif
+    
 
     public void BeginDrag()
     {
@@ -130,4 +131,5 @@ public class DraggableBlock : MonoBehaviour
         OnEndDrag.Invoke();
         m_dragging = false;
     }
+    #endif
 }
