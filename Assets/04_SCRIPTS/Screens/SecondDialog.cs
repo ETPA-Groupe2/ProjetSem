@@ -19,16 +19,25 @@ public class SecondDialog : MonoBehaviour
     public GameObject m_DialogueManager;
     public GameObject m_CraftBombButton;
     public GameObject m_bombText;
-    public GameObject m_fondCraft;
+
+    [SerializeField] s_VarBool m_cpDialogue2;
 
 
     void Start()
     {
-        StartCoroutine(Type());
-        m_zoneButton.SetActive(false);
-        m_energyText.SetActive(false);
-        m_ImageFond.SetActive(true);
-        m_Player.SetActive(false);
+        if (m_cpDialogue2.Value == true)
+        {
+            StartCoroutine(Type());
+            m_zoneButton.SetActive(false);
+            m_energyText.SetActive(false);
+            m_ImageFond.SetActive(true);
+            m_Player.SetActive(false);
+        }
+        else if (m_cpDialogue2.Value == false)
+        {
+            m_ImageFond.SetActive(false);
+            m_continueButton.SetActive(false);
+        }
 
     }
 
@@ -71,10 +80,8 @@ public class SecondDialog : MonoBehaviour
             m_Player.SetActive(true);
             m_CraftBombButton.SetActive(true);
             m_bombText.SetActive(true);
-            m_fondCraft.SetActive(true);
             m_DialogueManager.SetActive(false);
-      
-
+            m_cpDialogue2.Value = false;
         }
     }
 }

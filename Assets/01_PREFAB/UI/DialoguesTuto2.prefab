@@ -29,8 +29,8 @@ RectTransform:
   m_Children:
   - {fileID: 6714616387397913271}
   - {fileID: 6714616386280546751}
-  - {fileID: 6714616385976556527}
   - {fileID: 6714616387397014875}
+  - {fileID: 6714616385976556527}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -68,7 +68,7 @@ Transform:
   m_LocalScale: {x: 1057.198, y: 1057.1981, z: 1057.1981}
   m_Children: []
   m_Father: {fileID: 6714616385900196363}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6714616385976556526
 MonoBehaviour:
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_DialogueManager: {fileID: 6714616385900196372}
   m_CraftBombButton: {fileID: 0}
   m_bombText: {fileID: 0}
-  m_fondCraft: {fileID: 0}
+  m_cpDialogue2: {fileID: 11400000, guid: 09dd39686d5356b4e9e0b0068aa61019, type: 2}
 --- !u!1 &6714616386280546746
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +287,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6714616385900196363}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}

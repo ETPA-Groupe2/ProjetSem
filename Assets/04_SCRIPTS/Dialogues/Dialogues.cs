@@ -40,7 +40,7 @@ public class Dialogues : MonoBehaviour
 
     private void Update()
     {
-        if(textDisplay.text == sentences[index] && m_cpDialogue.Value == true)
+        if(textDisplay.text == sentences[index])
         {
             m_continueButton.SetActive(true);
         }
