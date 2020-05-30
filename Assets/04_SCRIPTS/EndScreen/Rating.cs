@@ -32,6 +32,7 @@ public class Rating : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("test");
             m_completedSound.Play(0);
             m_pollutionRate.FinalRating();
             m_textDisplayer.text = "Niveau terminé ! Vous êtes du rang " + m_pollutionRate.m_rateString + " !";

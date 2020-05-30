@@ -21,17 +21,27 @@ public class FourthDialog : MonoBehaviour
     public GameObject m_bombText;
     public GameObject m_TableaudesScores;
 
-
+    [SerializeField] s_VarBool m_cpDialogue4;
 
     void Start()
     {
-        StartCoroutine(Type());
-        m_zoneButton.SetActive(false);
-        m_energyText.SetActive(false);
-        m_ImageFond.SetActive(true);
-        m_Player.SetActive(false);
-        m_CraftBombButton.SetActive(false);
-        m_bombText.SetActive(false);
+        if (m_cpDialogue4.Value == true)
+        {
+            StartCoroutine(Type());
+            m_zoneButton.SetActive(false);
+            m_energyText.SetActive(false);
+            m_ImageFond.SetActive(true);
+            m_Player.SetActive(false);
+            m_CraftBombButton.SetActive(false);
+            m_bombText.SetActive(false);
+        }
+        else if (m_cpDialogue4.Value == false)
+        {
+            m_ImageFond.SetActive(false);
+            m_continueButton.SetActive(false);
+            m_CraftBombButton.SetActive(true);
+            m_bombText.SetActive(true);
+        }
 
     }
 
@@ -75,6 +85,7 @@ public class FourthDialog : MonoBehaviour
             m_DialogueManager.SetActive(false);
 
             m_TableaudesScores.SetActive(true);
+            m_cpDialogue4.Value = false;
 
 
         }
