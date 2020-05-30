@@ -37,6 +37,8 @@ public class SecondDialog : MonoBehaviour
         {
             m_ImageFond.SetActive(false);
             m_continueButton.SetActive(false);
+            m_CraftBombButton.SetActive(true);
+            m_bombText.SetActive(true);
         }
 
     }
