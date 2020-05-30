@@ -18,20 +18,29 @@ public class Dialogues : MonoBehaviour
     public GameObject m_Player;
     public GameObject m_DialogManager;
 
-    
+    [SerializeField] s_VarBool m_cpDialogue;
+
+   
     void Start()
     {
-        StartCoroutine(Type());
-        m_zoneButton.SetActive(false);
-        m_energyText.SetActive(false);
-        m_ImageFond.SetActive(true);
-        m_Player.SetActive(false);
-
+        if (m_cpDialogue.Value == true)
+        {
+            StartCoroutine(Type());
+            m_zoneButton.SetActive(false);
+            m_energyText.SetActive(false);
+            m_ImageFond.SetActive(true);
+            m_Player.SetActive(false);
+        }
+        else if(m_cpDialogue.Value == false)
+        {
+            m_ImageFond.SetActive(false);
+            m_continueButton.SetActive(false);
+        }
     }
 
     private void Update()
     {
-        if(textDisplay.text == sentences[index])
+        if(textDisplay.text == sentences[index] && m_cpDialogue.Value == true)
         {
             m_continueButton.SetActive(true);
         }
@@ -67,6 +76,7 @@ public class Dialogues : MonoBehaviour
             m_ImageFond.SetActive(false);
             m_Player.SetActive(true);
             m_DialogManager.SetActive(false);
+            m_cpDialogue.Value = false;
 
         }
     }

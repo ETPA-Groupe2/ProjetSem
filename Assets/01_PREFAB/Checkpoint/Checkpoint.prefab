@@ -60,6 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_triggerButton: {fileID: 0}
   m_checkPointFX: {fileID: 0}
+  m_cpDialogue: {fileID: 11400000, guid: c5b6a495623ea6244967ca954285a4bc, type: 2}
 --- !u!82 &1009443003915568644
 AudioSource:
   m_ObjectHideFlags: 0
