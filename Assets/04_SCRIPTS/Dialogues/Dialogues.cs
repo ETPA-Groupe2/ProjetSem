@@ -17,6 +17,8 @@ public class Dialogues : MonoBehaviour
     public GameObject m_ImageFond;
     public GameObject m_Player;
     public GameObject m_DialogManager;
+    public GameObject m_CraftBombButton;
+    public GameObject m_bombText;
 
     [SerializeField] s_VarBool m_cpDialogue;
 
@@ -30,11 +32,15 @@ public class Dialogues : MonoBehaviour
             m_energyText.SetActive(false);
             m_ImageFond.SetActive(true);
             m_Player.SetActive(false);
+            m_CraftBombButton.SetActive(false);
+            m_bombText.SetActive(false);
         }
         else if(m_cpDialogue.Value == false)
         {
             m_ImageFond.SetActive(false);
             m_continueButton.SetActive(false);
+            m_CraftBombButton.SetActive(true);
+            m_bombText.SetActive(true);
         }
     }
 
@@ -77,7 +83,6 @@ public class Dialogues : MonoBehaviour
             m_Player.SetActive(true);
             m_DialogManager.SetActive(false);
             m_cpDialogue.Value = false;
-
         }
     }
 }

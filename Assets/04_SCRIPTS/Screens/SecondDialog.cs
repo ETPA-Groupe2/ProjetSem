@@ -77,7 +77,7 @@ public class SecondDialog : MonoBehaviour
             textDisplay.text = "";
             m_continueButton.SetActive(false);
             m_zoneButton.SetActive(true);
-            m_energyText.SetActive(false);
+            m_energyText.SetActive(true);
             m_ImageFond.SetActive(false);
             m_Player.SetActive(true);
             m_CraftBombButton.SetActive(true);
