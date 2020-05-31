@@ -30,7 +30,7 @@ public class BuildingSystem : MonoBehaviour
     [SerializeField]
     private Camera m_playerCamera;
 
-    private bool m_buildModeOn = false;
+    [SerializeField] private s_VarBool m_buildModeOn;
 
     [SerializeField]
     private LayerMask buildableSurfacesLayer;
@@ -65,6 +65,7 @@ public class BuildingSystem : MonoBehaviour
     private void Start()
     {
         m_buildSound = GetComponent<AudioSource>();
+        m_buildModeOn.m_value = false;
     }
     private void Update()
     {
@@ -73,7 +74,7 @@ public class BuildingSystem : MonoBehaviour
     // L'idée avec les screenpointtoray c'est que le raycast se lance depuis le milieu de l ecran    tout le temps, mais ça suggère que la camera suive le joueur quoi //
        #if UNITY_EDITOR
 
-        if (m_buildModeOn)
+        if (m_buildModeOn.m_value)
         {
             m_canBuild.Value = true;
             m_canBuildBomb.Value = false;
@@ -91,19 +92,19 @@ public class BuildingSystem : MonoBehaviour
                     { 
                         PlaceBomb(m_currentTemplateBlock.transform.position);
                         m_bomb = false;
-                        m_buildModeOn = false;
+                        m_buildModeOn.Value = false;
                     }
                     else if(m_canBuild.Value && m_glide)
                     {
                         PlaceGlide(m_currentTemplateBlock.transform.position);
                         m_glide = false;
-                        m_buildModeOn = false;
+                        m_buildModeOn.Value = false;
                     }
                     else if(m_canBuild.Value && m_gen)
                     {
                         PlaceGen(m_currentTemplateBlock.transform.position);
                         m_gen = false;
-                        m_buildModeOn = false;
+                        m_buildModeOn.Value = false;
                     }
                 } 
             }
@@ -118,7 +119,7 @@ public class BuildingSystem : MonoBehaviour
 
         #if UNITY_ANDROID
 
-        if (m_buildModeOn)
+        if (m_buildModeOn.m_value)
         {
             m_canBuild.Value = true;
             m_canBuildBomb.Value = false;
@@ -142,21 +143,21 @@ public class BuildingSystem : MonoBehaviour
                                 PlaceBomb(m_currentTemplateBlock.transform.position);
                                 m_bomb = false;
                                 m_dragOver.m_value = false;
-                                m_buildModeOn = false;
+                                m_buildModeOn.m_value = false;
                             }
                             else if(m_canBuild.Value && m_glide)
                             {
                                 PlaceGlide(m_currentTemplateBlock.transform.position);
                                 m_glide = false;
                                 m_dragOver.m_value = false;
-                                m_buildModeOn = false;
+                                m_buildModeOn.m_value = false;
                             }
                             else if(m_canBuild.Value && m_gen)
                             {
                                 PlaceGen(m_currentTemplateBlock.transform.position);
                                 m_gen = false;
                                 m_dragOver.m_value = false;
-                                m_buildModeOn = false;
+                                m_buildModeOn.m_value = false;
                             }
                         } 
                     }
@@ -172,7 +173,7 @@ public class BuildingSystem : MonoBehaviour
             
 
 
-        if (!m_buildModeOn && m_currentTemplateBlock != null)
+        if (!m_buildModeOn.m_value && m_currentTemplateBlock != null)
         {
             Destroy(m_currentTemplateBlock.gameObject);
             m_canBuild.Value = false;
@@ -187,7 +188,7 @@ public class BuildingSystem : MonoBehaviour
     {
         if(m_canBuildBomb.Value)
         {
-            m_buildModeOn = true;
+            m_buildModeOn.m_value = true;
             m_bomb = true;
             m_blockTrans = new Vector3(m_playerTrans.position.x, m_playerTrans.position.y+1, m_playerTrans.position.z-m_posBlockOffset);
 
@@ -202,7 +203,7 @@ public class BuildingSystem : MonoBehaviour
     {
         if(m_canBuildGlide.Value)
         {
-            m_buildModeOn = true;
+            m_buildModeOn.m_value = true;
             m_glide = true;
             m_blockTrans = new Vector3(m_playerTrans.position.x, m_playerTrans.position.y, m_playerTrans.position.z-m_posBlockOffset);
 
@@ -216,7 +217,7 @@ public class BuildingSystem : MonoBehaviour
     {
         if(m_canBuildGen.Value)
         {
-            m_buildModeOn = true;
+            m_buildModeOn.m_value = true;
             m_gen = true;
             m_blockTrans = new Vector3(m_playerTrans.position.x, m_playerTrans.position.y, m_playerTrans.position.z-m_posBlockOffset);
 

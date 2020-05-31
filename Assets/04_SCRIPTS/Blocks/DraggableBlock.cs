@@ -17,7 +17,7 @@ public class DraggableBlock : MonoBehaviour
 
     [SerializeField] private Plane objPlane;
     [SerializeField] private Vector3 m0;
-    [SerializeField] private GameObject gObj;
+    [SerializeField] public GameObject gObj;
 
 
     #endregion
@@ -69,6 +69,7 @@ public class DraggableBlock : MonoBehaviour
         {
             if(Input.GetTouch(0).phase == TouchPhase.Began)
             {
+                Debug.LogWarning("LIFE IS DEATH");
                 Ray mouseRay = GenerateRay(Input.GetTouch(0).position);
                 RaycastHit hit;
 
@@ -93,7 +94,15 @@ public class DraggableBlock : MonoBehaviour
                 Ray mRay = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
                 float rayDistance;
                 if(objPlane.Raycast(mRay, out rayDistance))
-                    gObj.transform.position = mRay.GetPoint(rayDistance) + m0;
+                {
+                    Vector3 pos = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, m_zPosition);
+
+                    Vector3 curPos = Camera.main.ScreenToWorldPoint(pos);
+                    curPos.y = m_yPosition;
+
+                    gObj.transform.position = curPos;
+                }
+                   
             }
             else if(Input.GetTouch(0).phase == TouchPhase.Ended && gObj)
             {

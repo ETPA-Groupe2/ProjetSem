@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class DisplayCraft : MonoBehaviour
 {
-    [Header("--- THE NUMBER OF RESOURCES IN INVENTORY & PARAMETERS ---")]
+    [Header("--- BUILD ON PARAMETER ---")]
+
+    [SerializeField] private s_VarBool m_buildModeOn;
 
     [Header("-- Bomb Parameters -- ", order = 1)]
 
@@ -46,13 +48,17 @@ public class DisplayCraft : MonoBehaviour
 
        m_genText.text = m_generatorResourceInt.Value+"/4"; 
 
-       if(m_bombeResourceInt.Value>=2)
+       if(m_bombeResourceInt.Value>=2 && m_buildModeOn.m_value == false)
         {
             ColorBlock colors = m_bombButton.colors;
             colors.normalColor = new Color32(204, 255, 206, 255);
             m_bombButton.colors = colors;
             m_bombButton.interactable = true;
             m_canBuildBomb.Value = true;
+        }
+        else if(m_buildModeOn.m_value == true)
+        {
+            m_bombButton.interactable = false;
         }
         else
         {
