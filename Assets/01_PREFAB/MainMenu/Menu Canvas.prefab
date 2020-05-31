@@ -500,8 +500,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 0826bc3b2ed590f47a06fc14dbb24d61, type: 3}
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -512,8 +512,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Un jeu par la Kebab Team:\n\nIohannes Mboumba, Pauline Barbet, Johann
-    Theron, Romain Poussier, Anna Deleforge\n\n\nEffets sonores:\r\n\nwww.zapsplat.com\r\n\n\rwww.freesound.org\r\nhttps://creativecommons.org/licenses/by/3.0/legalcode\r\n\r\nMusiques:
+  m_Text: "Un jeu par la Kebab Team:\n\nPauline Barbet, Anna Deleforge, Iohannes
+    Mboumba, Romain Poussier, Johann Theron\n\n\nEffets sonores:\r\n\nwww.zapsplat.com\r\n\n\rwww.freesound.org\r\nhttps://creativecommons.org/licenses/by/3.0/legalcode\r\n\r\nMusiques:
     \r\n\n\rAvijit Nath - The Mystery Man\r\nInfados - Kevin MacLeod\r\r\nAnguish
     - Kevin MacLeod\r\n"
 --- !u!1 &4655596191119878720
