@@ -18,10 +18,6 @@ public class Rating : MonoBehaviour
     [Tooltip("Put the PollutionRate script here")]
     [SerializeField] private PollutionRate m_pollutionRate;
 
-    [Header("Display management")]
-    [Tooltip("Put here the text box in which you want to display the final rating")]
-    [SerializeField] private Text m_textDisplayer;
-
     AudioSource m_completedSound;
 
     private void Start()
@@ -32,10 +28,9 @@ public class Rating : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("test");
             m_completedSound.Play(0);
             m_pollutionRate.FinalRating();
-            m_textDisplayer.text = "Niveau terminé ! Vous êtes du rang " + m_pollutionRate.m_rateString + " !";
+ 
             Invoke("LoadLevel2", 5f);
         }
     }
