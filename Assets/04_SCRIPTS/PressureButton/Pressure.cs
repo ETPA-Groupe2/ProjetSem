@@ -17,6 +17,7 @@ public class Pressure : MonoBehaviour
     [Header("Event")]
     [Tooltip("The event you want to play when the button is pressed")]
     [SerializeField] GD2Lib.Event Event;
+    [SerializeField] GameObject m_camDisable;
     
 
     void OnTriggerEnter(Collider other)
@@ -25,6 +26,7 @@ public class Pressure : MonoBehaviour
         if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("Zone") && !other.gameObject.CompareTag("Ground"))
         {
             Event.Raise();
+            m_camDisable.SetActive(false);
         }
     }
 

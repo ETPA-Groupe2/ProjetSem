@@ -1,5 +1,5 @@
 ﻿/******************************************************
-*       Made by Johann Theron                         *  
+*       Made by Johann Theron & Anna Deleforge        *  
 *                                                     *
 /*****************************************************/
 
@@ -51,33 +51,34 @@ public class PollutionRate : MonoBehaviour
 
     public void FinalRating()
     {
+        Debug.Log("ALLO");
         #region CheckPollutionLevel
-        if (m_globalPollution.Value >= m_minScoreRateS && m_globalPollution.Value <= m_minScoreRateA-1f)
+        if (m_globalPollution.Value >= m_minScoreRateS && m_globalPollution.Value <= m_minScoreRateA - 1f)
         {
             m_rateString = "S";
             m_LetterS.SetActive(true);
             m_tableauFond.SetActive(true);
-}
-        
-        if (m_globalPollution.Value >= m_minScoreRateA && m_globalPollution.Value <= m_minScoreRateB-1f)
+        }
+
+        if (m_globalPollution.Value >= m_minScoreRateA && m_globalPollution.Value <= m_minScoreRateB - 1f)
         {
             m_rateString = "A";
             m_LetterA.SetActive(true);
             m_tableauFond.SetActive(true);
         }
-        if (m_globalPollution.Value >= m_minScoreRateB && m_globalPollution.Value <= m_minScoreRateC-1f)
+        if (m_globalPollution.Value >= m_minScoreRateB && m_globalPollution.Value <= m_minScoreRateC - 1f)
         {
             m_rateString = "B";
             m_LetterB.SetActive(true);
             m_tableauFond.SetActive(true);
         }
-        if (m_globalPollution.Value >= m_minScoreRateC  && m_globalPollution.Value <= m_minScoreRateD-1f)
+        if (m_globalPollution.Value >= m_minScoreRateC && m_globalPollution.Value <= m_minScoreRateD - 1f)
         {
             m_rateString = "C";
             m_LetterC.SetActive(true);
             m_tableauFond.SetActive(true);
         }
-        if (m_globalPollution.Value >= m_minScoreRateD && m_globalPollution.Value <= m_minScoreRateE-1f)
+        if (m_globalPollution.Value >= m_minScoreRateD && m_globalPollution.Value <= m_minScoreRateE - 1f)
         {
             m_rateString = "D";
             m_LetterD.SetActive(true);

@@ -561,6 +561,11 @@ MonoBehaviour:
   m_movingLayer:
     serializedVersion: 2
     m_Bits: 1
+  m_uiLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  m_EnergyButton: {fileID: 0}
+  m_BombButton: {fileID: 0}
   m_loadCheckpoint: 0
   m_isMoving: 0
 --- !u!195 &5607653098993016041
@@ -574,9 +579,9 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 15
-  m_Acceleration: 15
+  m_Acceleration: 20
   avoidancePriority: 50
-  m_AngularSpeed: 90
+  m_AngularSpeed: 180
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
