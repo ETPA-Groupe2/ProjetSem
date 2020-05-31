@@ -100,7 +100,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 20612a32ac2e59f46832bbf361aebaaf,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -168,17 +168,17 @@ PrefabInstance:
     - target: {fileID: 8549313623883799365, guid: 0f32c968135c591449250fceca0941c0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -204.39
+      value: -9.4
       objectReference: {fileID: 0}
     - target: {fileID: 8549313623883799365, guid: 0f32c968135c591449250fceca0941c0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.41
+      value: -2.45
       objectReference: {fileID: 0}
     - target: {fileID: 8549313623883799365, guid: 0f32c968135c591449250fceca0941c0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -279.1
+      value: -7.94
       objectReference: {fileID: 0}
     - target: {fileID: 8549313623883799365, guid: 0f32c968135c591449250fceca0941c0,
         type: 3}
@@ -12450,7 +12450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &521025893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23776,17 +23776,17 @@ PrefabInstance:
     - target: {fileID: 229701423771111411, guid: a9e2b74b64cc51e4a9de02499d40e203,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -200.43169
+      value: -6.3
       objectReference: {fileID: 0}
     - target: {fileID: 229701423771111411, guid: a9e2b74b64cc51e4a9de02499d40e203,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.609999
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 229701423771111411, guid: a9e2b74b64cc51e4a9de02499d40e203,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -271.1116
+      value: 8.3
       objectReference: {fileID: 0}
     - target: {fileID: 229701423771111411, guid: a9e2b74b64cc51e4a9de02499d40e203,
         type: 3}
