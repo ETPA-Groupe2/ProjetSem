@@ -29,6 +29,7 @@ public class CPPersistence : MonoBehaviour
 }
 
     private GameObject m_sp;
+    [SerializeField] private s_VarBool m_destroy;
 
     [Tooltip("Put here the player transform")]
     [SerializeField] Transform m_player;
@@ -38,8 +39,9 @@ public class CPPersistence : MonoBehaviour
 
     void Start()
     {
+        m_destroy.Value = false;
         m_sp = GameObject.Find("SpawnPoint");
-        if (m_sp!=null)
+        if (m_sp!=null && m_destroy.Value == false)
         {
             DontDestroyOnLoad(m_sp);
         }   

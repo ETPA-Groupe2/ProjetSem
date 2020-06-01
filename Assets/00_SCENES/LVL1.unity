@@ -1854,7 +1854,7 @@ PrefabInstance:
     - target: {fileID: 5191174975473514750, guid: 5a8f4e48f8a8be24388081e81f16c6bb,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -230.00008
+      value: -230.00009
       objectReference: {fileID: 0}
     - target: {fileID: 5191174975473514751, guid: 5a8f4e48f8a8be24388081e81f16c6bb,
         type: 3}
@@ -43681,6 +43681,12 @@ PrefabInstance:
       propertyPath: m_navmesh
       value: 
       objectReference: {fileID: 521025892}
+    - target: {fileID: 5154089321814666844, guid: e6261694072fc9a46adce4c3c696b825,
+        type: 3}
+      propertyPath: m_destroy
+      value: 
+      objectReference: {fileID: 11400000, guid: c1fcb25922b7b1b4a90d9e38997c5453,
+        type: 2}
     - target: {fileID: 5154089321814666845, guid: e6261694072fc9a46adce4c3c696b825,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54143,6 +54149,12 @@ PrefabInstance:
       propertyPath: m_pollutionRate
       value: 
       objectReference: {fileID: 223132412}
+    - target: {fileID: 698174461601970832, guid: 6c98e65610b9dca45bbf9af8b3cdce68,
+        type: 3}
+      propertyPath: m_destroy
+      value: 
+      objectReference: {fileID: 11400000, guid: c1fcb25922b7b1b4a90d9e38997c5453,
+        type: 2}
     - target: {fileID: 698174461601970834, guid: 6c98e65610b9dca45bbf9af8b3cdce68,
         type: 3}
       propertyPath: m_Name

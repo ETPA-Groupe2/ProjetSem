@@ -935,6 +935,12 @@ PrefabInstance:
       propertyPath: m_navmesh
       value: 
       objectReference: {fileID: 260695391}
+    - target: {fileID: 5154089321814666844, guid: e6261694072fc9a46adce4c3c696b825,
+        type: 3}
+      propertyPath: m_destroy
+      value: 
+      objectReference: {fileID: 11400000, guid: 558484546dfd61143bf49cb85f89ef66,
+        type: 2}
     - target: {fileID: 5154089321814666845, guid: e6261694072fc9a46adce4c3c696b825,
         type: 3}
       propertyPath: m_LocalPosition.x
