@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 public class Multimat : MonoBehaviour
+
+// made by Anna Deleforge //
 {
     [SerializeField]
     public int CurrentMaterial;

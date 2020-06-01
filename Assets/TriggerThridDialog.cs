@@ -5,11 +5,11 @@ using TMPro;
 
 // made by Anna Deleforge //
 
-public class TriggerSecondTuto : MonoBehaviour
+public class TriggerThridDialog : MonoBehaviour
 {
 
     public bool m_isTriggered = false;
-    public GameObject m_SecondDialogue;
+    public GameObject m_ThirdDialogue;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,7 +17,7 @@ public class TriggerSecondTuto : MonoBehaviour
         {
             m_isTriggered = true;
             Debug.Log(m_isTriggered);
-            m_SecondDialogue.SetActive(true);
+            m_ThirdDialogue.SetActive(true);
 
         }
     }
