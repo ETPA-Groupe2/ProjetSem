@@ -9,7 +9,6 @@ public class ButtonSoundScript : MonoBehaviour
     public void PlaySound()
     {
         m_audioObject = GameObject.Find("ClickSound");
-        m_audioObject.GetComponent<AudioSource>().Play();
     }
 }
 
