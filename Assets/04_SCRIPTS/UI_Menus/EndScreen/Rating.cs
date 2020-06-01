@@ -31,13 +31,12 @@ public class Rating : MonoBehaviour
             m_completedSound.Play(0);
             m_pollutionRate.FinalRating();
  
-            Invoke("LoadLevel2", 5f);
+            Invoke("LoadMenu", 5f);
         }
     }
 
-    //Temporary
-    void LoadLevel2()
+    void LoadMenu()
     {
-        SceneManager.LoadScene("Salle2_V1");
+        SceneManager.LoadScene("MenuScene");
     }
 }
