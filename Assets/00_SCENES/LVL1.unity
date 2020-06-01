@@ -1502,7 +1502,7 @@ PrefabInstance:
     - target: {fileID: 556591991918395485, guid: 5a8f4e48f8a8be24388081e81f16c6bb,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 31.000519
+      value: 31.000504
       objectReference: {fileID: 0}
     - target: {fileID: 556591993016708616, guid: 5a8f4e48f8a8be24388081e81f16c6bb,
         type: 3}
@@ -1854,7 +1854,7 @@ PrefabInstance:
     - target: {fileID: 5191174975473514750, guid: 5a8f4e48f8a8be24388081e81f16c6bb,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -230.00005
+      value: -230.00006
       objectReference: {fileID: 0}
     - target: {fileID: 5191174975473514751, guid: 5a8f4e48f8a8be24388081e81f16c6bb,
         type: 3}
@@ -9826,6 +9826,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7009395717790798958, guid: 6caa7f7436b48c44a898506d53080315,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1801866
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009395717790798958, guid: 6caa7f7436b48c44a898506d53080315,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7168926
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009395717790798958, guid: 6caa7f7436b48c44a898506d53080315,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1801866
+      objectReference: {fileID: 0}
     - target: {fileID: 7009395717790798959, guid: 6caa7f7436b48c44a898506d53080315,
         type: 3}
       propertyPath: m_Sprite
@@ -9976,6 +9991,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a18b494f8cc316b48a126b387639f998,
         type: 3}
+    - target: {fileID: 7009395718620222409, guid: 6caa7f7436b48c44a898506d53080315,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7009395719118707885, guid: 6caa7f7436b48c44a898506d53080315,
         type: 3}
       propertyPath: m_Sprite
