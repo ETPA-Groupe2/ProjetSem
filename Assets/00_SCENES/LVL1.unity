@@ -100,7 +100,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 20612a32ac2e59f46832bbf361aebaaf,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -50572,12 +50572,22 @@ PrefabInstance:
     - target: {fileID: 3088791383310412307, guid: ca548c45e7917f346a57e0cf12a2e798,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.83
+      value: 0.83000064
       objectReference: {fileID: 0}
     - target: {fileID: 3088791383310412307, guid: ca548c45e7917f346a57e0cf12a2e798,
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.9162127
+      objectReference: {fileID: 0}
+    - target: {fileID: 3088791383310412307, guid: ca548c45e7917f346a57e0cf12a2e798,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 37.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3088791383310412307, guid: ca548c45e7917f346a57e0cf12a2e798,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.85000086
       objectReference: {fileID: 0}
     - target: {fileID: 7264291829209236203, guid: ca548c45e7917f346a57e0cf12a2e798,
         type: 3}
@@ -50603,6 +50613,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dialogues3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744354542055211248, guid: ca548c45e7917f346a57e0cf12a2e798,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8015453263602956864, guid: ca548c45e7917f346a57e0cf12a2e798,
         type: 3}
