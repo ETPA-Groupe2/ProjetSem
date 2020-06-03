@@ -1,4 +1,9 @@
-﻿interface IGeneratorResources
+﻿/******************************************************
+*       Made by Iohannes Mboumba                      *  
+*                                                     *
+/*****************************************************/
+
+interface IGeneratorResources
 {
 
 }

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Anna Delforge                         *  
+*                                                     *
+/*****************************************************/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;

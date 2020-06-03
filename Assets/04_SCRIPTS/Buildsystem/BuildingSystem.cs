@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Anna Delforge & Iohannes Mboumba      *  
+*                                                     *
+/*****************************************************/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -61,7 +67,6 @@ public class BuildingSystem : MonoBehaviour
 
     AudioSource m_buildSound;
 
-    //BuildMode ON/OFF en appuyant sur "e"//
     private void Start()
     {
         m_buildSound = GetComponent<AudioSource>();
@@ -69,9 +74,6 @@ public class BuildingSystem : MonoBehaviour
     }
     private void Update()
     {
-    // Attention le raycast ici gère les distance d'affichage en gros //
-    // Pour que le joueur puisse construire de plus loin, changer le buildPosHit //
-    // L'idée avec les screenpointtoray c'est que le raycast se lance depuis le milieu de l ecran    tout le temps, mais ça suggère que la camera suive le joueur quoi //
        #if UNITY_EDITOR
 
         if (m_buildModeOn.m_value)
@@ -231,8 +233,6 @@ public class BuildingSystem : MonoBehaviour
 
     #region INSTANTIATE BLOCKS
 
-    // Créer les block en fonction de ceux stockés dans la biblio //
-    // Assigne nom, material, et ID //
     private void PlaceBomb(Vector3 p_pos)
     {
         m_buildSound.Play(0);

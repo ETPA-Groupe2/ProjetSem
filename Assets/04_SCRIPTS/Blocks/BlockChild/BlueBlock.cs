@@ -20,7 +20,6 @@ public class BlueBlock : Blocks
     {
         // The block is thrown in the air by this vector
         m_blueBlockTR.AddForce((transform.position + new Vector3(0,0,-1)) * m_force); 
-        Debug.Log("Ca marche woula");
     }
 
     private void OnTriggerEnter(Collider other) 

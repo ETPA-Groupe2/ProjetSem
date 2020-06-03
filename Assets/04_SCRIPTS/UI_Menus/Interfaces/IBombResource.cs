@@ -1,4 +1,9 @@
-﻿interface IBombResource 
+﻿/******************************************************
+*       Made by Iohannes Mboumba                      *  
+*                                                     *
+/*****************************************************/
+
+interface IBombResource 
 {
     
 }

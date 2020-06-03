@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Johann Theron & Iohannes Mboumba      *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GD2Lib;
@@ -66,7 +71,6 @@ public class GlideBlock : Blocks
         if(m_zAxis)
         {
             transform.Translate(m_dir.z * m_speed * Time.deltaTime, 0,0 );
-            Debug.Log("allo");
         }
         if(m_xAxis)
         {

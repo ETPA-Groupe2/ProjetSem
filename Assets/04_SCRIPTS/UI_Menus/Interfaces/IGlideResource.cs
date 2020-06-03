@@ -1,4 +1,9 @@
-﻿interface IGlideResource
+﻿/******************************************************
+*       Made by Iohannes Mboumba                      *  
+*                                                     *
+/*****************************************************/
+
+interface IGlideResource
 {
     
 }

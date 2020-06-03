@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Romain Poussier                       *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

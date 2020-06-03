@@ -10,7 +10,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Inventory Object", menuName = "Inventory System/Inventory")]
 public class s_InventoryObject : ScriptableObject
 {
-    public List<InventorySlot> m_container = new List<InventorySlot>();
+   public List<InventorySlot> m_container = new List<InventorySlot>();
 
    public void AddItem(s_ItemObject p_item)
     {

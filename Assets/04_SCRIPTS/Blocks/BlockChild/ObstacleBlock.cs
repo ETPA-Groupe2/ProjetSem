@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Johann Theron & Iohannes Mboumba      *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿/******************************************************
+*       Made by Iohannes Mboumba                      *  
+*                                                     *
+/*****************************************************/
+
+using UnityEngine;
 
 public interface IObstacle 
 {

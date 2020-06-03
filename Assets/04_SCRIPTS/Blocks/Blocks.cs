@@ -16,7 +16,7 @@ public abstract class Blocks : MonoBehaviour
     [Tooltip("Needs a reference to it's particle system")]
     [SerializeField] protected ParticleSystem m_particles;
 
-    [Tooltip("Utterly useless, thank you Anna.")]
+    [Tooltip("Level of pollution the block emit")]
     [SerializeField] protected float m_pollutionLvl;
     
     private void OnEnable() 

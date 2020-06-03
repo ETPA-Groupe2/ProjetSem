@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/******************************************************
+*       Made by Iohannes Mboumba                      *  
+*                                                     *
+/*****************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -69,7 +74,6 @@ public class DraggableBlock : MonoBehaviour
         {
             if(Input.GetTouch(0).phase == TouchPhase.Began)
             {
-                Debug.LogWarning("LIFE IS DEATH");
                 Ray mouseRay = GenerateRay(Input.GetTouch(0).position);
                 RaycastHit hit;
 
@@ -107,7 +111,6 @@ public class DraggableBlock : MonoBehaviour
             else if(Input.GetTouch(0).phase == TouchPhase.Ended && gObj)
             {
                 m_dragOver.m_value = true;
-                //gObj = null;
             }
         }
         #endif
